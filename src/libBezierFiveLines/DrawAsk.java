@@ -4,7 +4,6 @@ import java.awt.event.*;
 import javax.swing.*; 
 
 public class DrawAsk extends JFrame  implements ActionListener {
-
 /**
 	 * 
 	 */

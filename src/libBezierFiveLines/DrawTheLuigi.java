@@ -2,11 +2,9 @@ package libBezierFiveLines;
 
 import java.awt.*;
 import java.awt.geom.Line2D;
-
 import javax.swing.*;
 
 public class DrawTheLuigi  extends JPanel  {
-
 	/**
 	 * 
 	 */
