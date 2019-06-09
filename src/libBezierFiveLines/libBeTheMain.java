@@ -1,20 +1,13 @@
 package libBezierFiveLines;
-
-import javax.swing.JFrame;
+import javax.swing.UnsupportedLookAndFeelException;
 
 public class libBeTheMain  {
-  public static void main(String[] args)  {
-	
-		JFrame frame = new JFrame();
-	
-	  DrawTheLuigi dl = new DrawTheLuigi();
+  public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException  {
+	   
+	  
+	    DrawAsk da = new DrawAsk();
+	    da.daw();
+	    
 
-		frame.setResizable(false);
-		frame.setSize(800, 800); 
-		frame.setFocusable(true); 
-		frame.setLocationRelativeTo(null);
-		frame.setVisible(true); 
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
-    	  frame.add(dl);
   }
 }
