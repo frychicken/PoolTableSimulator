@@ -1,7 +1,7 @@
 package libBezierFiveLines;
 
 import java.awt.event.*;
-import javax.swing.*; 
+import javax.swing.*;
 
 public class DrawAsk extends JFrame  implements ActionListener {
 /**
@@ -40,7 +40,7 @@ static JFrame jf;
 	 button.addActionListener(oka);
 	 panel.add(button);
      jf.add(panel);
-	 jf.setSize(500,150);
+	 jf.setSize(480,150);
      jf.setResizable(false);
      jf.setLocationRelativeTo(null);
 	 jf.setVisible(true);
@@ -75,7 +75,18 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 	frame.setFocusable(true); 
 	frame.setLocationRelativeTo(null);
 	frame.setVisible(true); 
-	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+	frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+	frame.addWindowListener(new WindowAdapter() {
+		   public void windowClosing(WindowEvent evt) {
+             try {
+				daw();
+			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+					| UnsupportedLookAndFeelException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		   }
+		  });
 	frame.add(dl);
 	
 }

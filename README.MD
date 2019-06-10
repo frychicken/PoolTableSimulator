@@ -11,3 +11,5 @@ _About_
 Origin: (400, 400) 
 
 Middle triangle: The maximum/minimum size of the curve
+
+There are bunch of bugs lol

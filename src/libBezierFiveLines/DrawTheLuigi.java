@@ -23,6 +23,10 @@ public class DrawTheLuigi  extends JPanel  {
               
               //y (i) = 3/2(x + 200) + 400; y' (j) = -3/2(x-200) + 400 
               // w = 400; h = 300
+              g.setColor(Color.RED);
+              g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
+              g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
+              g.setColor(Color.BLACK);
               g.drawLine(200, 400, 400, 100);
               g.drawLine(400, 100, 600, 400);
               
