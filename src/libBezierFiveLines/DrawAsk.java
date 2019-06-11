@@ -1,5 +1,6 @@
 package libBezierFiveLines;
 
+import java.awt.Toolkit;
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -15,7 +16,6 @@ static JFrame jf;
  JLabel lh = new JLabel("h:");
  JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (vertex) (default: 300).");
  JLabel dbl = new JLabel("Distance between lines (default: 10)");
-
  static JTextField fw;  	
  static JTextField fh;  	
  static JTextField dist;  
@@ -37,14 +37,27 @@ static JFrame jf;
 	 panel.add(fh);
 	 panel.add(dbl);
 	 panel.add(dist);
+	panel.setLayout(null);
+	jf.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
+
+	 instru.setBounds(2,10,480,10);
+	 lw.setBounds(100,30,20,20);
+	 lh.setBounds(300,30,20,20);
+	
+	 fw.setBounds(150,30,50,20);
+	 fh.setBounds(350,30,50,20);
+	 dbl.setBounds(10,50,250,20);
+     dist.setBounds(220, 50, 50,20);
+
 	 button.addActionListener(oka);
 	 panel.add(button);
-     jf.add(panel);
+	 button.setBounds(220,80,60,20);
+	 jf.add(panel);
 	 jf.setSize(480,150);
      jf.setResizable(false);
      jf.setLocationRelativeTo(null);
 	 jf.setVisible(true);
-	 
+
  }
  
 @Override
@@ -55,6 +68,7 @@ public void actionPerformed(ActionEvent e) {
 		h = Double.parseDouble(fh.getText());
 		dis = Double.parseDouble(dist.getText());
 		jf.setVisible(false);
+	
 		try {
 			doit();
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
@@ -71,6 +85,8 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 	JFrame frame = new JFrame("Result");
 	DrawTheLuigi dl = new DrawTheLuigi(); 
 	frame.setResizable(false);
+	frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
+
 	frame.setSize(800, 800); 
 	frame.setFocusable(true); 
 	frame.setLocationRelativeTo(null);
