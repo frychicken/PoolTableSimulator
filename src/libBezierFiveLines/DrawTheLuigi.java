@@ -19,7 +19,7 @@ public class DrawTheLuigi  extends JPanel  {
     double x = 400, x3 =400+(400-(200+(-1)*(w/2-200))) , x2 = 400,x1 = 200+(-1)*(w/2-200) ,y1 = 400,y2 = 400-h,y3 = 400;
     double t =  (-1*(-2*x1-2*x2) + Math.sqrt(Math.pow((-2*x1-2*x2),2) - 4*(x1-2*x2+x3)*(x1-x)))/2*(x1-2*x2+x3);
     double y = Math.pow((1-t),2)*y1 +2*(1-t)*t*y2 +Math.pow(t,2)*y3;
-    
+    int count =0;
     public void paint(Graphics g) {
 
               g.drawLine(10, 400, 790, 400);
@@ -37,22 +37,23 @@ public class DrawTheLuigi  extends JPanel  {
               g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
               g.drawString("Use arrow keys to change its height, width; type \"a\" to add more lines, \"s\" to remove lines and \"c\" to close the window", 150,650);
               g.drawString(" type \"t\" to toggle changing height", 300,700);
+
+            
               g.setColor(Color.BLACK);
               g.drawLine(200, 400, 400, 100);
               g.drawLine(400, 100, 600, 400);
-
+              
               Graphics2D g2 = (Graphics2D) g; 
              double i =top; 
              double j =bottom;
+             
              while (i <bottom && j>top) {
-            	 
                        g2.draw( new Line2D.Double( -1*(halfw*(i-400)/h) + 200+(-1)*(w/2-200), i+=DrawAsk.dis,  (halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))), j-=DrawAsk.dis));
-            		 
-
+            	       count ++;
              }
-
-                    
-                  
+             g.setColor(Color.BLUE); 
+             g.drawString("Number of Lines: "+count, 10, 45);
+                  count = 0;
 
     }
     

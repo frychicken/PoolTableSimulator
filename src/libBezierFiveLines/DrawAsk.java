@@ -108,7 +108,6 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 			moveTheTHing(event);
 		}
 		boolean toogle_top = false;
-		int ccc = 0;
 		private void moveTheTHing(KeyEvent event) {
 			// TODO Auto-generated method stub
 			int key = event.getKeyCode(); 
