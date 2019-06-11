@@ -11,7 +11,7 @@ public class DrawTheLuigi  extends JPanel  {
 	private static final long serialVersionUID = 1L;
 	double w = DrawAsk.w;
     double h = DrawAsk.h;
-    double halfw = (w%200!=0) ? 200-( w/2-200) : w/2;
+    double halfw = (w%200!=0) ? 200-(-1)*( w/2-200) : w/2;
     double startpoint = 200;
     double top =400-h;
     double bottom =400;
@@ -22,6 +22,7 @@ public class DrawTheLuigi  extends JPanel  {
               g.drawLine(400, 10, 400, 790);
               
               //y (i) = 3/2(x + 200) + 400; y' (j) = -3/2(x-200) + 400 
+              // i = 3/2(x+w/2) + 400
               // w = 400; h = 300
               g.setColor(Color.RED);
               g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
@@ -34,12 +35,19 @@ public class DrawTheLuigi  extends JPanel  {
              double i =top; 
              double j =bottom;
              while (i <bottom && j>top) {
+            	 
+            	 if (w%200 !=0) {
+                       g2.draw( new Line2D.Double( -1*(halfw*(i-400)/h) + 200+(-1)*(w/2-200), i+=DrawAsk.dis,  (halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))), j-=DrawAsk.dis));
+            		 
+            	 } else {
+            	 
              	// the flip
              	if(w > 400)
                      g2.draw( new Line2D.Double( -1*(halfw*(j-w)/h) + startpoint, i+=DrawAsk.dis,  (halfw*(i-w)/h)+400+(400-startpoint), j-=DrawAsk.dis));
 
                   else
                    g2.draw( new Line2D.Double( -1*(halfw*(i-w)/h) + startpoint, i+=DrawAsk.dis,  (halfw*(j-w)/h)+400+(400-startpoint), j-=DrawAsk.dis));
+             }
              }
 
                     
