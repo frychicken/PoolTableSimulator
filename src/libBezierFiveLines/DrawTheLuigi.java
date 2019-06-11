@@ -36,6 +36,7 @@ public class DrawTheLuigi  extends JPanel  {
               g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
               g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
               g.drawString("Use arrow keys to change its height, width; type \"a\" to add more lines, \"s\" to remove lines and \"c\" to close the window", 150,650);
+              g.drawString(" type \"t\" to toggle changing height", 300,700);
               g.setColor(Color.BLACK);
               g.drawLine(200, 400, 400, 100);
               g.drawLine(400, 100, 600, 400);

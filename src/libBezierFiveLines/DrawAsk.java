@@ -107,12 +107,19 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 		public void keyPressed(KeyEvent event) {
 			moveTheTHing(event);
 		}
-
+		boolean toogle_top = false;
+		int ccc = 0;
 		private void moveTheTHing(KeyEvent event) {
 			// TODO Auto-generated method stub
 			int key = event.getKeyCode(); 
 			int key2 = event.getKeyChar();
-
+		
+			if (key2 == 't') {
+				toogle_top = !toogle_top;
+	
+		
+			    frame.repaint(); 
+			}
 			if (key == KeyEvent.VK_LEFT) {
                 dl.w -=  10;
 				frame.repaint(); 
@@ -124,11 +131,19 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 
 			}
 			else if (key == KeyEvent.VK_UP) {
+				if (toogle_top) {
+					 dl.h +=  10;
+				dl.top = 400 - dl.h;	
+				} else
 			    dl.h +=  10;
 				frame.repaint(); 
 
 			}
 			else if (key == KeyEvent.VK_DOWN) {
+				if (toogle_top) {
+				    dl.h -=  10;
+					dl.top = 400 - dl.h;	
+					} else
 			    dl.h -=  10;
 				frame.repaint(); 
 
