@@ -16,11 +16,19 @@ public class DrawTheLuigi  extends JPanel  {
     double top =400-h;
     double bottom =400;
     
+    double x = 400, x3 =400+(400-(200+(-1)*(w/2-200))) , x2 = 400,x1 = 200+(-1)*(w/2-200) ,y1 = 400,y2 = 400-h,y3 = 400;
+    double t =  (-1*(-2*x1-2*x2) + Math.sqrt(Math.pow((-2*x1-2*x2),2) - 4*(x1-2*x2+x3)*(x1-x)))/2*(x1-2*x2+x3);
+    double y = Math.pow((1-t),2)*y1 +2*(1-t)*t*y2 +Math.pow(t,2)*y3;
     
     public void paint(Graphics g) {
+    	System.out.println(t);
               g.drawLine(10, 400, 790, 400);
               g.drawLine(400, 10, 400, 790);
-              
+              // B(t)=(1-t)^2.P0 + 2(1-t).t.P1 + t^2.P2
+              // x = (1-t)^2x1 + 2(1-t)tx2 + t^2x3
+              //y = (1-t)^2y1 + 2(1-t)ty2 + t^2y3
+              // 400 = ((1-t)^2)*(200+(-1)*(w/2-200)) + 2(1-t)t400 +(t^2)*(400-(200+(-1)*(w/2-200)))
+              //t = (-(-2x1-2x2) +- sqrt((-2x1-2x2)^2 - 4(x1-2x2+x3)(x1-x))/2(x1-2x2+x3)
               //y (i) = 3/2(x + 200) + 400; y' (j) = -3/2(x-200) + 400 
               // i = 3/2(x+w/2) + 400
               // w = 400; h = 300
@@ -36,18 +44,9 @@ public class DrawTheLuigi  extends JPanel  {
              double j =bottom;
              while (i <bottom && j>top) {
             	 
-            	 if (w%200 !=0) {
                        g2.draw( new Line2D.Double( -1*(halfw*(i-400)/h) + 200+(-1)*(w/2-200), i+=DrawAsk.dis,  (halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))), j-=DrawAsk.dis));
             		 
-            	 } else {
-            	 
-             	// the flip
-             	if(w > 400)
-                     g2.draw( new Line2D.Double( -1*(halfw*(j-w)/h) + startpoint, i+=DrawAsk.dis,  (halfw*(i-w)/h)+400+(400-startpoint), j-=DrawAsk.dis));
 
-                  else
-                   g2.draw( new Line2D.Double( -1*(halfw*(i-w)/h) + startpoint, i+=DrawAsk.dis,  (halfw*(j-w)/h)+400+(400-startpoint), j-=DrawAsk.dis));
-             }
              }
 
                     
