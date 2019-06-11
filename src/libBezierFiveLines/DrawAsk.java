@@ -16,6 +16,7 @@ static JFrame jf;
  JLabel lh = new JLabel("h:");
  JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (vertex) (default: 300).");
  JLabel dbl = new JLabel("Distance between lines (default: 10)");
+ 
  static JTextField fw;  	
  static JTextField fh;  	
  static JTextField dist;  
@@ -86,7 +87,6 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 	DrawTheLuigi dl = new DrawTheLuigi(); 
 	frame.setResizable(false);
 	frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
-
 	frame.setSize(800, 800); 
 	frame.setFocusable(true); 
 	frame.setLocationRelativeTo(null);
@@ -103,6 +103,57 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 			}
 		   }
 		  });
+	frame.addKeyListener(new KeyAdapter() {
+		public void keyPressed(KeyEvent event) {
+			moveTheTHing(event);
+		}
+
+		private void moveTheTHing(KeyEvent event) {
+			// TODO Auto-generated method stub
+			int key = event.getKeyCode(); 
+			int key2 = event.getKeyChar();
+
+			if (key == KeyEvent.VK_LEFT) {
+                dl.w -=  10;
+				frame.repaint(); 
+
+			}
+			else if (key == KeyEvent.VK_RIGHT) {
+			    dl.w +=  10;
+				frame.repaint(); 
+
+			}
+			else if (key == KeyEvent.VK_UP) {
+			    dl.h +=  10;
+				frame.repaint(); 
+
+			}
+			else if (key == KeyEvent.VK_DOWN) {
+			    dl.h -=  10;
+				frame.repaint(); 
+
+			}
+			if (key2 == 's') {
+		         dis +=1;
+				frame.repaint(); 
+			}
+			if (key2 == 'a') {
+			    dis -=1;
+			    if (dis < 1) dis = 1;
+			    frame.repaint(); 
+			}
+			if (key2 == 'c') {
+			 frame.setVisible(false);
+			 try {
+				daw();
+			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+					| UnsupportedLookAndFeelException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			}
+		}
+	});
 	frame.add(dl);
 	
 }

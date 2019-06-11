@@ -21,7 +21,7 @@ public class DrawTheLuigi  extends JPanel  {
     double y = Math.pow((1-t),2)*y1 +2*(1-t)*t*y2 +Math.pow(t,2)*y3;
     
     public void paint(Graphics g) {
-    	System.out.println(t);
+
               g.drawLine(10, 400, 790, 400);
               g.drawLine(400, 10, 400, 790);
               // B(t)=(1-t)^2.P0 + 2(1-t).t.P1 + t^2.P2
@@ -35,10 +35,11 @@ public class DrawTheLuigi  extends JPanel  {
               g.setColor(Color.RED);
               g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
               g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
+              g.drawString("Use arrow keys to change its height, width; type \"a\" to add more lines, \"s\" to remove lines and \"c\" to close the window", 150,650);
               g.setColor(Color.BLACK);
               g.drawLine(200, 400, 400, 100);
               g.drawLine(400, 100, 600, 400);
-              
+
               Graphics2D g2 = (Graphics2D) g; 
              double i =top; 
              double j =bottom;
