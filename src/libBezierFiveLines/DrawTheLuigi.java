@@ -45,7 +45,7 @@ public class DrawTheLuigi  extends JPanel implements MouseListener, MouseMotionL
               g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
               g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
               g.drawString("Use arrow keys or drag the screen up/down to change its height, width", 250,650);
-              g.drawString("type \"a\" to add more lines, \"s\" to remove lines and \"c\" to close the window", 250, 670);
+              g.drawString("type \"a\" or click near the blue text (add/remove) to add more lines, \"s\" to remove lines and \"c\" to close the window", 150, 670);
               g.drawString(" type \"t\" or click once to toggle changing height", 280,700);
 
             
@@ -100,7 +100,16 @@ int initialY=0;
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
 		// TODO Auto-generated method stub
+		  if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
+			  DrawAsk.dis  --;
+		  if (DrawAsk.dis <1) DrawAsk.dis =1;
+		  }
+			  else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() > 50 && arg0.getX() < 100)
+			  DrawAsk.dis ++;
+		  
+		  else 
           DrawAsk.toogle_top = !DrawAsk.toogle_top;
+		  frame.repaint();
 	}
 	@Override
 	public void mouseEntered(MouseEvent arg0) {
