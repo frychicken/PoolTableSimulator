@@ -1,13 +1,22 @@
 package libBezierFiveLines;
 
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.awt.geom.Line2D;
 import javax.swing.*;
 
-public class DrawTheLuigi  extends JPanel  {
+public class DrawTheLuigi  extends JPanel implements MouseListener, MouseMotionListener {
 	/**
 	 * 
 	 */
+	JFrame frame;
+	public DrawTheLuigi(JFrame frame) {
+		this.frame = frame;
+	    addMouseListener(this);
+	    addMouseMotionListener(this);
+	}
 	private static final long serialVersionUID = 1L;
 	double w = DrawAsk.w;
     double h = DrawAsk.h;
@@ -35,8 +44,9 @@ public class DrawTheLuigi  extends JPanel  {
               g.setColor(Color.RED);
               g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
               g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
-              g.drawString("Use arrow keys to change its height, width; type \"a\" to add more lines, \"s\" to remove lines and \"c\" to close the window", 150,650);
-              g.drawString(" type \"t\" to toggle changing height", 300,700);
+              g.drawString("Use arrow keys or drag the screen up/down to change its height, width", 250,650);
+              g.drawString("type \"a\" to add more lines, \"s\" to remove lines and \"c\" to close the window", 250, 670);
+              g.drawString(" type \"t\" or click once to toggle changing height", 280,700);
 
             
               g.setColor(Color.BLACK);
@@ -56,6 +66,63 @@ public class DrawTheLuigi  extends JPanel  {
                   count = 0;
 
     }
+int initial =0;
+int initialY=0;
+	@Override
+
+	public void mouseDragged(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+
+	  if (arg0.getX() - initial <0) {
+		  w += 5;
+		  frame.repaint();
+	  } else {
+		  w -= 5;
+		  frame.repaint();
+	  }
+	  
+	  if (arg0.getY() - initialY >0) {
+		  if (DrawAsk.toogle_top)  top =400-h;
+		  h-=5;
+		  frame.repaint();
+	  } else {
+		  if (DrawAsk.toogle_top)  top =400-h;
+		  h+=5;
+		  frame.repaint(); 
+	  }
+
+	}
+	@Override
+	public void mouseMoved(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void mouseClicked(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+          DrawAsk.toogle_top = !DrawAsk.toogle_top;
+	}
+	@Override
+	public void mouseEntered(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void mouseExited(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void mousePressed(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		initial = arg0.getX();
+		initialY = arg0.getY();
+	}
+	@Override
+	public void mouseReleased(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
     
 
 }

@@ -8,7 +8,8 @@ public class DrawAsk extends JFrame  implements ActionListener {
 /**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	
+private static final long serialVersionUID = 1L;
 static JFrame jf;
  JButton button= new JButton("OK");
  JPanel panel = new JPanel();
@@ -80,11 +81,11 @@ public void actionPerformed(ActionEvent e) {
 
 	}
  }
-
+static boolean toogle_top = false;
 public void doit() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
 	UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 	JFrame frame = new JFrame("Result");
-	DrawTheLuigi dl = new DrawTheLuigi(); 
+	DrawTheLuigi dl = new DrawTheLuigi(frame); 
 	frame.setResizable(false);
 	frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 	frame.setSize(800, 800); 
@@ -92,6 +93,8 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 	frame.setLocationRelativeTo(null);
 	frame.setVisible(true); 
 	frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+   
+
 	frame.addWindowListener(new WindowAdapter() {
 		   public void windowClosing(WindowEvent evt) {
              try {
@@ -103,11 +106,12 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 			}
 		   }
 		  });
+
 	frame.addKeyListener(new KeyAdapter() {
 		public void keyPressed(KeyEvent event) {
 			moveTheTHing(event);
 		}
-		boolean toogle_top = false;
+		
 		private void moveTheTHing(KeyEvent event) {
 			// TODO Auto-generated method stub
 			int key = event.getKeyCode(); 
@@ -171,6 +175,7 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 	frame.add(dl);
 	
 }
+
 	
 }
  
