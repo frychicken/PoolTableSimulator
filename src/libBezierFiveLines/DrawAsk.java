@@ -15,9 +15,10 @@ static JFrame jf;
  JPanel panel = new JPanel();
  JLabel lw = new JLabel("W:");
  JLabel lh = new JLabel("h:");
- JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (vertex) (default: 300).");
+ JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (vertex) (default: 150).");
  JLabel dbl = new JLabel("Distance between lines (default: 10)");
  
+ static JCheckBox checkBox;
  static JTextField fw;  	
  static JTextField fh;  	
  static JTextField dist;  
@@ -25,14 +26,20 @@ static JFrame jf;
  public static double h =300;
  public static double dis =10;
  
+ static boolean mousechange = false;
+
+ 
  public void daw() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
 	UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 	 jf = new JFrame("Setup");
 	 fw = new JTextField("400", 16);  
-	 fh = new JTextField("300", 16); 
+	 fh = new JTextField("150", 16); 
 	 dist = new JTextField("10", 16); 
-	 DrawAsk oka = new DrawAsk();
+	checkBox = new JCheckBox("Mouse change");  	
+	
+	DrawAsk oka = new DrawAsk();
 	 panel.add(instru);
+	 panel.add(checkBox);
 	 panel.add(lw);
 	 panel.add(fw);
 	 panel.add(lh);
@@ -51,6 +58,8 @@ static JFrame jf;
 	 dbl.setBounds(10,50,250,20);
      dist.setBounds(220, 50, 50,20);
 
+     checkBox.setBounds(300, 50, 100,20);
+     
 	 button.addActionListener(oka);
 	 panel.add(button);
 	 button.setBounds(220,80,60,20);
@@ -62,12 +71,17 @@ static JFrame jf;
 
  }
  
+ 
 @Override
 public void actionPerformed(ActionEvent e) {
+	if(checkBox.isSelected()) {
+		mousechange = true;
+	}
+	
 	String s = e.getActionCommand(); 
 	if (s.equals("OK") ) {
 		w = Double.parseDouble(fw.getText());
-		h = Double.parseDouble(fh.getText());
+		h = Double.parseDouble(fh.getText())*2;
 		dis = Double.parseDouble(dist.getText());
 		jf.setVisible(false);
 	
@@ -94,10 +108,11 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 	frame.setVisible(true); 
 	frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
    
-
+   
 	frame.addWindowListener(new WindowAdapter() {
 		   public void windowClosing(WindowEvent evt) {
              try {
+            	 mousechange = false;
 				daw();
 			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 					| UnsupportedLookAndFeelException e) {
@@ -117,6 +132,11 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 			int key = event.getKeyCode(); 
 			int key2 = event.getKeyChar();
 		
+			if (key2 == 'g') {
+				dl.ball_go = true;
+				dl.runpls();
+			}
+			
 			if (key2 == 't') {
 				toogle_top = !toogle_top;
 	
@@ -173,7 +193,6 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 		}
 	});
 	frame.add(dl);
-	
 }
 
 	
