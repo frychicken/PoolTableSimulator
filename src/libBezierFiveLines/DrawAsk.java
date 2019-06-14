@@ -1,10 +1,11 @@
 package libBezierFiveLines;
 
+import java.awt.Component;
 import java.awt.Toolkit;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class DrawAsk extends JFrame  implements ActionListener {
+public class DrawAsk extends Component  implements ActionListener {
 /**
 	 * 
 	 */
@@ -113,6 +114,11 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 		   public void windowClosing(WindowEvent evt) {
              try {
             	 mousechange = false;
+            	 DrawTheLuigi.ball_y = 395;
+     	         DrawTheLuigi.ball_x = 395;
+     	         DrawTheLuigi.toX = 400;
+     	         DrawTheLuigi.toY = 400;
+     	         
 				daw();
 			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 					| UnsupportedLookAndFeelException e) {

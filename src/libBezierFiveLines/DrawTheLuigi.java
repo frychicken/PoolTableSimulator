@@ -7,7 +7,7 @@ import java.awt.event.MouseMotionListener;
 import java.awt.geom.Line2D;
 import javax.swing.*;
 
-public class DrawTheLuigi  extends JPanel implements MouseListener, MouseMotionListener {
+public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener {
 	/**
 	 * 
 	 */
@@ -36,9 +36,6 @@ public class DrawTheLuigi  extends JPanel implements MouseListener, MouseMotionL
     double top =400-h;
     double bottom =400;
     
-    double x = 400, x3 =400+(400-(200+(-1)*(w/2-200))) , x2 = 400,x1 = 200+(-1)*(w/2-200) ,y1 = 400,y2 = 400-h,y3 = 400;
-    double t =  (-1*(-2*x1-2*x2) + Math.sqrt(Math.pow((-2*x1-2*x2),2) - 4*(x1-2*x2+x3)*(x1-x)))/2*(x1-2*x2+x3);
-    double y = Math.pow((1-t),2)*y1 +2*(1-t)*t*y2 +Math.pow(t,2)*y3;
     int count =0;
     
     double top_curve =0;
@@ -73,6 +70,7 @@ public class DrawTheLuigi  extends JPanel implements MouseListener, MouseMotionL
               g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
               g.drawString("Use arrow keys or drag the screen up/down to change its height, width", 250,650);
               g.drawString("type \"a\" or click near the blue text (add/remove) to add more lines, \"s\" to remove lines and \"c\" to close the window", 150, 670);
+              g.drawString(" type \"g\" to animate the ball", 300,685);
               g.drawString(" type \"t\" or click once to toggle changing height", 280,700);
               
               g.drawString("Top of the triangle (from 400 y): "+top_tri , 10,60);
@@ -80,21 +78,43 @@ public class DrawTheLuigi  extends JPanel implements MouseListener, MouseMotionL
               g.drawString("X: "+mouseXC, 700,60);
               g.drawString("Y: "+mouseYC, 700,80);
 
+              g.drawString("y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve), 10,100 );
+              g.drawString("y= "+ Math.abs(400-toY)/(400-toX) + "(x-400)" + "+ 400",10,110);
+
               g.setColor(Color.BLACK);
               g.drawLine(200, 400, 400, 100);
               g.drawLine(400, 100, 600, 400);
               
+              g.setColor(Color.GREEN);
               g.fillOval(ball_x,ball_y, 10,10);
-              
+              g.setColor(Color.BLACK);
               ((Graphics2D) g).draw(new Line2D.Double(400,400,toX,toY));
+          
+               // infinite big number
+              ((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/((-1)*(400 - toX)/Math.abs(400 - toY)) , 500000));
+
+     
+         
+              double the_slop= (toX*Math.pow(w,2))/(8*(h/2));
+              g.setColor(Color.pink);
+              ((Graphics2D) g).draw(new Line2D.Double(toX,toY,500000/the_slop , 500000));
+              g.setColor(Color.BLACK);
+
               
               Graphics2D g2 = (Graphics2D) g; 
              double i =top; 
              double j =bottom;
              
              while (i <bottom && j>top) {
-                       g2.draw( new Line2D.Double( -1*(halfw*(i-400)/h) + 200+(-1)*(w/2-200), i+=DrawAsk.dis,  (halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))), j-=DrawAsk.dis));
-            	       count ++;
+            	 i+=DrawAsk.dis;
+            	 j-=DrawAsk.dis;
+            	 double x1 = (-1)*(halfw*(i-400)/h) + 200+(-1)*(w/2-200);
+            	 double x2 =  (halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200)));
+            	 double y1 = i;
+            	 double y2 = j;
+            	        
+                       g2.draw( new Line2D.Double( x1 , y1, x2, y2));
+                       count ++;
              }
              g.setColor(Color.BLUE); 
              g.drawString("Number of Lines: "+count, 10, 45);
@@ -109,6 +129,8 @@ int initialY=0;
 		// TODO Auto-generated method stub
 		mouseXC = arg0.getX();
 		mouseYC = arg0.getY();
+	       ball_y = 395;
+	        ball_x = 395;
 	if(DrawAsk.mousechange) {
 	  if (arg0.getX() - initial <0) {
 		  w += 5;
@@ -143,7 +165,8 @@ int initialY=0;
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
 		// TODO Auto-generated method stub
-		
+	       ball_y = 395;
+	        ball_x = 395;
 		if(DrawAsk.mousechange) {
 		  if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
 			  DrawAsk.dis  --;
@@ -193,16 +216,22 @@ int initialY=0;
 	      	
 	}
 	public void runpls() {
+		  // double distance = Math.sqrt( Math.pow((400-toX),2) + Math.pow((400-toY),2));
         ball_y = 400;
+        ball_x = 400;
  		while(ball_go) {
 		     if ((ball_y) <=toY) {
-		    	 ball_go = false;
-		     }
-		    // double distance = Math.sqrt( Math.pow((400-toX),2) + Math.pow((400-toY),2));
+		    	ball_go= false;
+		     }else {
 			 ball_y --;
 		     ball_x =  (int) (((ball_y-400)*(400-toX))/Math.abs(400-toY)) + 400;
-
-		     
+		     }
+		     try {
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	    frame.repaint();
     }
  }
