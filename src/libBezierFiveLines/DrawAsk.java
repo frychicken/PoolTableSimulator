@@ -13,6 +13,7 @@ public class DrawAsk extends Component  implements ActionListener {
 private static final long serialVersionUID = 1L;
 static JFrame jf;
  JButton button= new JButton("OK");
+ JButton welp= new JButton("HELP");
  JPanel panel = new JPanel();
  JLabel lw = new JLabel("W:");
  JLabel lh = new JLabel("h:");
@@ -56,16 +57,22 @@ static JFrame jf;
 	
 	 fw.setBounds(150,30,50,20);
 	 fh.setBounds(350,30,50,20);
-	 dbl.setBounds(10,50,250,20);
-     dist.setBounds(220, 50, 50,20);
+	 dbl.setBounds(10,50,300,20);
+     dist.setBounds(250, 50, 50,20);
 
-     checkBox.setBounds(300, 50, 100,20);
+     checkBox.setBounds(320, 50, 200,20);
      
 	 button.addActionListener(oka);
+	 welp.addActionListener(oka);
+
 	 panel.add(button);
+	 panel.add(welp);
+	 
 	 button.setBounds(220,80,60,20);
+	 welp.setBounds(210,110,80,20);
+	 
 	 jf.add(panel);
-	 jf.setSize(480,150);
+	 jf.setSize(480,200);
      jf.setResizable(false);
      jf.setLocationRelativeTo(null);
 	 jf.setVisible(true);
@@ -80,6 +87,12 @@ public void actionPerformed(ActionEvent e) {
 	}
 	
 	String s = e.getActionCommand(); 
+	
+	if (s.equals("HELP") ) {
+	 Help he = new Help();
+	 he.showHelp();
+	}
+	
 	if (s.equals("OK") ) {
 		w = Double.parseDouble(fw.getText());
 		h = Double.parseDouble(fh.getText())*2;
