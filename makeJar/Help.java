@@ -1,6 +1,3 @@
-//just a help window
-package libBezierFiveLines;
-
 import com.sun.javafx.application.PlatformImpl;
 import java.awt.BorderLayout;
 import java.awt.Dimension;

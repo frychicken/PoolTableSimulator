@@ -1,5 +1,3 @@
-// just graphic stuff
-package libBezierFiveLines;
 
 import java.awt.Component;
 import java.awt.Toolkit;
@@ -194,6 +192,4 @@ public class DrawAsk extends Component  implements ActionListener {
 
 
 }
-
-
 

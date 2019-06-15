@@ -27,3 +27,7 @@ Uncheck "mousechange" if you want to use the simulation mode where pink line is 
 ```TODO```
 
 + Check the math
+
+```Compile to jar```
+
+Run Compile.bat @ /makeJar
