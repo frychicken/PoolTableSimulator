@@ -26,7 +26,12 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	boolean ball_kgo = false;
 	
 	static int ball_y =395;
+	int theSub =1;
 	static int ball_x =395;
+	
+	int stick_sx = 500;
+	int stick_cy = 500;
+	int the_sub =1;
 	
 	JFrame frame;
 	public DrawTheLuigi(JFrame frame) {
@@ -112,7 +117,12 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
               g.setColor(Color.pink);
               ((Graphics2D) g).draw(new Line2D.Double(toX,toY,500000/the_slop , 500000));
               g.setColor(Color.BLACK);
-
+             
+              stick_sx = (int) (((stick_cy-395)*(400-toX))/Math.abs(400-toY)) + 395;
+              
+              for (int i=0; i< 5; i++)
+              g.drawLine(stick_sx +i, stick_cy+i,  (int) (((stick_sx)*(400-toX))/Math.abs(400-toY)) + 395+i, stick_cy + 200+i);
+            
               
               Graphics2D g2 = (Graphics2D) g; 
              double i =top; 
@@ -134,18 +144,22 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
                   count = 0;
             
            		if(ball_go) {
-       		     if ((ball_y) <=toY) {
+           	    
+           	    if (stick_cy <= 400) {
+           
+           	    	if ((ball_y) <=toY) {
        		    	ball_go= false;
        		    	ball_kgo = true;
        		     }else {
-       			 ball_y --;
+       			 ball_y -= theSub; theSub+=1;
        		     ball_x =  (int) (((ball_y-395)*(400-toX))/Math.abs(400-toY)) + 395;
        		     }    
-              } else if (ball_kgo) {
+              } else {stick_cy -= the_sub; the_sub +=2;}
+           	    } else if (ball_kgo) {
             	  if (ball_y > 400) {
             		  ball_kgo= false;
             	  }
-            	  ball_y++;
+            	  ball_y+=theSub; theSub -=1;
             	  ball_x =  (int) (((ball_y - toX)/ (Math.pow(w,2))/(8*(h/2))) + toX);
             	  
               }
@@ -159,8 +173,7 @@ int initialY=0;
 		// TODO Auto-generated method stub
 		mouseXC = arg0.getX();
 		mouseYC = arg0.getY();
-	       ball_y = 395;
-	        ball_x = 395;
+	   reset();
 	if(DrawAsk.mousechange) {
 	  if (arg0.getX() - initial <0) {
 		  w += 5;
@@ -195,10 +208,7 @@ int initialY=0;
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
 		// TODO Auto-generated method stub
-		timer.stop();
-		ball_go = false;
-	       ball_y = 395;
-	        ball_x = 395;
+        reset();
 		if(DrawAsk.mousechange) {
 		  if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
 			  DrawAsk.dis  --;
@@ -211,7 +221,8 @@ int initialY=0;
           DrawAsk.toogle_top = !DrawAsk.toogle_top;
 		}
 		else {
-	        if(arg0.getButton() == MouseEvent.BUTTON1) {
+			
+		 if(arg0.getButton() == MouseEvent.BUTTON1) {
 	        	toX = arg0.getX();
 	    		toY = arg0.getY();
 	          } else {
@@ -219,6 +230,8 @@ int initialY=0;
 		    		toY = 400;
 	          }
 	
+	   
+	        
 		}
 		frame.repaint();
 
@@ -246,6 +259,17 @@ int initialY=0;
 	public void mouseReleased(MouseEvent arg0) {
 		// TODO Auto-generated method stub
 	      	
+	}
+	
+	public void reset() {
+		timer.stop();
+		ball_go = false;
+	       ball_y = 395;
+	        ball_x = 395;
+	        stick_cy = 500;
+	        the_sub =1;
+	        theSub =1;
+	        
 	}
 	
 
