@@ -63,10 +63,6 @@ public class Help extends JPanel {
 				try {
 					frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 				} catch (Exception e) {
-					System.out.println("Loading alternative image...");
-					try {
-						frame.setIconImage(Toolkit.getDefaultToolkit().getImage(System.getProperty("user.dir")+"/lolol.png"));
-					}catch(Exception e2) {System.out.println("Lol, it seems like there is no favicon lol");}
 					e.printStackTrace();
 				}
 
