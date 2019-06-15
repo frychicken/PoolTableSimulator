@@ -49,8 +49,12 @@ static JFrame jf;
 	 panel.add(dbl);
 	 panel.add(dist);
 	panel.setLayout(null);
-	jf.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 
+	try {
+	jf.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 	 instru.setBounds(2,10,480,10);
 	 lw.setBounds(100,30,20,20);
 	 lh.setBounds(300,30,20,20);
@@ -115,7 +119,11 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 	JFrame frame = new JFrame("Result");
 	DrawTheLuigi dl = new DrawTheLuigi(frame); 
 	frame.setResizable(false);
+	try {
 	frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 	frame.setSize(800, 800); 
 	frame.setFocusable(true); 
 	frame.setLocationRelativeTo(null);

@@ -61,7 +61,11 @@ public class Help extends JPanel {
             @Override
             public void run() {  
                 frame = new JFrame("Help");  
-            	frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
+            	try {
+            		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
+            		} catch (Exception e) {
+            			e.printStackTrace();
+            		}
 
                 frame.getContentPane().add(new Help());  
                 frame.setMinimumSize(new Dimension(800, 600));  
