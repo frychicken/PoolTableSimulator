@@ -153,7 +153,8 @@ public void doit() throws ClassNotFoundException, InstantiationException, Illega
 		
 			if (key2 == 'g') {
 				dl.ball_go = true;
-				dl.runpls();
+				 dl.timer.start();
+				
 			}
 			
 			if (key2 == 't') {

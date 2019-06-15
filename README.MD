@@ -26,6 +26,4 @@ Uncheck "mousechange" if you want to use the simulation mode where pink line is 
 
 ```TODO```
 
-+ Fix ball's animation in simulation mode
-
-+ Make the ball go all the way
++ Check the math

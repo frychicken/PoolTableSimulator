@@ -1,6 +1,8 @@
 package libBezierFiveLines;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -11,6 +13,9 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	/**
 	 * 
 	 */
+	   Timer timer;
+		  ActionListener animation;
+
 	static double toX =400;
 	static double toY= 400;
 	
@@ -18,6 +23,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	double mouseYC =0;
 	
 	boolean ball_go = false;
+	boolean ball_kgo = false;
 	
 	static int ball_y =395;
 	static int ball_x =395;
@@ -27,6 +33,13 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		this.frame = frame;
 	    addMouseListener(this);
 	    addMouseMotionListener(this);
+	     animation = new ActionListener() {
+	            @Override
+	            public void actionPerformed(ActionEvent ae) {
+	                repaint();
+	            }
+	        };
+	        timer = new Timer(50, animation);
 	}
 	private static final long serialVersionUID = 1L;
 	double w = DrawAsk.w;
@@ -119,7 +132,24 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
              g.setColor(Color.BLUE); 
              g.drawString("Number of Lines: "+count, 10, 45);
                   count = 0;
-
+            
+           		if(ball_go) {
+       		     if ((ball_y) <=toY) {
+       		    	ball_go= false;
+       		    	ball_kgo = true;
+       		     }else {
+       			 ball_y --;
+       		     ball_x =  (int) (((ball_y-395)*(400-toX))/Math.abs(400-toY)) + 395;
+       		     }    
+              } else if (ball_kgo) {
+            	  if (ball_y > 400) {
+            		  ball_kgo= false;
+            	  }
+            	  ball_y++;
+            	  ball_x =  (int) (((ball_y - toX)/ (Math.pow(w,2))/(8*(h/2))) + toX);
+            	  
+              }
+                  
      }
 int initial =0;
 int initialY=0;
@@ -165,6 +195,8 @@ int initialY=0;
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
 		// TODO Auto-generated method stub
+		timer.stop();
+		ball_go = false;
 	       ball_y = 395;
 	        ball_x = 395;
 		if(DrawAsk.mousechange) {
@@ -215,25 +247,6 @@ int initialY=0;
 		// TODO Auto-generated method stub
 	      	
 	}
-	public void runpls() {
-		  // double distance = Math.sqrt( Math.pow((400-toX),2) + Math.pow((400-toY),2));
-        ball_y = 400;
-        ball_x = 400;
- 		while(ball_go) {
-		     if ((ball_y) <=toY) {
-		    	ball_go= false;
-		     }else {
-			 ball_y --;
-		     ball_x =  (int) (((ball_y-400)*(400-toX))/Math.abs(400-toY)) + 400;
-		     }
-		     try {
-			Thread.sleep(10);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	    frame.repaint();
-    }
- }
+	
 
 }
