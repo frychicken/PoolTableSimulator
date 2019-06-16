@@ -1,5 +1,3 @@
-package libBezierFiveLines;
-
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.io.BufferedReader;
