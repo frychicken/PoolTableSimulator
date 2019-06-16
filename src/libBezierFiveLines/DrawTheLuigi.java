@@ -145,7 +145,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		g.drawString("Use arrow keys or drag the screen up/down to change its height, width", 250,650);
 		g.drawString("type \"a\" or click near the blue text (add/remove) to add more lines, \"s\" to remove lines and \"c\" to close the window", 150, 670);
-		g.drawString(" type \"g\" to animate the ball", 300,685);
+		g.drawString(" type \"g\" or click at the origin to animate the ball", 300,685);
 		g.drawString(" type \"t\" or click once to toggle changing height", 280,700);
 
 		g.drawString("Top of the triangle (from 400 y): "+top_tri , 10,60);
@@ -210,7 +210,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.setColor(Color.MAGENTA);
 		// generate the curve by generating bunch of line; each line is i and j distance from each other
 		while (i <bottom && j>top) {
-			g2.draw( new Line2D.Double( (-1)*(halfw*(i-400)/h) + 200+(-1)*(w/2-200) ,i+=DrawAsk.dis, (halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))), 	j-=DrawAsk.dis));
+			
+			g2.draw( new Line2D.Double( ((-1)*(halfw*(i-400)/h) + 200+(-1)*(w/2-200))  ,(i+=DrawAsk.dis) , ((halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))))   , 	(j-=DrawAsk.dis) ));
 			count ++;
 		}
 		//count number of lines
@@ -246,7 +247,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				if (DrawAsk.toogle_top)  top =400-h; // if not, change how the endpoints are met
 				h+=5;
 			}
-		}	else {
+		}	else {			
 			//if user does not toggle mousechange --> allow doing simulation
 			toX = arg0.getX();
 			toY = arg0.getY();
@@ -263,8 +264,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		//reset when mouse if clicked
-		reset();
+		
 		//if user toggle mouse change
 		if(DrawAsk.mousechange) {
 			//click near the blue part to add/remove lines 
@@ -279,8 +279,14 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				DrawAsk.toogle_top = !DrawAsk.toogle_top;
 		}
 		else {
-			//if user does not toggle mouse change; if user left-click
-			if(arg0.getButton() == MouseEvent.BUTTON1) {
+			//reset when mouse is clicked but not on origin and when mousechange is toggle
+			if (!((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5)))
+			reset();
+			if((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5) ) {
+				ball_go = true;
+				timer.start();
+			}else if(arg0.getButton() == MouseEvent.BUTTON1) {
+				//if user does not toggle mouse change; if user left-click
 				//get the coordinates of the left-click
 				toX = arg0.getX();
 				toY = arg0.getY();
@@ -291,6 +297,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}
 
 		}
+
 		frame.repaint();
 	}
 
