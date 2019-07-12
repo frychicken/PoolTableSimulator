@@ -1,4 +1,5 @@
 // just graphic stuff
+package libBezierFiveLines;
 
 import java.awt.Component;
 import java.awt.Toolkit;
@@ -27,7 +28,7 @@ public class DrawAsk extends Component  implements ActionListener {
 
 	public static boolean mousechange = false;
 	public static boolean toogle_top = false;
-    	
+    //create frame, window with button and checkbox, label.
 	public void daw() {
 		jf = new JFrame("Setup");
 		fw = new JTextField("400", 16);  
@@ -80,6 +81,7 @@ public class DrawAsk extends Component  implements ActionListener {
 
 	}
 
+	//if the user click things on set up screen
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String s = e.getActionCommand(); 
@@ -99,8 +101,9 @@ public class DrawAsk extends Component  implements ActionListener {
 
 		}
 	}
+	//basically creates window and listening to things that are going on
 	private void doit() {
-		
+
 		JFrame frame = new JFrame("Result");
 		DrawTheLuigi dl = new DrawTheLuigi(frame); 
 		frame.setResizable(false);
@@ -112,9 +115,10 @@ public class DrawAsk extends Component  implements ActionListener {
 		frame.setSize(800, 800); 
 		frame.setFocusable(true); 
 		frame.setLocationRelativeTo(null);
+   
 		frame.setVisible(true); 
 		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-		
+
 		frame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent evt) {
 				mousechange = false;
@@ -122,12 +126,13 @@ public class DrawAsk extends Component  implements ActionListener {
 				daw();
 			}
 		});
-
+        
+		//listen if the user click anything 
 		frame.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent event) {
 				moveTheTHing(event);
 			}
-
+            //probably easy enough to understand
 			private void moveTheTHing(KeyEvent event) {
 				int key = event.getKeyCode(); 
 				int key2 = event.getKeyChar();
@@ -157,23 +162,32 @@ public class DrawAsk extends Component  implements ActionListener {
 						dl.h -=  10;
 					frame.repaint(); 
 				}
+				//g to shoot the ball
 				if (key2 == 'g') {
 					DrawTheLuigi.ball_go = true;
 					DrawTheLuigi.timer.start();
 				}
+				//t to toggle changing top
 				if (key2 == 't') {
 					toogle_top = !toogle_top;
 					frame.repaint(); 
 				}
+				//s to remove lines
 				if (key2 == 's') {
 					dis +=1;
 					frame.repaint(); 
 				}
+				// a to add more lines
 				if (key2 == 'a') {
 					dis -=1;
 					if (dis < 1) dis = 1;
 					frame.repaint(); 
 				}
+				if (key2 == 'p') {
+					dl.toggle_perl = !dl.toggle_perl;
+					frame.repaint(); 
+				}
+				//c to close window
 				if (key2 == 'c') {
 					frame.setVisible(false);
 					daw();

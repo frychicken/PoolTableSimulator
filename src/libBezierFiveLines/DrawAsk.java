@@ -103,7 +103,7 @@ public class DrawAsk extends Component  implements ActionListener {
 	}
 	//basically creates window and listening to things that are going on
 	private void doit() {
-		
+
 		JFrame frame = new JFrame("Result");
 		DrawTheLuigi dl = new DrawTheLuigi(frame); 
 		frame.setResizable(false);
@@ -115,9 +115,10 @@ public class DrawAsk extends Component  implements ActionListener {
 		frame.setSize(800, 800); 
 		frame.setFocusable(true); 
 		frame.setLocationRelativeTo(null);
+   
 		frame.setVisible(true); 
 		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-		
+
 		frame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent evt) {
 				mousechange = false;
@@ -180,6 +181,10 @@ public class DrawAsk extends Component  implements ActionListener {
 				if (key2 == 'a') {
 					dis -=1;
 					if (dis < 1) dis = 1;
+					frame.repaint(); 
+				}
+				if (key2 == 'p') {
+					dl.toggle_perl = !dl.toggle_perl;
 					frame.repaint(); 
 				}
 				//c to close window

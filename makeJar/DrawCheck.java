@@ -1,3 +1,5 @@
+package libBezierFiveLines;
+//draw the window for checking update
 import java.awt.*;
 import javax.swing.JFrame;
 public class DrawCheck extends Component {
@@ -48,6 +50,6 @@ public class DrawCheck extends Component {
 		f.drawString(display, 20,120);
 	}
 	public int getVersion() {
-		return 2; 
+		return 3; 
 	}
 }
