@@ -26,8 +26,10 @@ Uncheck "mousechange" if you want to use the simulation mode where pink line is 
 
 ```TODO```
 
-+ Check the math
++ ~~Check the math~~
 
 ```Compile to jar```
 
-Run Compile.bat @ /makeJar
+Run Compile.bat @ /makeJar 
+
+```.exe``` file is outdated

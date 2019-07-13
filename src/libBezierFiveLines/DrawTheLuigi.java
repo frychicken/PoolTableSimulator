@@ -13,8 +13,10 @@ import javax.swing.*;
 public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener {
 	private static final long serialVersionUID = 1L;
 
-	public boolean toggle_perl = true;
-	
+	public boolean toggle_perl = false;
+
+	private static double dapathx =400;
+
 	public static Timer timer;
 	private JFrame frame;
 	private ActionListener animation;
@@ -22,7 +24,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	public static double toX =400;
 	public static double toY= 400;
 
-	private double mouseXC =0;
+	public double mouseXC =0;
 	private double mouseYC =0;
 
 	public static boolean ball_go = false;
@@ -78,9 +80,9 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		drawStick(g);
 		drawTangentLine(g);
 		ballAndStickLogic();
-	
+		getPathSlope();
 	}
-	
+
 	//from here down are logic stuff
 
 	// calculate the slope of the ball and the cue --> find the path of the ball and the cue
@@ -107,10 +109,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}
 			// ball bounce back -- this is the equation to find x; but i am not sure if this is the correct one
 			ball_y+=theSub; theSub -=1;
-			ball_x =  (int) (((ball_y - toX)/ (Math.pow(w,2))/(8*(h/2))) + toX-4);
+			ball_x =  (int) (((ball_y - toY)/((400-toY)/(getPathSlope() - toX))) + toX-4);
 		}
 	}
-    // reset everything, stop the timer -- animation.
+	// reset everything, stop the timer -- animation.
 	public static void reset() {
 		timer.stop();
 		ball_go = false;
@@ -122,6 +124,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		theSub =1;
 		toX =400;
 		toY=400;
+		dapathx = 400;
 	}
 
 	//find the vertex (y)
@@ -148,14 +151,13 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 	//calculate the line perpendicular to the tangent line
 	private double find_perpend_tan(double x) {
-		
+
 		return -1/((4)*(top_curve/Math.pow(w,2))*2*(x-400));
 	}
-	
-	private double find_interse(double x) {
-		// 400 = find_perpend_tan(toX) x +b 
-		double b = toY;
-		return  ((-1)*(400 - b)/find_perpend_tan(toX)  + 400);
+	// calculate the reflection line by finding the length between perpend line and projected line
+	private double getPathSlope() {
+		dapathx = (400 - toY)/( (500000-toY)/((500000/find_perpend_tan(toX))-toX)) + toX -4;
+		return  dapathx+ (dapathx -400);
 	}
 
 	//draw the tangent line to the curve
@@ -163,17 +165,19 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		//check if mouse touch the curve
 		g.setColor(Color.BLACK);
 		double suppose_y = the_functino(toX);
-		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2))) {
-			System.out.println(find_interse(toX));
+		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2)) && toggle_perl) {		
+			// perpendicular line
+			g.setColor(Color.blue);
 			((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/find_perpend_tan(toX), 500000 ));
 			//draw from x,y to infi
-		((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/find_derivative(toX), 500000 ));
-		//draw from x,y to -infi
-		((Graphics2D) g).draw(new Line2D.Double(toX,toY, -500000/find_derivative(toX), -500000 ));
+			g.setColor(Color.RED);
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/find_derivative(toX), 500000 ));
+			//draw from x,y to -infi
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -500000/find_derivative(toX), -500000 ));
 		}
 	}
 	//from here down are graphics stuff
-	
+
 	private void drawInformation(Graphics g) {
 		g.setColor(Color.RED);
 		// equation of the two sides of the triangle
@@ -184,8 +188,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.drawString("type \"a\" or click near the blue text (add/remove) to add more lines, \"s\" to remove lines and \"c\" to close the window", 50, 570);
 		g.drawString(" type \"g\" or click at the origin to animate the ball", 280,585);
 		g.drawString(" type \"t\" or click once to toggle changing height", 280,600);
-		g.drawString(" type \"p\" or click once to toggle perpendicular line", 280,615);
-		
+		g.drawString(" type \"p\" or click once to toggle perpendicular lines, tangent line", 280,615);
+
 		g.drawString("Top of the triangle (from 400 y): "+top_tri , 10,60);
 		g.drawString("Top of the curve (from 400 y): "+ top_curve , 10,80);
 		// mouse Coords
@@ -220,20 +224,21 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.setColor(Color.GRAY);
 		//line that is perpendicular to the path of the ball before it hits the curve -- using very large number to create 90 degree angle ( it will be less 90 if the number goes down)
 		if(toggle_perl) {
-		((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/((-1)*(400 - toX)/Math.abs(400 - toY)) , 500000));
-		((Graphics2D) g).draw(new Line2D.Double(toX,toY, -500000/((-1)*(400 - toX)/Math.abs(400 - toY)) , -500000));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/((-1)*(400 - toX)/Math.abs(400 - toY)) , 500000));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -500000/((-1)*(400 - toX)/Math.abs(400 - toY)) , -500000));
 		}
 	}
 
 	//draw the pink path -- when the ball hits the curve and bounce back
 	private void drawPathBounceBack(Graphics g) {
 		// this line responsible for the bounce back of the ball, but i am not sure if it is correct
-		double the_slop= (toX*Math.pow(w,2))/(8*(h/2));
+		//double the_slop= (toX*Math.pow(w,2))/(8*(h/2));
 		g.setColor(Color.pink);
 		//check if mouse touch the curve
 		double suppose_y = the_functino(toX);
 		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2)))
-		((Graphics2D) g).draw(new Line2D.Double(toX,toY,500000/the_slop , 500000));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, getPathSlope() , 400));
+		// ((Graphics2D) g).draw(new Line2D.Double(toX,toY,500000/the_slop , 500000));
 	}
 
 	//draw the cue using bunch of lines instead of rect because cant rotate
@@ -254,7 +259,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.setColor(Color.MAGENTA);
 		// generate the curve by generating bunch of line; each line is i and j distance from each other
 		while (i <bottom && j>top) {
-			
+
 			g2.draw( new Line2D.Double( ((-1)*(halfw*(i-400)/h) + 200+(-1)*(w/2-200))  ,(i+=DrawAsk.dis) , ((halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))))   , 	(j-=DrawAsk.dis) ));
 			count ++;
 		}
@@ -264,8 +269,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		count = 0;
 
 	}
-	
-    //down here are listeners for the mouse
+
+	//down here are listeners for the mouse
 	@Override
 	public void mouseDragged(MouseEvent arg0) {
 		//find the coords of the mouse to display on the screen
@@ -283,7 +288,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				w -= 5;
 				frame.repaint();
 			}
-            // changing the curve vertically
+			// changing the curve vertically
 			if (arg0.getY() - initialY >0) {
 				if (DrawAsk.toogle_top)  top =400-h; //if they toggle changing up and down
 				h-=5;
@@ -296,7 +301,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			toX = arg0.getX();
 			toY = arg0.getY();
 		}
-        //refresh the frame
+		//refresh the frame
 		frame.repaint();
 	}
 	@Override
@@ -308,7 +313,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		
+
 		//if user toggle mouse change
 		if(DrawAsk.mousechange) {
 			//click near the blue part to add/remove lines 
@@ -325,7 +330,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		else {
 			//reset when mouse is clicked but not on origin and when mousechange is toggle
 			if (!((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5)))
-			reset();
+				reset();
 			if((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5) ) {
 				ball_go = true;
 				timer.start();

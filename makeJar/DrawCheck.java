@@ -1,4 +1,3 @@
-package libBezierFiveLines;
 //draw the window for checking update
 import java.awt.*;
 import javax.swing.JFrame;

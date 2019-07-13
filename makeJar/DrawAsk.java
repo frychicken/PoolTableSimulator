@@ -1,5 +1,4 @@
 // just graphic stuff
-package libBezierFiveLines;
 
 import java.awt.Component;
 import java.awt.Toolkit;
