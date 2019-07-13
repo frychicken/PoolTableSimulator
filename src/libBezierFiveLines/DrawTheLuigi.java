@@ -16,10 +16,13 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	public boolean toggle_perl = false;
 
 	private static double dapathx =400;
+	private final int supperBigNumber = 500000;
+	private boolean check = true;
 
 	public static Timer timer;
 	private JFrame frame;
 	private ActionListener animation;
+	private WriteLogF wl = new WriteLogF();
 
 	public static double toX =400;
 	public static double toY= 400;
@@ -69,6 +72,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 
 	//draw bunch of stuff
+	@Override
 	public void paint(Graphics g) {
 		getTopCurve();
 		drawInformation(g);
@@ -141,6 +145,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		}
 	}
+	private int getCueX() {
+		return (int) (((stick_sx)*(400-toX))/Math.abs(400-toY));
+	}
+
 	// find y of the curve
 	private double the_functino(double x) {
 		return ((4)*top_curve/Math.pow(w,2))*Math.pow((x-400),2) + (400 - top_curve);
@@ -151,12 +159,22 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 	//calculate the line perpendicular to the tangent line
 	private double find_perpend_tan(double x) {
-
 		return -1/((4)*(top_curve/Math.pow(w,2))*2*(x-400));
 	}
 	// calculate the reflection line by finding the length between perpend line and projected line
+
 	private double getPathSlope() {
-		dapathx = (400 - toY)/( (500000-toY)/((500000/find_perpend_tan(toX))-toX)) + toX -4;
+		dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
+
+		if (ball_go && check) {
+			System.out.println("Calculateting dapathx: " + dapathx);
+			wl.writeLog("Calculateting dapathx: " + dapathx);
+			check = false;
+		}
+		if (!ball_go) {
+			check = true;
+		}
+
 		return  dapathx+ (dapathx -400);
 	}
 
@@ -168,47 +186,54 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2)) && toggle_perl) {		
 			// perpendicular line
 			g.setColor(Color.blue);
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/find_perpend_tan(toX), 500000 ));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/find_perpend_tan(toX), supperBigNumber ));
 			//draw from x,y to infi
 			g.setColor(Color.RED);
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/find_derivative(toX), 500000 ));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/find_derivative(toX), supperBigNumber ));
 			//draw from x,y to -infi
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -500000/find_derivative(toX), -500000 ));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -supperBigNumber/find_derivative(toX), -supperBigNumber ));
 		}
 	}
 	//from here down are graphics stuff
 
 	private void drawInformation(Graphics g) {
 		g.setColor(Color.RED);
-		// equation of the two sides of the triangle
-		g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
-		g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
 
-		g.drawString("Use arrow keys or drag the screen up/down to change its height, width", 200,550);
-		g.drawString("type \"a\" or click near the blue text (add/remove) to add more lines, \"s\" to remove lines and \"c\" to close the window", 50, 570);
+		g.drawString("Use arrow keys or drag the screen up/down to change its height, width if you choose mousechange", 100,550);
+		g.drawString("type \"a\" or click near the blue text (add/remove) (debug mode) to add more lines, \"s\" to remove lines and \"c\" to close", 20, 570);
 		g.drawString(" type \"g\" or click at the origin to animate the ball", 280,585);
 		g.drawString(" type \"t\" or click once to toggle changing height", 280,600);
-		g.drawString(" type \"p\" or click once to toggle perpendicular lines, tangent line", 280,615);
+		g.drawString(" type \"d\" to toggle debug mode", 280,615);
+		g.drawString(" type \"m\" to toggle mouse change", 280,630);
 
-		g.drawString("Top of the triangle (from 400 y): "+top_tri , 10,60);
-		g.drawString("Top of the curve (from 400 y): "+ top_curve , 10,80);
-		// mouse Coords
-		g.drawString("X: "+mouseXC, 700,60);
-		g.drawString("Y: "+mouseYC, 700,80);
+		if (toggle_perl) {
+			// equation of the two sides of the triangle
+			g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
+			g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
 
-		//equation of the curve and equation of the line 
-		g.drawString("y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve), 10,100 );
-		g.drawString("y= "+ Math.abs(400-toY)/(400-toX) + "(x-400)" + "+ 400",10,115);
+			g.drawString("Top of the triangle (from 400 y): "+top_tri , 10,60);
+			g.drawString("Top of the curve (from 400 y): "+ top_curve , 10,80);
+			// mouse Coords
+			g.drawString("X: "+mouseXC, 700,60);
+			g.drawString("Y: "+mouseYC, 700,80);
+
+			//equation of the curve and equation of the line 
+			g.drawString("y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve), 10,100 );
+			g.drawString("y= "+ Math.abs(400-toY)/(400-toX) + "(x-400)" + "+ 400",10,115);
+		}
 	}
 
 	private void drawCoords(Graphics g) {
 		g.setColor(Color.BLACK);
+
 		//x and y axis
 		g.drawLine(10, 400, 790, 400);
-		g.drawLine(400, 10, 400, 790);
-		//Mid triangle
-		g.drawLine(200, 400, 400, 100);
-		g.drawLine(400, 100, 600, 400);
+		if(toggle_perl) {
+			g.drawLine(400, 10, 400, 790);
+			//Mid triangle
+			g.drawLine(200, 400, 400, 100);
+			g.drawLine(400, 100, 600, 400);
+		}
 	}
 
 	//draw the ball
@@ -224,8 +249,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.setColor(Color.GRAY);
 		//line that is perpendicular to the path of the ball before it hits the curve -- using very large number to create 90 degree angle ( it will be less 90 if the number goes down)
 		if(toggle_perl) {
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, 500000/((-1)*(400 - toX)/Math.abs(400 - toY)) , 500000));
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -500000/((-1)*(400 - toX)/Math.abs(400 - toY)) , -500000));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/((-1)*(400 - toX)/Math.abs(400 - toY)) , supperBigNumber));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -supperBigNumber/((-1)*(400 - toX)/Math.abs(400 - toY)) , -supperBigNumber));
 		}
 	}
 
@@ -244,10 +269,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	//draw the cue using bunch of lines instead of rect because cant rotate
 	private void drawStick(Graphics g) {
 		// using the same slope as the path of the ball to the curve 
-		g.setColor(Color.ORANGE);
 		stick_sx = (int) (((stick_cy-395)*(400-toX))/Math.abs(400-toY)) + 395;
+		g.setColor(Color.ORANGE);
 		for (int i=0; i< 5; i++)
-			g.drawLine(stick_sx +i, stick_cy+i,  (int) (((stick_sx)*(400-toX))/Math.abs(400-toY)) + 395+i, stick_cy + 200+i);
+			g.drawLine(stick_sx +i, stick_cy+i,  getCueX() + 395+i, stick_cy + 200+i);
 
 	}
 
@@ -265,7 +290,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		}
 		//count number of lines
 		g.setColor(Color.BLUE); 
-		g.drawString("Number of Lines: "+count, 10, 45);
+		if (toggle_perl)
+			g.drawString("Number of Lines: "+count, 10, 45);
 		count = 0;
 
 	}

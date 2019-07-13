@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 
 
 public class Help extends JPanel {
@@ -67,9 +68,9 @@ public class Help extends JPanel {
 				}
 
 				frame.getContentPane().add(new Help());  
-				frame.setMinimumSize(new Dimension(800, 600));  
+				frame.setMinimumSize(new Dimension(800, 800));  
 				frame.setLocationRelativeTo(null);
-				frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);  
+				frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);  
 				frame.setVisible(true);  
 			}  
 		});    

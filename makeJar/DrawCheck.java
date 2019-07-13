@@ -14,6 +14,7 @@ public class DrawCheck extends Component {
 			e.printStackTrace();
 		}
 	}
+	@Override
 	public void paint(Graphics g) {
 		g.drawString(todis, 80,150);
 		g.setColor(Color.BLACK);
@@ -49,6 +50,6 @@ public class DrawCheck extends Component {
 		f.drawString(display, 20,120);
 	}
 	public int getVersion() {
-		return 3; 
+		return 4; 
 	}
 }

@@ -1,3 +1,5 @@
+//just a help window
+
 import com.sun.javafx.application.PlatformImpl;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -14,6 +16,7 @@ import javafx.stage.Stage;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 
 
 public class Help extends JPanel {
@@ -60,17 +63,13 @@ public class Help extends JPanel {
 				try {
 					frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 				} catch (Exception e) {
-					System.out.println("Loading alternative image...");
-					try {
-						frame.setIconImage(Toolkit.getDefaultToolkit().getImage(System.getProperty("user.dir")+"/lolol.png"));
-					}catch(Exception e2) {System.out.println("Lol, it seems like there is no favicon lol");}
 					e.printStackTrace();
 				}
 
 				frame.getContentPane().add(new Help());  
-				frame.setMinimumSize(new Dimension(800, 600));  
+				frame.setMinimumSize(new Dimension(800, 800));  
 				frame.setLocationRelativeTo(null);
-				frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);  
+				frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);  
 				frame.setVisible(true);  
 			}  
 		});    

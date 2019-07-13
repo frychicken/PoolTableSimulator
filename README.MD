@@ -8,28 +8,32 @@ using Bezier Curve and slope line equation
 
 **The window is not resizable**
 
+Anything below 400 will result in unwanted movements of the ball
+
 Origin: (400, 400) 
 
-Middle triangle: The maximum/minimum size of the curve
+green is the color of the ball; pink is the curve; magenta is the reflection path; red is the tangent line to the curve; blue is the normal line to the tangent line; dark grey is the perpendicular line to the projected line of the ball (black)
 
 ```Usage```
 
-Use arrow keys (left/right) or mouse (up/down) to change its width and (up/down) to change the accuracy of its height; type "a" to add more lines, "s" to remove lines and "c" to close the window
+Uncheck "mousechange" if you want to use the simulation mode; otherwise, check it.
 
-click near the blue text to add/remove lines (add: 0-50; remove: 50-100)
+Use arrow keys (left/right) or mouse (up/down) (in mousechange mode) to change its width and (up/down) to change the accuracy of its height; type "a" to add more lines, "s" to remove lines and "c" to close the window
+
+click near the blue text to add/remove (in debug mode) lines (add: 0-50; remove: 50-100) (in debug mode)
 
 type "t" or click once to toggle changing height (up/down)
 
-Click "g" or click at the origin to start animate the ball in simulation mode
+type "g" or click at the origin to start animate the ball in simulation mode
 
-Uncheck "mousechange" if you want to use the simulation mode where pink line is the reflection path of the ball (Green); otherwise, check it.
+type "d" to toggle debug mode
 
-```TODO```
-
-+ ~~Check the math~~
+type "m" to toggle mousechange on demand
 
 ```Compile to jar```
 
 Run Compile.bat @ /makeJar 
+
+Run Compile.sh for mac/linux
 
 ```.exe``` file is outdated
