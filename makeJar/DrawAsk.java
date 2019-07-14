@@ -1,5 +1,4 @@
 // just graphic stuff
-
 import java.awt.Component;
 import java.awt.Toolkit;
 import java.awt.event.*;
@@ -109,16 +108,16 @@ public class DrawAsk extends Component  implements ActionListener {
 			dis = Double.parseDouble(dist.getText());
 			jf.setVisible(false);
 			doit();
-
+			System.out.println("Initial mousechange: " +mousechange);
+			wl.writeLog("Initial mousechange: " +mousechange);
+			System.out.println("initial w: " +w);
+			wl.writeLog("initial w: " +w);
+			System.out.println("initial h: " +h);
+			wl.writeLog("initial h: " +h);
+			System.out.println("initial distance between lines: " +dis);
+			wl.writeLog("initial w: " +dis);
 		}
-		System.out.println("Initial mousechange: " +mousechange);
-		wl.writeLog("Initial mousechange: " +mousechange);
-		System.out.println("initial w: " +w);
-		wl.writeLog("initial w: " +w);
-		System.out.println("initial h: " +h);
-		wl.writeLog("initial h: " +h);
-		System.out.println("initial distance between lines: " +dis);
-		wl.writeLog("initial w: " +dis);
+
 	}
 	//basically creates window and listening to things that are going on
 	private void doit() {

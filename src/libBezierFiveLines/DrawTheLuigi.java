@@ -15,7 +15,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	public boolean toggle_perl = false;
 	private static double coordsx = 400;
-    private static double coordsy = 400;
+	private static double coordsy = 400;
 
 	//private static double dapathx =400;
 	private final int supperBigNumber = 500000;
@@ -166,23 +166,30 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	// calculate the reflection line by finding the length between perpend line and projected line
 
 	private void getPathSlope() {
-		//dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
-		
+		//calculating the intersection of the path and 400 (y)
+		double dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
+
 		double fpt = ( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX));
 		double fd = ( (supperBigNumber-toY)/((supperBigNumber/find_derivative(toX))-toX));
-		
-		double testx = (fpt*(toX-4) - fd*(400) + 400 - toY)/(fpt - fd);
-		double testy = fd*(testx - 400) + 400;
-		double length = Math.sqrt( Math.pow( (400 - testx), 2) + Math.pow( (400 - testy), 2));
-		if (toX >= 400) {
-        coordsx = testx + length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
-		coordsy = testy + fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+
+		double testx = (fpt*(toX-4) - fd*(395) + 395 - toY)/(fpt - fd);
+		double testy = fd*(testx - 395) + 395;
+		// calculating the length 400,400 to the normal line
+		double length = Math.sqrt( Math.pow( (395 - testx), 2) + Math.pow( (395 - testy), 2));
+		if (dapathx >= 400) {
+			coordsx = testx + length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coordsy = testy + fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
 		}
 		else {
-			  coordsx = testx - length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
-				coordsy = testy - fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));	
+			coordsx = testx - length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coordsy = testy - fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));	
 		}
+		// write log
 		if (ball_go && check) {
+			System.out.println("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
+			wl.writeLog("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
+			System.out.println("dapathx appears to be: " + dapathx);
+			wl.writeLog("dapathx appears to be: " + dapathx);
 			System.out.println("coordsx appears to be: " + coordsx);
 			wl.writeLog("coordsx appears to be: " + coordsx);
 			System.out.println("coordsy appears to be: " + coordsy);
@@ -192,9 +199,6 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		if (!ball_go) {
 			check = true;
 		}
-		
-
-
 		//return dapathx+ (dapathx -400);
 	}
 

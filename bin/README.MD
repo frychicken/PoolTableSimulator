@@ -32,7 +32,7 @@ type "m" to toggle mousechange on demand
 
 ```Compile to jar```
 
-Run Compile.bat @ /makeJar 
+Run Compile.bat for windows
 
 Run Compile.sh for mac/linux
 

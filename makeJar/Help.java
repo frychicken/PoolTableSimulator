@@ -67,7 +67,7 @@ public class Help extends JPanel {
 				}
 
 				frame.getContentPane().add(new Help());  
-				frame.setMinimumSize(new Dimension(800, 800));  
+				frame.setMinimumSize(new Dimension(800, 600));  
 				frame.setLocationRelativeTo(null);
 				frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);  
 				frame.setVisible(true);  

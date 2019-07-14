@@ -18,8 +18,9 @@ public class libBeTheMain  {
 			ccu.checkup();
 		} catch (Exception e) {
 			e.printStackTrace();
+			ccu.popUp("Error occurs while loading update");
+			return;
 		}
-
 		DrawAsk da = new DrawAsk(); 
 		da.daw();
 	}
