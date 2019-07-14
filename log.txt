@@ -32,3 +32,802 @@ Current version: 4; newest version: 3
 no new updates current version: 4; newest version: 3
 Terminated by user
 Time executed: 12 seconds
+===== Time execute: 2019/07/13 11:11:20 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Terminated by user
+Time executed: 27 seconds
+===== Time execute: 2019/07/13 16:40:40 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/13 21:56:30 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 27 seconds
+===== Time execute: 2019/07/13 21:57:11 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 38 seconds
+===== Time execute: 2019/07/13 21:58:05 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 32 seconds
+===== Time execute: 2019/07/13 22:01:20 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/13 22:04:34 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 24 seconds
+===== Time execute: 2019/07/13 22:08:09 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 29 seconds
+===== Time execute: 2019/07/13 22:19:42 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 84 seconds
+===== Time execute: 2019/07/13 22:21:19 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/13 22:24:27 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 36 seconds
+===== Time execute: 2019/07/13 22:27:36 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 57 seconds
+===== Time execute: 2019/07/13 22:29:11 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+Calculateting dapathx: 425.71588896515703
+Clicked g
+Calculateting dapathx: 428.81798770054655
+Drawing screen closed by user
+Terminated by user
+Time executed: 20 seconds
+===== Time execute: 2019/07/13 22:29:53 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+Calculateting dapathx: 434.9095682940692
+Clicked g
+Calculateting dapathx: 438.080874303817
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/13 22:32:07 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+Calculateting dapathx: 423.4894386843332
+Clicked g
+Calculateting dapathx: 424.0964578747248
+Clicked g
+Calculateting dapathx: 432.7555679187021
+Clicked g
+Calculateting dapathx: 479.4295652452363
+Clicked g
+Calculateting dapathx: 419.21669785173253
+Clicked g
+Calculateting dapathx: 436.80249754848006
+Clicked d makes debug mode = true
+Clicked g
+Calculateting dapathx: 452.09741454013476
+Drawing screen closed by user
+Terminated by user
+Time executed: 41 seconds
+===== Time execute: 2019/07/13 22:32:53 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Calculateting dapathx: 431.5447533890741
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/13 22:33:11 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+Calculateting dapathx: 452.09741454013476
+Clicked g
+Calculateting dapathx: 432.4278938710491
+Clicked g
+Calculateting dapathx: 514.3328629956309
+Clicked g
+Calculateting dapathx: 432.1335137103908
+Clicked g
+Calculateting dapathx: 418.5812229215237
+Clicked g
+Calculateting dapathx: 442.00609182566654
+Clicked g
+Calculateting dapathx: 417.77740511420717
+Clicked g
+Calculateting dapathx: 473.88113612347496
+Clicked g
+Calculateting dapathx: 444.32854363958023
+Clicked g
+Calculateting dapathx: 394.0269661302522
+Clicked g
+Calculateting dapathx: 395.880740131546
+Clicked g
+Calculateting dapathx: 426.85163438716984
+Drawing screen closed by user
+Terminated by user
+Time executed: 48 seconds
+===== Time execute: 2019/07/13 22:34:04 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Calculateting dapathx: 441.02958852241505
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/13 22:38:17 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 29 seconds
+===== Time execute: 2019/07/13 22:38:55 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+coordsx appears to be: 442.02466844491096
+coordsy appears to be: 440.9907659339956
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 44 seconds
+===== Time execute: 2019/07/13 22:40:02 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/13 22:42:34 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 73 seconds
+===== Time execute: 2019/07/13 22:46:38 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/13 22:47:36 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 81 seconds
+===== Time execute: 2019/07/13 22:49:16 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 40 seconds
+===== Time execute: 2019/07/13 22:51:43 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 110 seconds
+===== Time execute: 2019/07/13 22:54:06 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 33 seconds
+===== Time execute: 2019/07/13 22:55:14 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 56 seconds
+===== Time execute: 2019/07/13 22:56:26 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 59 seconds
+===== Time execute: 2019/07/13 22:57:32 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/13 22:57:58 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/07/13 22:58:40 ======
+Current version: 4; newest version: 4
+no new updates current version: 4; newest version: 4
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds

@@ -14,8 +14,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	private static final long serialVersionUID = 1L;
 
 	public boolean toggle_perl = false;
+	private static double coordsx = 400;
+    private static double coordsy = 400;
 
-	private static double dapathx =400;
+	//private static double dapathx =400;
 	private final int supperBigNumber = 500000;
 	private boolean check = true;
 
@@ -113,7 +115,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}
 			// ball bounce back -- this is the equation to find x; but i am not sure if this is the correct one
 			ball_y+=theSub; theSub -=1;
-			ball_x =  (int) (((ball_y - toY)/((400-toY)/(getPathSlope() - toX))) + toX-4);
+			ball_x =  (int) (((ball_y - toY)/((coordsy-toY)/(coordsx - toX))) + toX-7);
 		}
 	}
 	// reset everything, stop the timer -- animation.
@@ -128,7 +130,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		theSub =1;
 		toX =400;
 		toY=400;
-		dapathx = 400;
+		//dapathx = 400;
 	}
 
 	//find the vertex (y)
@@ -163,19 +165,37 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 	// calculate the reflection line by finding the length between perpend line and projected line
 
-	private double getPathSlope() {
-		dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
-
+	private void getPathSlope() {
+		//dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
+		
+		double fpt = ( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX));
+		double fd = ( (supperBigNumber-toY)/((supperBigNumber/find_derivative(toX))-toX));
+		
+		double testx = (fpt*(toX-4) - fd*(400) + 400 - toY)/(fpt - fd);
+		double testy = fd*(testx - 400) + 400;
+		double length = Math.sqrt( Math.pow( (400 - testx), 2) + Math.pow( (400 - testy), 2));
+		if (toX >= 400) {
+        coordsx = testx + length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+		coordsy = testy + fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+		}
+		else {
+			  coordsx = testx - length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+				coordsy = testy - fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));	
+		}
 		if (ball_go && check) {
-			System.out.println("Calculateting dapathx: " + dapathx);
-			wl.writeLog("Calculateting dapathx: " + dapathx);
+			System.out.println("coordsx appears to be: " + coordsx);
+			wl.writeLog("coordsx appears to be: " + coordsx);
+			System.out.println("coordsy appears to be: " + coordsy);
+			wl.writeLog("coordsy appears to be: " + coordsy);
 			check = false;
 		}
 		if (!ball_go) {
 			check = true;
 		}
+		
 
-		return  dapathx+ (dapathx -400);
+
+		//return dapathx+ (dapathx -400);
 	}
 
 	//draw the tangent line to the curve
@@ -262,7 +282,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		//check if mouse touch the curve
 		double suppose_y = the_functino(toX);
 		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2)))
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, getPathSlope() , 400));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, coordsx , coordsy));
 		// ((Graphics2D) g).draw(new Line2D.Double(toX,toY,500000/the_slop , 500000));
 	}
 
