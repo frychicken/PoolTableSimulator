@@ -1,4 +1,0 @@
-===== Time execute: 2019/07/14 19:23:46 ======
-no new updates current version: 5; newest version: 4
-Terminated by user
-Time executed: 6 seconds
