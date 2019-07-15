@@ -30,6 +30,12 @@ type "d" to toggle debug mode
 
 type "m" to toggle mousechange on demand
 
+type "n" to toggle nightmode
+
+```TODO```
+
+Actually calculate the velocity of the ball (green) 
+
 ```Compile to jar```
 
 Run Compile.bat for windows

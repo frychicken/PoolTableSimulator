@@ -16,6 +16,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	public boolean toggle_perl = false;
 	private static double coordsx = 400;
 	private static double coordsy = 400;
+	private double dapathx = 400;
+	public boolean nightmode = false;
 
 	//private static double dapathx =400;
 	private final int supperBigNumber = 500000;
@@ -87,6 +89,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		drawTangentLine(g);
 		ballAndStickLogic();
 		getPathSlope();
+		writedalog();
 	}
 
 	//from here down are logic stuff
@@ -147,6 +150,23 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		}
 	}
+	private void writedalog() {
+		// write log
+		if (ball_go && check) {
+			System.out.println("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
+			wl.writeLog("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
+			System.out.println("dapathx appears to be: " + dapathx);
+			wl.writeLog("dapathx appears to be: " + dapathx);
+			System.out.println("coordsx appears to be: " + coordsx);
+			wl.writeLog("coordsx appears to be: " + coordsx);
+			System.out.println("coordsy appears to be: " + coordsy);
+			wl.writeLog("coordsy appears to be: " + coordsy);
+			check = false;
+		}
+		if (!ball_go) {
+			check = true;
+		}
+	}
 	private int getCueX() {
 		return (int) (((stick_sx)*(400-toX))/Math.abs(400-toY));
 	}
@@ -167,7 +187,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	private void getPathSlope() {
 		//calculating the intersection of the path and 400 (y)
-		double dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
+		dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
 
 		double fpt = ( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX));
 		double fd = ( (supperBigNumber-toY)/((supperBigNumber/find_derivative(toX))-toX));
@@ -184,28 +204,18 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			coordsx = testx - length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
 			coordsy = testy - fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));	
 		}
-		// write log
-		if (ball_go && check) {
-			System.out.println("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
-			wl.writeLog("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
-			System.out.println("dapathx appears to be: " + dapathx);
-			wl.writeLog("dapathx appears to be: " + dapathx);
-			System.out.println("coordsx appears to be: " + coordsx);
-			wl.writeLog("coordsx appears to be: " + coordsx);
-			System.out.println("coordsy appears to be: " + coordsy);
-			wl.writeLog("coordsy appears to be: " + coordsy);
-			check = false;
-		}
-		if (!ball_go) {
-			check = true;
-		}
+
 		//return dapathx+ (dapathx -400);
 	}
 
 	//draw the tangent line to the curve
 	private void drawTangentLine(Graphics g) {
 		//check if mouse touch the curve
-		g.setColor(Color.BLACK);
+		if(nightmode) {
+			g.setColor(Color.WHITE);
+
+		}else
+			g.setColor(Color.BLACK);
 		double suppose_y = the_functino(toX);
 		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2)) && toggle_perl) {		
 			// perpendicular line
@@ -229,7 +239,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.drawString(" type \"t\" or click once to toggle changing height", 280,600);
 		g.drawString(" type \"d\" to toggle debug mode", 280,615);
 		g.drawString(" type \"m\" to toggle mouse change", 280,630);
-
+		g.drawString(" type \"n\" to toggle nightmode", 280,645);
+		
 		if (toggle_perl) {
 			// equation of the two sides of the triangle
 			g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
@@ -248,7 +259,11 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 
 	private void drawCoords(Graphics g) {
-		g.setColor(Color.BLACK);
+		if(nightmode) {
+			g.setColor(Color.GRAY);
+
+		}else
+			g.setColor(Color.BLACK);
 
 		//x and y axis
 		g.drawLine(10, 400, 790, 400);
@@ -267,10 +282,14 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 
 	private void drawNormalLineAndPathBall(Graphics g) {
-		g.setColor(Color.BLACK);
+		if(nightmode) {
+			g.setColor(Color.WHITE);
+
+		}else
+			g.setColor(Color.BLACK);
 		//path of the ball
 		((Graphics2D) g).draw(new Line2D.Double(400,400,toX,toY));
-		g.setColor(Color.GRAY);
+		g.setColor(Color.LIGHT_GRAY);
 		//line that is perpendicular to the path of the ball before it hits the curve -- using very large number to create 90 degree angle ( it will be less 90 if the number goes down)
 		if(toggle_perl) {
 			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/((-1)*(400 - toX)/Math.abs(400 - toY)) , supperBigNumber));

@@ -1,6 +1,7 @@
 // just graphic stuff
 package libBezierFiveLines;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Toolkit;
 import java.awt.event.*;
@@ -15,7 +16,7 @@ public class DrawAsk extends Component  implements ActionListener {
 	private JPanel panel = new JPanel();
 	private JLabel lw = new JLabel("W:");
 	private JLabel lh = new JLabel("h:");
-	private JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (vertex) (default: 150).");
+	private JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (default: 150)");
 	private JLabel dbl = new JLabel("Distance between lines (default: 10)");
 	private WriteLogF wl = new WriteLogF();
 	private static JCheckBox checkBox;
@@ -25,7 +26,6 @@ public class DrawAsk extends Component  implements ActionListener {
 	public static double w =400;
 	public static double h =300;
 	public static double dis =10;
-
 	public static boolean mousechange = false;
 	public static boolean toogle_top = false;
 	//create frame, window with button and checkbox, label.
@@ -46,7 +46,7 @@ public class DrawAsk extends Component  implements ActionListener {
 		panel.add(dbl);
 		panel.add(dist);
 		panel.setLayout(null);
-
+		
 		try {
 			jf.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 		} catch (Exception e) {
@@ -213,7 +213,7 @@ public class DrawAsk extends Component  implements ActionListener {
 				//s to remove lines
 				if (key2 == 's') {
 					dis +=1;
-					System.out.println("Clicked t]s");
+					System.out.println("Clicked s");
 					wl.writeLog("Clicked s");
 					frame.repaint(); 
 				}
@@ -237,6 +237,17 @@ public class DrawAsk extends Component  implements ActionListener {
 					System.out.println("Clicked m makes mousechange = "+ mousechange);
 					wl.writeLog("Clicked m makes mousechange = "+ mousechange);
 					frame.repaint(); 
+				}
+				if(key2 == 'n') {
+					dl.nightmode = !dl.nightmode;
+					System.out.println("Clicked n makes nightmode = "+ dl.nightmode);
+					wl.writeLog("Clicked n makes nightmode = "+ dl.nightmode);
+					if(dl.nightmode) {
+						frame.getContentPane().setBackground(Color.BLACK);  
+					} else {
+						frame.getContentPane().setBackground(Color.WHITE);  
+
+					}
 				}
 				//c to close window
 				if (key2 == 'c') {

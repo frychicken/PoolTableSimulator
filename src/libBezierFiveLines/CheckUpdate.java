@@ -26,7 +26,7 @@ public class CheckUpdate {
 	public CheckUpdate(){
 		t = new Timer(10, new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				//do your updating of your variables here
+				//updating variables 
 				drc.changec(todis);
 				drc.repaint();
 			}

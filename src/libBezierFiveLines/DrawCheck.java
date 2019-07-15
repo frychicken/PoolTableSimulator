@@ -9,14 +9,14 @@ public class DrawCheck extends Component {
 	private double f;
 	public static double strin=1;
 	private String display;
-	private String msg[] = new String[3];
-	private int i;
-	private double f2 = Math.random();;
+	private String msg[] = new String[7];
+	private int f2 =(int)(Math.random() * ((6 - 0) + 1)) + 0;
 	public DrawCheck(JFrame frame) {
 		try {
 			frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 		}
 	}
 	@Override
@@ -40,7 +40,7 @@ public class DrawCheck extends Component {
 			x = 10;
 		}
 		if (strin == 50 ) {
-			f2 = Math.random();
+			f2 = (int)(Math.random() * ((6 - 0) + 1)) + 0;
 		}
 
 		strin = (double)(f/90)*100; 
@@ -48,11 +48,13 @@ public class DrawCheck extends Component {
 	
 		msg[0] = "You can click \"help\" in the setup menu to get help";
 		msg[1] = "Sometimes, the program does something not expected";
-		if (f2>0.5)
-			i =0;
-		else 
-			i = 1;
-		display = msg[i];
+		msg[2] = "y=ax+b!";
+		msg[3] = "My final AP Calc project inspired me to write this!";
+		msg[4] = "If you still see this, the program might crash lol";
+		msg[5] = "You might wanna close this because it is taking too long";
+		msg[6] = "If this stucks at 13% then close this window :v";
+
+		display = msg[f2];
 	}
 
 	private void drawdouknow(Graphics f) {

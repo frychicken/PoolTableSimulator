@@ -1,0 +1,552 @@
+===== Time execute: 2019/07/14 19:53:34 ======
+Error checking update: Timed out!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 129 seconds
+===== Time execute: 2019/07/14 20:33:16 ======
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 36 seconds
+===== Time execute: 2019/07/14 20:34:41 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 36 seconds
+===== Time execute: 2019/07/14 20:36:00 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked d makes debug mode = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 73 seconds
+===== Time execute: 2019/07/14 20:41:42 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/14 20:43:32 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 23 seconds
+===== Time execute: 2019/07/14 20:44:31 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 32 seconds
+===== Time execute: 2019/07/14 20:46:55 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 39 seconds
+===== Time execute: 2019/07/14 20:48:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 62 seconds
+===== Time execute: 2019/07/14 20:50:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 66 seconds
+===== Time execute: 2019/07/14 21:02:59 ======
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/14 21:03:02 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 4 seconds
+===== Time execute: 2019/07/14 21:03:11 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 5 seconds
+===== Time execute: 2019/07/14 21:03:57 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 4 seconds
+===== Time execute: 2019/07/14 21:05:07 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/14 21:06:09 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/14 21:06:19 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/14 21:06:30 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/14 21:07:18 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/14 21:07:36 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 32 seconds
+===== Time execute: 2019/07/14 21:08:30 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 16 seconds
+===== Time execute: 2019/07/14 21:08:54 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = true
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 423.005749438164
+coordsx appears to be: 432.74117839919086
+coordsy appears to be: 426.71090816135086
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked d makes debug mode = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Drawing screen closed by user
+Terminated by user
+Time executed: 178 seconds
+===== Time execute: 2019/07/14 21:13:26 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/14 21:19:40 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/14 21:29:42 ======
+no new updates current version: 5; newest version: 5
+Terminated by user
+Time executed: 6 seconds
