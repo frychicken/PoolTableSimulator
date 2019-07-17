@@ -11,9 +11,11 @@ public class DrawAsk extends Component  implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private static JFrame jf;
+	private JFrame frame;
 	private JButton button= new JButton("OK");
+	private  JButton controller[] = new JButton[4];
 	private JButton welp= new JButton("HELP");
-	private JPanel panel = new JPanel();
+	private JPanel panel;
 	private JLabel lw = new JLabel("W:");
 	private JLabel lh = new JLabel("h:");
 	private JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (default: 150)");
@@ -30,6 +32,7 @@ public class DrawAsk extends Component  implements ActionListener {
 	public static boolean toogle_top = false;
 	//create frame, window with button and checkbox, label.
 	public void daw() {
+		panel = new JPanel();
 		jf = new JFrame("Setup");
 		fw = new JTextField("400", 16);  
 		fh = new JTextField("150", 16); 
@@ -46,11 +49,12 @@ public class DrawAsk extends Component  implements ActionListener {
 		panel.add(dbl);
 		panel.add(dist);
 		panel.setLayout(null);
-		
+
 		try {
 			jf.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 		} catch (Exception e) {
 			e.printStackTrace();
+			wl.writeLog(e.toString());
 		}
 		instru.setBounds(2,10,480,10);
 		lw.setBounds(100,30,20,20);
@@ -123,14 +127,24 @@ public class DrawAsk extends Component  implements ActionListener {
 	}
 	//basically creates window and listening to things that are going on
 	private void doit() {
-
-		JFrame frame = new JFrame("Result");
+		panel = new JPanel();
+	    frame = new JFrame("Result");
 		DrawTheLuigi dl = new DrawTheLuigi(frame); 
+		for (int i=0; i<controller.length; controller[i++] = new JButton(""+i)) {}
+		for (int i =0; i<controller.length; panel.add(controller[i++])) {}
+
+		controller[0].setBounds(600, 500, 50, 50);
+		controller[1].setBounds(550, 550, 50, 50);
+		controller[2].setBounds(600, 550, 50, 50);
+		controller[3].setBounds(650, 550, 50, 50);
+		panel.setLayout(null);
+
 		frame.setResizable(false);
 		try {
 			frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 		} catch (Exception e) {
 			e.printStackTrace();
+			wl.writeLog(e.toString());
 		}
 		frame.setSize(800, 800); 
 		frame.setFocusable(true); 
@@ -142,8 +156,10 @@ public class DrawAsk extends Component  implements ActionListener {
 		frame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent evt) {
+				
 				mousechange = false;
 				DrawTheLuigi.reset();
+				frame.dispose();
 				System.out.println("drawing screen closed by user");
 				wl.writeLog("Drawing screen closed by user");
 				daw();
@@ -254,11 +270,14 @@ public class DrawAsk extends Component  implements ActionListener {
 					System.out.println("Clicked c");
 					wl.writeLog("Clicked c");
 					frame.setVisible(false);
+					frame.dispose();
 					daw();
 				}
 			}
 		});
-		frame.add(dl);
+		
+		frame.getContentPane().add(dl);
+	
 	}
 
 

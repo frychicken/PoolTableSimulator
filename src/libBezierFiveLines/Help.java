@@ -5,6 +5,8 @@ import com.sun.javafx.application.PlatformImpl;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javafx.collections.ObservableList;
 import javafx.embed.swing.JFXPanel;
@@ -71,6 +73,12 @@ public class Help extends JPanel {
 				frame.setMinimumSize(new Dimension(800, 600));  
 				frame.setLocationRelativeTo(null);
 				frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);  
+				frame.addWindowListener(new WindowAdapter() {
+					@Override
+					public void windowClosing(WindowEvent evt) {
+						frame.dispose();
+					}
+				});
 				frame.setVisible(true);  
 			}  
 		});    

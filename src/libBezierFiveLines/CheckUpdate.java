@@ -24,6 +24,8 @@ public class CheckUpdate {
 	private final Timer t;
 	private boolean check = true;
 	public CheckUpdate(){
+		frame = new JFrame("Checking update"); 
+		drc= new DrawCheck(frame);
 		t = new Timer(10, new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				//updating variables 
@@ -41,6 +43,7 @@ public class CheckUpdate {
 
 	public void closeUpWindow() {
 		frame.setVisible(false);  
+		frame.dispose();
 		stillqm = false;
 	}
 
@@ -50,8 +53,7 @@ public class CheckUpdate {
 	}
 
 	public void checkup() throws Exception {
-		frame = new JFrame("Checking update"); 
-		drc= new DrawCheck(frame);
+
 		frame.getContentPane().add(BorderLayout.CENTER, drc); 
 		frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
 		frame.addWindowListener(new WindowAdapter() {
@@ -59,6 +61,7 @@ public class CheckUpdate {
 			public void windowClosing(WindowEvent evt) {
 				stillqm = false;
 				check = false;
+				frame.dispose();
 			}
 		});
 		frame.setResizable(false);

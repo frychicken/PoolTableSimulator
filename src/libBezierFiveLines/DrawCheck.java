@@ -5,18 +5,19 @@ import javax.swing.JFrame;
 public class DrawCheck extends Component {
 	private String todis = "Checking for updates";
 	private static final long serialVersionUID = 1L;
+	private WriteLogF wl = new WriteLogF();
 	public static int x = 10;
 	private double f;
 	public static double strin=1;
 	private String display;
-	private String msg[] = new String[7];
-	private int f2 =(int)(Math.random() * ((6 - 0) + 1)) + 0;
+	private String msg[] = new String[8];
+	private int f2 =(int)(Math.random() * ((7 - 0) + 1)) + 0;
 	public DrawCheck(JFrame frame) {
 		try {
 			frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 		} catch (Exception e) {
 			e.printStackTrace();
-			
+			wl.writeLog(e.toString());
 		}
 	}
 	@Override
@@ -40,12 +41,12 @@ public class DrawCheck extends Component {
 			x = 10;
 		}
 		if (strin == 50 ) {
-			f2 = (int)(Math.random() * ((6 - 0) + 1)) + 0;
+			f2 = (int)(Math.random() * ((7 - 0) + 1)) + 0;
 		}
 
 		strin = (double)(f/90)*100; 
 		strin = Math.ceil(strin);
-	
+
 		msg[0] = "You can click \"help\" in the setup menu to get help";
 		msg[1] = "Sometimes, the program does something not expected";
 		msg[2] = "y=ax+b!";
@@ -53,6 +54,7 @@ public class DrawCheck extends Component {
 		msg[4] = "If you still see this, the program might crash lol";
 		msg[5] = "You might wanna close this because it is taking too long";
 		msg[6] = "If this stucks at 13% then close this window :v";
+		msg[7] = "Log is at"+System.getProperty("user.dir");
 
 		display = msg[f2];
 	}

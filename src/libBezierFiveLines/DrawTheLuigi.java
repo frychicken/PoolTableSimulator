@@ -237,9 +237,9 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.drawString("type \"a\" or click near the blue text (add/remove) (debug mode) to add more lines, \"s\" to remove lines and \"c\" to close", 20, 570);
 		g.drawString(" type \"g\" or click at the origin to animate the ball", 280,585);
 		g.drawString(" type \"t\" or click once to toggle changing height", 280,600);
-		g.drawString(" type \"d\" to toggle debug mode", 280,615);
+		g.drawString(" type \"d\" or click here to toggle debug mode", 280,615);
 		g.drawString(" type \"m\" to toggle mouse change", 280,630);
-		g.drawString(" type \"n\" to toggle nightmode", 280,645);
+		g.drawString(" type \"n\" or click here to toggle nightmode", 280,645);
 		
 		if (toggle_perl) {
 			// equation of the two sides of the triangle
@@ -415,7 +415,21 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}
 
 		}
+		
+		if((Math.abs(arg0.getX() -390) <=15) && (Math.abs(arg0.getY() - 612) <=5) ) {
+			toggle_perl = !toggle_perl;
+		}
+		
+		if((Math.abs(arg0.getX() -390) <=15) && (Math.abs(arg0.getY() - 645) <=5) ) {
+			nightmode = !nightmode;
+			if(nightmode) {
+				frame.getContentPane().setBackground(Color.BLACK);  
+			} else {
+				frame.getContentPane().setBackground(Color.WHITE);  
 
+			}
+		}
+		
 		frame.repaint();
 	}
 
@@ -426,6 +440,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			initial = arg0.getX();
 			initialY = arg0.getY();
 		}
+
+
 	}
 	@Override
 	public void mouseEntered(MouseEvent arg0) {}
