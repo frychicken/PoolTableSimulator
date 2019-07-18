@@ -13,7 +13,6 @@ public class DrawAsk extends Component  implements ActionListener {
 	private static JFrame jf;
 	private JFrame frame;
 	private JButton button= new JButton("OK");
-	private  JButton controller[] = new JButton[4];
 	private JButton welp= new JButton("HELP");
 	private JPanel panel;
 	private JLabel lw = new JLabel("W:");
@@ -30,6 +29,7 @@ public class DrawAsk extends Component  implements ActionListener {
 	public static double dis =10;
 	public static boolean mousechange = false;
 	public static boolean toogle_top = false;
+	private DrawTheLuigi dl;
 	//create frame, window with button and checkbox, label.
 	public void daw() {
 		panel = new JPanel();
@@ -124,21 +124,12 @@ public class DrawAsk extends Component  implements ActionListener {
 			wl.writeLog("initial w: " +dis);
 		}
 
+
 	}
 	//basically creates window and listening to things that are going on
-	private void doit() {
-		panel = new JPanel();
-	    frame = new JFrame("Result");
-		DrawTheLuigi dl = new DrawTheLuigi(frame); 
-		for (int i=0; i<controller.length; controller[i++] = new JButton(""+i)) {}
-		for (int i =0; i<controller.length; panel.add(controller[i++])) {}
-
-		controller[0].setBounds(600, 500, 50, 50);
-		controller[1].setBounds(550, 550, 50, 50);
-		controller[2].setBounds(600, 550, 50, 50);
-		controller[3].setBounds(650, 550, 50, 50);
-		panel.setLayout(null);
-
+	private void doit()  {
+		frame = new JFrame("Result");
+		dl = new DrawTheLuigi(frame); 
 		frame.setResizable(false);
 		try {
 			frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
@@ -149,14 +140,12 @@ public class DrawAsk extends Component  implements ActionListener {
 		frame.setSize(800, 800); 
 		frame.setFocusable(true); 
 		frame.setLocationRelativeTo(null);
-
-		frame.setVisible(true); 
 		frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
 
 		frame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent evt) {
-				
+
 				mousechange = false;
 				DrawTheLuigi.reset();
 				frame.dispose();
@@ -275,9 +264,10 @@ public class DrawAsk extends Component  implements ActionListener {
 				}
 			}
 		});
-		
-		frame.getContentPane().add(dl);
 	
+		frame.add(dl);
+		frame.setVisible(true); 
+
 	}
 
 

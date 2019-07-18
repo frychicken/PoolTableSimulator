@@ -983,3 +983,131 @@ initial w: 10.0
 Drawing screen closed by user
 Terminated by user
 Time executed: 7 seconds
+===== Time execute: 2019/07/16 21:35:02 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/16 21:39:12 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/16 21:39:28 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/16 21:41:10 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/16 21:41:59 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/16 21:42:41 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 20 seconds
+===== Time execute: 2019/07/16 21:43:23 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/16 21:43:58 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/16 21:45:57 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/16 21:46:13 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/16 21:46:48 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 16 seconds
+===== Time execute: 2019/07/16 21:52:27 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 21:52:41 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 21:53:01 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 21:53:33 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 21:53:43 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 21:54:20 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 21:55:47 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 21:57:27 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 22:01:37 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/16 22:05:04 ======
+Error checking update: Timed out!
+===== Time execute: 2019/07/16 22:06:14 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds

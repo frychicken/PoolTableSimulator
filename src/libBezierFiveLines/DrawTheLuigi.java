@@ -10,7 +10,7 @@ import java.awt.event.MouseMotionListener;
 import java.awt.geom.Line2D;
 import javax.swing.*;
 
-public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener {
+public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener  {
 	private static final long serialVersionUID = 1L;
 
 	public boolean toggle_perl = false;
@@ -60,7 +60,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	private int initial =0;
 	private int initialY=0;
-
+    
+    
 	public DrawTheLuigi(JFrame frame) {
 		this.frame = frame;
 		addMouseListener(this);
@@ -73,6 +74,23 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}
 		};
 		timer = new Timer(50, animation);
+	}
+	
+	private void initComponents(Graphics g) {
+		g.setColor(Color.CYAN);
+		g.fillRect(680, 430, 50, 50);
+		g.fillRect(630, 480, 50, 50);
+		g.fillRect(680, 480, 50, 50);
+		g.fillRect(730, 480, 50, 50);
+		g.setColor(Color.BLACK);
+		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {460 +5, 440 , 460+5}, 3);
+		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {505 -5, 525, 505-5}, 3);
+		g.fillPolygon(new int[] {(630+(630+50))/2 -20 +5, (630+(630+50))/2 +5,(630+(630+50))/2 +5}, new int[] {505, 525, 485}, 3);
+		g.fillPolygon(new int[] {(730+(730+50))/2 -5, (730+(730+50))/2 -5,(730+(730+50))/2 + 20-5}, new int[] {485, 525, 505}, 3);
+		g.drawRect(680, 430, 50, 50);
+		g.drawRect(630, 480, 50, 50);
+		g.drawRect(680, 480, 50, 50);
+		g.drawRect(730, 480, 50, 50);
 	}
 
 	//draw bunch of stuff
@@ -90,6 +108,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		ballAndStickLogic();
 		getPathSlope();
 		writedalog();
+		initComponents(g);
+
 	}
 
 	//from here down are logic stuff
@@ -243,8 +263,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		
 		if (toggle_perl) {
 			// equation of the two sides of the triangle
-			g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
-			g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
+			g.drawString("coordsx, coordsy appears to be: " + Math.round(coordsx) +", "+Math.round(coordsy), 10,15 );
+			g.drawString("dapathx appears to be: " + Math.round(dapathx), 10,30 );
 
 			g.drawString("Top of the triangle (from 400 y): "+top_tri , 10,60);
 			g.drawString("Top of the curve (from 400 y): "+ top_curve , 10,80);
