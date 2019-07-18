@@ -76,6 +76,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		timer = new Timer(50, animation);
 	}
 	
+	
 	private void initComponents(Graphics g) {
 		g.setColor(Color.CYAN);
 		g.fillRect(680, 430, 50, 50);
