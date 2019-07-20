@@ -20,7 +20,7 @@ Uncheck "mousechange" if you want to use the simulation mode; otherwise, check i
 
 Use arrow keys (left/right) or mouse (up/down) (in mousechange mode) to change its width and (up/down) to change the accuracy of its height; type "a" to add more lines, "s" to remove lines and "c" to close the window
 
-click near the blue text to add/remove (in debug mode) lines (add: 0-50; remove: 50-100) (in debug mode)
+click near the blue text to add/remove lines (add: 0-50; remove: 50-100) (in debug mode)
 
 type "t" or click once to toggle changing height (up/down)
 

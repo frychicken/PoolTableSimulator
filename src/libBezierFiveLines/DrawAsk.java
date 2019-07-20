@@ -218,17 +218,16 @@ public class DrawAsk extends Component  implements ActionListener {
 				//s to remove lines
 				if (key2 == 's') {
 					dis +=1;
-					System.out.println("Clicked s");
-					wl.writeLog("Clicked s");
+					System.out.println("Clicked s makes dis = " + dis);
+					wl.writeLog("Clicked s makes dis =" + dis);
 					frame.repaint(); 
 				}
 				// a to add more lines
 				if (key2 == 'a') {
 					dis -=1;
 					if (dis < 1) dis = 1;
-
-					System.out.println("Clicked a");
-					wl.writeLog("Clicked a");
+					System.out.println("Clicked a makes dis = " + dis);
+					wl.writeLog("Clicked a makes dis = " + dis);
 					frame.repaint(); 
 				}
 				if (key2 == 'd') {
