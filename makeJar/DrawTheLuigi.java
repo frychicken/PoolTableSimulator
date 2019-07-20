@@ -8,12 +8,14 @@ import java.awt.event.MouseMotionListener;
 import java.awt.geom.Line2D;
 import javax.swing.*;
 
-public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener {
+public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener  {
 	private static final long serialVersionUID = 1L;
 
 	public boolean toggle_perl = false;
 	private static double coordsx = 400;
 	private static double coordsy = 400;
+	private double dapathx = 400;
+	public boolean nightmode = false;
 
 	//private static double dapathx =400;
 	private final int supperBigNumber = 500000;
@@ -27,8 +29,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	public static double toX =400;
 	public static double toY= 400;
 
-	public double mouseXC =0;
-	private double mouseYC =0;
+	public static double mouseXC =0;
+	public static double mouseYC =0;
 
 	public static boolean ball_go = false;
 	private static boolean ball_kgo = false;
@@ -57,6 +59,9 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	private int initial =0;
 	private int initialY=0;
 
+	private boolean clicked = false;	
+	public boolean hideHelpBox = false;
+
 	public DrawTheLuigi(JFrame frame) {
 		this.frame = frame;
 		addMouseListener(this);
@@ -69,6 +74,41 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}
 		};
 		timer = new Timer(50, animation);
+
+	}
+
+	//draw on screen button
+	private void initComponents(Graphics g) {
+		g.setColor(checkhover(680,430));
+		g.fillRect(680, 430, 50, 50);
+		g.setColor(checkhover(630,480));
+		g.fillRect(630, 480, 50, 50);
+		g.setColor(checkhover(680,480));
+		g.fillRect(680, 480, 50, 50);
+		g.setColor(checkhover(730,480));
+		g.fillRect(730, 480, 50, 50);
+		g.setColor(checkhover(680,560));
+		g.fillOval(680, 560, 50, 50);
+		g.setColor(Color.BLACK);
+		g.drawRect(680, 430, 50, 50);
+		g.drawRect(630, 480, 50, 50);
+		g.drawRect(680, 480, 50, 50);
+		g.drawRect(730, 480, 50, 50);
+		g.drawOval(680, 560, 50, 50);
+		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {460 +5, 440 , 460+5}, 3);
+		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {505 -5, 525, 505-5}, 3);
+		g.fillPolygon(new int[] {(630+(630+50))/2 -20 +5, (630+(630+50))/2 +5,(630+(630+50))/2 +5}, new int[] {505, 525, 485}, 3);
+		g.fillPolygon(new int[] {(730+(730+50))/2 -5, (730+(730+50))/2 -5,(730+(730+50))/2 + 20-5}, new int[] {485, 525, 505}, 3);	
+		g.setColor(Color.BLUE);
+		g.fillOval(140,490,20,10);
+		g.setColor(Color.GREEN);
+		g.fillOval(140,505,20,10);
+		g.setColor(Color.ORANGE);
+		g.fillOval(140,535,20,10);
+		g.setColor(Color.RED);
+		g.fillOval(140,550,20,10);
+		g.setColor(Color.PINK);
+		g.fillOval(140,575,20,10);
 	}
 
 	//draw bunch of stuff
@@ -83,12 +123,29 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		drawPathBounceBack(g);       
 		drawStick(g);
 		drawTangentLine(g);
+		initComponents(g);
 		ballAndStickLogic();
 		getPathSlope();
+		writedalog();
+
+
 	}
 
 	//from here down are logic stuff
+	//check color when hover onscreen button
+	private Color checkhover(int x, int y) {
+		if (((mouseXC > x) && (mouseXC < x +50)) && ((mouseYC > y) && (mouseYC < y +50))) {
+			if (clicked) {
+				clicked = false;
+				return Color.DARK_GRAY;
 
+			} else
+				return Color.LIGHT_GRAY;
+		}
+		else {
+			return  Color.GRAY;
+		}
+	}
 	// calculate the slope of the ball and the cue --> find the path of the ball and the cue
 	private void ballAndStickLogic() {
 		//if you click g
@@ -130,7 +187,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		toY=400;
 		//dapathx = 400;
 	}
-
+	public void resetC() {
+		w=400;
+		h=300;
+	}
 	//find the vertex (y)
 	private void getTopCurve() {
 		if (DrawAsk.toogle_top) {
@@ -143,6 +203,23 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				c=1;
 			}
 
+		}
+	}
+	private void writedalog() {
+		// write log
+		if (ball_go && check) {
+			System.out.println("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
+			wl.writeLog("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
+			System.out.println("dapathx appears to be: " + dapathx);
+			wl.writeLog("dapathx appears to be: " + dapathx);
+			System.out.println("coordsx appears to be: " + coordsx);
+			wl.writeLog("coordsx appears to be: " + coordsx);
+			System.out.println("coordsy appears to be: " + coordsy);
+			wl.writeLog("coordsy appears to be: " + coordsy);
+			check = false;
+		}
+		if (!ball_go) {
+			check = true;
 		}
 	}
 	private int getCueX() {
@@ -165,7 +242,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	private void getPathSlope() {
 		//calculating the intersection of the path and 400 (y)
-		double dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
+		dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
 
 		double fpt = ( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX));
 		double fd = ( (supperBigNumber-toY)/((supperBigNumber/find_derivative(toX))-toX));
@@ -182,28 +259,18 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			coordsx = testx - length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
 			coordsy = testy - fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));	
 		}
-		// write log
-		if (ball_go && check) {
-			System.out.println("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
-			wl.writeLog("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
-			System.out.println("dapathx appears to be: " + dapathx);
-			wl.writeLog("dapathx appears to be: " + dapathx);
-			System.out.println("coordsx appears to be: " + coordsx);
-			wl.writeLog("coordsx appears to be: " + coordsx);
-			System.out.println("coordsy appears to be: " + coordsy);
-			wl.writeLog("coordsy appears to be: " + coordsy);
-			check = false;
-		}
-		if (!ball_go) {
-			check = true;
-		}
+
 		//return dapathx+ (dapathx -400);
 	}
 
 	//draw the tangent line to the curve
 	private void drawTangentLine(Graphics g) {
 		//check if mouse touch the curve
-		g.setColor(Color.BLACK);
+		if(nightmode) {
+			g.setColor(Color.WHITE);
+
+		}else
+			g.setColor(Color.BLACK);
 		double suppose_y = the_functino(toX);
 		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2)) && toggle_perl) {		
 			// perpendicular line
@@ -220,18 +287,21 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	private void drawInformation(Graphics g) {
 		g.setColor(Color.RED);
-
-		g.drawString("Use arrow keys or drag the screen up/down to change its height, width if you choose mousechange", 100,550);
-		g.drawString("type \"a\" or click near the blue text (add/remove) (debug mode) to add more lines, \"s\" to remove lines and \"c\" to close", 20, 570);
-		g.drawString(" type \"g\" or click at the origin to animate the ball", 280,585);
-		g.drawString(" type \"t\" or click once to toggle changing height", 280,600);
-		g.drawString(" type \"d\" to toggle debug mode", 280,615);
-		g.drawString(" type \"m\" to toggle mouse change", 280,630);
-
+		if(!hideHelpBox) {
+			g.drawString("Use arrow keys or drag (mousechange) its height, width", 30,450);
+			g.drawString("type \"a\", \"s\" to add, remove lines and \"c\" to close", 30, 470);
+			g.drawString(" type \"g\" or click at the origin to animate the ball", 30,485);
+			g.drawString(" type \"t\" or click        to toggle changing height", 30,500);
+			g.drawString(" type \"d\" or click        to toggle debug mode", 30,515);
+			g.drawString(" type \"m\" to toggle mouse change", 30,530);
+			g.drawString(" type \"n\" or click        to toggle nightmode", 30,545);
+			g.drawString(" type \"r\" or click        to reset curve", 30,560);
+			g.drawString(" type \"h\" or click        to hide help box", 30,585);
+		}
 		if (toggle_perl) {
 			// equation of the two sides of the triangle
-			g.drawString("i = ("+ h/100 +"/"+w/200+")(200-x) +"+w, 10,15 );
-			g.drawString("j = ("+ h/100 +"/"+w/200+")(x+600) +"+ w, 10,30 );
+			g.drawString("coordsx, coordsy appears to be: " + Math.round(coordsx) +", "+Math.round(coordsy), 10,15 );
+			g.drawString("dapathx appears to be: " + Math.round(dapathx), 10,30 );
 
 			g.drawString("Top of the triangle (from 400 y): "+top_tri , 10,60);
 			g.drawString("Top of the curve (from 400 y): "+ top_curve , 10,80);
@@ -246,7 +316,11 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 
 	private void drawCoords(Graphics g) {
-		g.setColor(Color.BLACK);
+		if(nightmode) {
+			g.setColor(Color.GRAY);
+
+		}else
+			g.setColor(Color.BLACK);
 
 		//x and y axis
 		g.drawLine(10, 400, 790, 400);
@@ -265,10 +339,14 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 
 	private void drawNormalLineAndPathBall(Graphics g) {
-		g.setColor(Color.BLACK);
+		if(nightmode) {
+			g.setColor(Color.WHITE);
+
+		}else
+			g.setColor(Color.BLACK);
 		//path of the ball
 		((Graphics2D) g).draw(new Line2D.Double(400,400,toX,toY));
-		g.setColor(Color.GRAY);
+		g.setColor(Color.LIGHT_GRAY);
 		//line that is perpendicular to the path of the ball before it hits the curve -- using very large number to create 90 degree angle ( it will be less 90 if the number goes down)
 		if(toggle_perl) {
 			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/((-1)*(400 - toX)/Math.abs(400 - toY)) , supperBigNumber));
@@ -312,8 +390,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		}
 		//count number of lines
 		g.setColor(Color.BLUE); 
-		if (toggle_perl)
-			g.drawString("Number of Lines: "+count, 10, 45);
+		g.drawString("Number of Lines: "+count, 10, 45);
 		count = 0;
 
 	}
@@ -324,8 +401,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		//find the coords of the mouse to display on the screen
 		mouseXC = arg0.getX();
 		mouseYC = arg0.getY();
-		//reset everytime the mouse if clicked/dragged
-		reset();
+
 		//if user click mouse change
 		if(DrawAsk.mousechange) {
 			// allow for changing the curve horizontally using mouse
@@ -344,10 +420,11 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				if (DrawAsk.toogle_top)  top =400-h; // if not, change how the endpoints are met
 				h+=5;
 			}
-		}	else {			
+		}	else if ( arg0.getY() <=400){			
 			//if user does not toggle mousechange --> allow doing simulation
 			toX = arg0.getX();
 			toY = arg0.getY();
+
 		}
 		//refresh the frame
 		frame.repaint();
@@ -361,38 +438,93 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-
+		clicked = true;
 		//if user toggle mouse change
 		if(DrawAsk.mousechange) {
 			//click near the blue part to add/remove lines 
-			if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
-				DrawAsk.dis --;
-				if (DrawAsk.dis <1) DrawAsk.dis =1;
-			}
-			else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() > 50 && arg0.getX() < 100)
-				DrawAsk.dis ++;
-
-			else 
-				DrawAsk.toogle_top = !DrawAsk.toogle_top;
-		}
-		else {
+			DrawAsk.toogle_top = !DrawAsk.toogle_top;
 			//reset when mouse is clicked but not on origin and when mousechange is toggle
 			if (!((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5)))
 				reset();
-			if((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5) ) {
+		}
+		else {
+			if(((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5)) || (  ((arg0.getX() > 680) && (arg0.getX()  < 680 +50)) && ((arg0.getY()  > 560) && (arg0.getY()  < 560 +50))    )   ) {
 				ball_go = true;
 				timer.start();
-			}else if(arg0.getButton() == MouseEvent.BUTTON1) {
+			} 
+			else if (((arg0.getX() > 680) && (arg0.getX() < 680 +50)) && ((arg0.getY() > 430) && (arg0.getY() < 430 +50))) {
+				if (DrawAsk.toogle_top) {
+					h +=  10;
+					top = 400 - h;	
+				} else {
+					h +=  10;
+				}
+
+			}else if (((arg0.getX() > 680) && (arg0.getX() < 680 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
+				if (DrawAsk.toogle_top) {
+					h -=  10;
+					top = 400 - h;	
+				} else {
+					h -=  10;
+				}
+
+			}else if (((arg0.getX() > 630) && (arg0.getX() < 630 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
+				w-=10;
+			}else if (((arg0.getX() > 730) && (arg0.getX() < 730 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
+				w+=10;
+			}
+			else if((arg0.getButton() == MouseEvent.BUTTON1) && arg0.getY() <=400) {
 				//if user does not toggle mouse change; if user left-click
 				//get the coordinates of the left-click
 				toX = arg0.getX();
 				toY = arg0.getY();
-			} else {
+			} else if (arg0.getButton() == MouseEvent.BUTTON3){
 				//if user click something else that is not left click --> reset the coords of the line to the curve back to origin
 				toX = 400;
 				toY = 400;
 			}
 
+		}
+
+		if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
+			DrawAsk.dis --;
+			if (DrawAsk.dis <1) DrawAsk.dis =1;
+		}
+		else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() > 50 && arg0.getX() < 100)
+			DrawAsk.dis ++;
+
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 515) <=10) ) {
+			System.out.println("Clicked d makes debug mode = " + toggle_perl);
+			wl.writeLog("Clicked d makes debug mode = "+ toggle_perl);
+			toggle_perl = !toggle_perl;
+		}
+
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 500) <=10) ) {
+			System.out.println("toggle top = "+ DrawAsk.toogle_top);
+			wl.writeLog("toggle top = "+ DrawAsk.toogle_top);
+			DrawAsk.toogle_top = !DrawAsk.toogle_top;
+		}
+
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 560) <=10) ) {
+			System.out.println("Clicked r makes w, h = " + w + ", "+h);
+			wl.writeLog("Clicked r makes w, h = " + w + ", "+h);
+			resetC();
+		}
+
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 585) <=10) ) {
+			hideHelpBox = !hideHelpBox;
+		}
+
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 545) <=10) ) {
+			System.out.println("Clicked n makes nightmode = "+ nightmode);
+			wl.writeLog("Clicked n makes nightmode = "+ nightmode);
+			nightmode = !nightmode;
+			if(nightmode) {
+				frame.getContentPane().setBackground(Color.BLACK);  
+			} else {
+				frame.getContentPane().setBackground(Color.WHITE);  
+
+			}
 		}
 
 		frame.repaint();
@@ -401,10 +533,13 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	//kinda forget what this does
 	@Override
 	public void mousePressed(MouseEvent arg0) {
+		clicked = true;
 		if(DrawAsk.mousechange) {
 			initial = arg0.getX();
 			initialY = arg0.getY();
 		}
+
+
 	}
 	@Override
 	public void mouseEntered(MouseEvent arg0) {}

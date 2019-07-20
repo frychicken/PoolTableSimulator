@@ -1,4 +1,5 @@
 // just graphic stuff
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Toolkit;
 import java.awt.event.*;
@@ -8,12 +9,13 @@ public class DrawAsk extends Component  implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private static JFrame jf;
+	private JFrame frame;
 	private JButton button= new JButton("OK");
 	private JButton welp= new JButton("HELP");
-	private JPanel panel = new JPanel();
+	private JPanel panel;
 	private JLabel lw = new JLabel("W:");
 	private JLabel lh = new JLabel("h:");
-	private JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (vertex) (default: 150).");
+	private JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (default: 150)");
 	private JLabel dbl = new JLabel("Distance between lines (default: 10)");
 	private WriteLogF wl = new WriteLogF();
 	private static JCheckBox checkBox;
@@ -23,11 +25,12 @@ public class DrawAsk extends Component  implements ActionListener {
 	public static double w =400;
 	public static double h =300;
 	public static double dis =10;
-
 	public static boolean mousechange = false;
 	public static boolean toogle_top = false;
+	private DrawTheLuigi dl;
 	//create frame, window with button and checkbox, label.
 	public void daw() {
+		panel = new JPanel();
 		jf = new JFrame("Setup");
 		fw = new JTextField("400", 16);  
 		fh = new JTextField("150", 16); 
@@ -49,6 +52,7 @@ public class DrawAsk extends Component  implements ActionListener {
 			jf.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 		} catch (Exception e) {
 			e.printStackTrace();
+			wl.writeLog(e.toString());
 		}
 		instru.setBounds(2,10,480,10);
 		lw.setBounds(100,30,20,20);
@@ -118,30 +122,31 @@ public class DrawAsk extends Component  implements ActionListener {
 			wl.writeLog("initial w: " +dis);
 		}
 
+
 	}
 	//basically creates window and listening to things that are going on
-	private void doit() {
-
-		JFrame frame = new JFrame("Result");
-		DrawTheLuigi dl = new DrawTheLuigi(frame); 
+	private void doit()  {
+		frame = new JFrame("Result");
+		dl = new DrawTheLuigi(frame); 
 		frame.setResizable(false);
 		try {
 			frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lolol.png")));
 		} catch (Exception e) {
 			e.printStackTrace();
+			wl.writeLog(e.toString());
 		}
 		frame.setSize(800, 800); 
 		frame.setFocusable(true); 
 		frame.setLocationRelativeTo(null);
-
-		frame.setVisible(true); 
 		frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
 
 		frame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent evt) {
+
 				mousechange = false;
 				DrawTheLuigi.reset();
+				frame.dispose();
 				System.out.println("drawing screen closed by user");
 				wl.writeLog("Drawing screen closed by user");
 				daw();
@@ -211,17 +216,16 @@ public class DrawAsk extends Component  implements ActionListener {
 				//s to remove lines
 				if (key2 == 's') {
 					dis +=1;
-					System.out.println("Clicked t]s");
-					wl.writeLog("Clicked s");
+					System.out.println("Clicked s makes dis = " + dis);
+					wl.writeLog("Clicked s makes dis =" + dis);
 					frame.repaint(); 
 				}
 				// a to add more lines
 				if (key2 == 'a') {
 					dis -=1;
 					if (dis < 1) dis = 1;
-
-					System.out.println("Clicked a");
-					wl.writeLog("Clicked a");
+					System.out.println("Clicked a makes dis = " + dis);
+					wl.writeLog("Clicked a makes dis = " + dis);
 					frame.repaint(); 
 				}
 				if (key2 == 'd') {
@@ -230,22 +234,48 @@ public class DrawAsk extends Component  implements ActionListener {
 					wl.writeLog("Clicked d makes debug mode = "+ dl.toggle_perl);
 					frame.repaint(); 
 				}
+				if (key2 == 'r') {
+					dl.w = 400;
+					dl.h=300;
+					System.out.println("Clicked r makes w, h = " + dl.w + ", "+dl.h);
+					wl.writeLog("Clicked r makes w, h = " + dl.w + ", "+dl.h);
+					frame.repaint(); 
+				}
+				if (key2 == 'h') {
+					dl.hideHelpBox = !dl.hideHelpBox;
+					frame.repaint(); 
+				}
 				if (key2 == 'm') {
 					mousechange = !mousechange;
 					System.out.println("Clicked m makes mousechange = "+ mousechange);
 					wl.writeLog("Clicked m makes mousechange = "+ mousechange);
 					frame.repaint(); 
 				}
+				if(key2 == 'n') {
+					dl.nightmode = !dl.nightmode;
+					System.out.println("Clicked n makes nightmode = "+ dl.nightmode);
+					wl.writeLog("Clicked n makes nightmode = "+ dl.nightmode);
+					if(dl.nightmode) {
+						frame.getContentPane().setBackground(Color.BLACK);  
+					} else {
+						frame.getContentPane().setBackground(Color.WHITE);  
+
+					}
+				}
 				//c to close window
 				if (key2 == 'c') {
 					System.out.println("Clicked c");
 					wl.writeLog("Clicked c");
 					frame.setVisible(false);
+					frame.dispose();
 					daw();
 				}
 			}
 		});
+
 		frame.add(dl);
+		frame.setVisible(true); 
+
 	}
 
 

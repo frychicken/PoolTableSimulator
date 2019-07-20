@@ -236,6 +236,17 @@ public class DrawAsk extends Component  implements ActionListener {
 					wl.writeLog("Clicked d makes debug mode = "+ dl.toggle_perl);
 					frame.repaint(); 
 				}
+				if (key2 == 'r') {
+					dl.w = 400;
+					dl.h=300;
+					System.out.println("Clicked r makes w, h = " + dl.w + ", "+dl.h);
+					wl.writeLog("Clicked r makes w, h = " + dl.w + ", "+dl.h);
+					frame.repaint(); 
+				}
+				if (key2 == 'h') {
+					dl.hideHelpBox = !dl.hideHelpBox;
+					frame.repaint(); 
+				}
 				if (key2 == 'm') {
 					mousechange = !mousechange;
 					System.out.println("Clicked m makes mousechange = "+ mousechange);
@@ -263,7 +274,7 @@ public class DrawAsk extends Component  implements ActionListener {
 				}
 			}
 		});
-	
+
 		frame.add(dl);
 		frame.setVisible(true); 
 

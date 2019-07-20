@@ -62,6 +62,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	private int initialY=0;
 
 	private boolean clicked = false;	
+	public boolean hideHelpBox = false;
+
 	public DrawTheLuigi(JFrame frame) {
 		this.frame = frame;
 		addMouseListener(this);
@@ -99,6 +101,16 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {505 -5, 525, 505-5}, 3);
 		g.fillPolygon(new int[] {(630+(630+50))/2 -20 +5, (630+(630+50))/2 +5,(630+(630+50))/2 +5}, new int[] {505, 525, 485}, 3);
 		g.fillPolygon(new int[] {(730+(730+50))/2 -5, (730+(730+50))/2 -5,(730+(730+50))/2 + 20-5}, new int[] {485, 525, 505}, 3);	
+		g.setColor(Color.BLUE);
+		g.fillOval(140,490,20,10);
+		g.setColor(Color.GREEN);
+		g.fillOval(140,505,20,10);
+		g.setColor(Color.ORANGE);
+		g.fillOval(140,535,20,10);
+		g.setColor(Color.RED);
+		g.fillOval(140,550,20,10);
+		g.setColor(Color.PINK);
+		g.fillOval(140,575,20,10);
 	}
 
 	//draw bunch of stuff
@@ -177,7 +189,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		toY=400;
 		//dapathx = 400;
 	}
-
+	public void resetC() {
+		w=400;
+		h=300;
+	}
 	//find the vertex (y)
 	private void getTopCurve() {
 		if (DrawAsk.toogle_top) {
@@ -274,15 +289,17 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	private void drawInformation(Graphics g) {
 		g.setColor(Color.RED);
-
-		g.drawString("Use arrow keys or drag the screen up/down to change its height, width if you choose mousechange", 100,550);
-		g.drawString("type \"a\" or click near the blue text (add/remove) to add more lines, \"s\" to remove lines and \"c\" to close", 20, 570);
-		g.drawString(" type \"g\" or click at the origin to animate the ball", 280,585);
-		g.drawString(" type \"t\" or click here to toggle changing height", 280,600);
-		g.drawString(" type \"d\" or click here to toggle debug mode", 280,615);
-		g.drawString(" type \"m\" to toggle mouse change", 280,630);
-		g.drawString(" type \"n\" or click here to toggle nightmode", 280,645);
-
+		if(!hideHelpBox) {
+			g.drawString("Use arrow keys or drag (mousechange) its height, width", 30,450);
+			g.drawString("type \"a\", \"s\" to add, remove lines and \"c\" to close", 30, 470);
+			g.drawString(" type \"g\" or click at the origin to animate the ball", 30,485);
+			g.drawString(" type \"t\" or click        to toggle changing height", 30,500);
+			g.drawString(" type \"d\" or click        to toggle debug mode", 30,515);
+			g.drawString(" type \"m\" to toggle mouse change", 30,530);
+			g.drawString(" type \"n\" or click        to toggle nightmode", 30,545);
+			g.drawString(" type \"r\" or click        to reset curve", 30,560);
+			g.drawString(" type \"h\" or click        to hide help box", 30,585);
+		}
 		if (toggle_perl) {
 			// equation of the two sides of the triangle
 			g.drawString("coordsx, coordsy appears to be: " + Math.round(coordsx) +", "+Math.round(coordsy), 10,15 );
@@ -386,8 +403,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		//find the coords of the mouse to display on the screen
 		mouseXC = arg0.getX();
 		mouseYC = arg0.getY();
-		//reset everytime the mouse if clicked/dragged
-		reset();
+
 		//if user click mouse change
 		if(DrawAsk.mousechange) {
 			// allow for changing the curve horizontally using mouse
@@ -406,7 +422,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				if (DrawAsk.toogle_top)  top =400-h; // if not, change how the endpoints are met
 				h+=5;
 			}
-		}	else {			
+		}	else if ( arg0.getY() <=400){			
 			//if user does not toggle mousechange --> allow doing simulation
 			toX = arg0.getX();
 			toY = arg0.getY();
@@ -459,15 +475,12 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}else if (((arg0.getX() > 730) && (arg0.getX() < 730 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
 				w+=10;
 			}
-			else if((arg0.getButton() == MouseEvent.BUTTON1) ) {
-
-
+			else if((arg0.getButton() == MouseEvent.BUTTON1) && arg0.getY() <=400) {
 				//if user does not toggle mouse change; if user left-click
 				//get the coordinates of the left-click
 				toX = arg0.getX();
 				toY = arg0.getY();
-
-			} else {
+			} else if (arg0.getButton() == MouseEvent.BUTTON3){
 				//if user click something else that is not left click --> reset the coords of the line to the curve back to origin
 				toX = 400;
 				toY = 400;
@@ -482,19 +495,29 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() > 50 && arg0.getX() < 100)
 			DrawAsk.dis ++;
 
-		if((Math.abs(arg0.getX() -390) <=15) && (Math.abs(arg0.getY() - 612) <=5) ) {
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 515) <=10) ) {
 			System.out.println("Clicked d makes debug mode = " + toggle_perl);
 			wl.writeLog("Clicked d makes debug mode = "+ toggle_perl);
 			toggle_perl = !toggle_perl;
 		}
 
-		if((Math.abs(arg0.getX() -390) <=15) && (Math.abs(arg0.getY() - 600) <=5) ) {
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 500) <=10) ) {
 			System.out.println("toggle top = "+ DrawAsk.toogle_top);
 			wl.writeLog("toggle top = "+ DrawAsk.toogle_top);
 			DrawAsk.toogle_top = !DrawAsk.toogle_top;
 		}
 
-		if((Math.abs(arg0.getX() -390) <=15) && (Math.abs(arg0.getY() - 645) <=5) ) {
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 560) <=10) ) {
+			System.out.println("Clicked r makes w, h = " + w + ", "+h);
+			wl.writeLog("Clicked r makes w, h = " + w + ", "+h);
+			resetC();
+		}
+
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 585) <=10) ) {
+			hideHelpBox = !hideHelpBox;
+		}
+
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 545) <=10) ) {
 			System.out.println("Clicked n makes nightmode = "+ nightmode);
 			wl.writeLog("Clicked n makes nightmode = "+ nightmode);
 			nightmode = !nightmode;
