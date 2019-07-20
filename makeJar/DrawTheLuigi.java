@@ -192,8 +192,14 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		h=300;
 	}
 	public void resetB() {
+		timer.stop();
 		ball_y = 395;
 		ball_x = 395;
+		ball_go = false;
+		ball_kgo = false;
+		stick_cy = 500;
+		the_sub =1;
+		theSub =1;
 	}
 	//find the vertex (y)
 	private void getTopCurve() {
@@ -402,6 +408,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	//down here are listeners for the mouse
 	@Override
 	public void mouseDragged(MouseEvent arg0) {
+		resetB();
 		//find the coords of the mouse to display on the screen
 		mouseXC = arg0.getX();
 		mouseYC = arg0.getY();
@@ -477,7 +484,12 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				w-=10;
 			}else if (((arg0.getX() > 730) && (arg0.getX() < 730 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
 				w+=10;
+			} else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
+				DrawAsk.dis --;
+				if (DrawAsk.dis <1) DrawAsk.dis =1;
 			}
+			else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() > 50 && arg0.getX() < 100)
+				DrawAsk.dis ++;
 			else if((arg0.getButton() == MouseEvent.BUTTON1) && arg0.getY() <=400) {
 				//if user does not toggle mouse change; if user left-click
 				//get the coordinates of the left-click
@@ -491,12 +503,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		}
 
-		if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
-			DrawAsk.dis --;
-			if (DrawAsk.dis <1) DrawAsk.dis =1;
-		}
-		else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() > 50 && arg0.getX() < 100)
-			DrawAsk.dis ++;
+	
 
 		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 515) <=10) ) {
 			System.out.println("Clicked d makes debug mode = " + toggle_perl);
