@@ -191,6 +191,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		w=400;
 		h=300;
 	}
+	public void resetB() {
+		ball_y = 395;
+		ball_x = 395;
+	}
 	//find the vertex (y)
 	private void getTopCurve() {
 		if (DrawAsk.toogle_top) {
@@ -438,6 +442,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	}
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
+		resetB();
 		clicked = true;
 		//if user toggle mouse change
 		if(DrawAsk.mousechange) {
