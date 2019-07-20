@@ -76,7 +76,7 @@ public class CheckUpdate {
 			StringBuilder fromcom = new StringBuilder();
 			try {
 				long tStart = System.currentTimeMillis();
-				URL url = new URL("https://raw.githubusercontent.com/bobdinh139/libBezierFiveLines/master/CurrentVersion.txt");
+				URL url = new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/CurrentVersion.txt");
 				br = new BufferedReader(new InputStreamReader(url.openStream()));
 				String line;
 				while (((line = br.readLine()) != null) &&check) {

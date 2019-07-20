@@ -42,7 +42,7 @@ public class Help extends JPanel {
 
 				browser = new WebView();
 				webEngine = browser.getEngine();
-				webEngine.load("https://raw.githubusercontent.com/bobdinh139/libBezierFiveLines/master/README.MD");
+				webEngine.load("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/README.MD");
 
 				ObservableList<Node> children = root.getChildren();
 				children.add(browser);                     

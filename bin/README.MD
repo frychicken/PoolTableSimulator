@@ -1,10 +1,12 @@
-# libBezierFiveLines -- WIP
+# PoolTableSimulator -- WIP
 
 Generate quadratic curve and pool table simulation
 
 using Bezier Curve and slope line equation
 
 ```About```
+
+_Powered by [libBezierFiveLines](https://github.com/bobdinh139/libBezierFiveLines)_
 
 **The window is not resizable**
 
@@ -46,4 +48,3 @@ Run Compile.bat for windows
 
 Run Compile.sh for mac/linux
 
-```.exe``` file is outdated
