@@ -7,8 +7,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -120,7 +123,15 @@ public class CheckUpdate {
 				System.out.println(todis + "current version: "+ d +"; newest version: "+ c);
 				wl.writeLog(todis + "current version: "+ d +"; newest version: "+ c);
 				toRepaint(todis);
-				popUp("New version is available go to my website to get the lastest version\n new version:" +c+" your version: "+d);
+				if (JOptionPane.showConfirmDialog((Component) null, "New version is available Do you want to update?\n new version:" +c+" your version: "+d,
+						"Confirm", JOptionPane.YES_NO_OPTION) ==0) {
+					todis = "Updating...";
+					System.out.println("Updating");
+					wl.writeLog("Updating");
+					toRepaint(todis);
+					updatedapro();
+					
+				} else
 				closeUpWindow();
 			}
 			else {
@@ -133,5 +144,24 @@ public class CheckUpdate {
 
 		}
 
+	}
+
+	private void updatedapro() {
+		try {
+		URL updaterD = new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/Updater/Updater.jar");
+		ReadableByteChannel ok = Channels.newChannel(updaterD.openStream());
+		FileOutputStream okay = new FileOutputStream(System.getProperty("user.dir")+"Updater.jar");
+		okay.getChannel().transferFrom(ok, 0, Long.MAX_VALUE);
+		okay.close();
+		ok.close();
+		Runtime r= Runtime.getRuntime();
+		r.exec("java -jar Updater.jar");
+		System.exit(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			wl.writeLog(e.toString());
+			
+		}
+		
 	}
 }

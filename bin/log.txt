@@ -1111,3 +1111,3502 @@ initial w: 10.0
 Drawing screen closed by user
 Terminated by user
 Time executed: 25 seconds
+===== Time execute: 2019/07/16 22:07:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/17 20:50:17 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/17 20:50:37 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/17 20:56:07 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 35 seconds
+===== Time execute: 2019/07/17 20:57:06 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 20:58:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/07/17 20:58:28 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 20:59:05 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 20:59:20 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/17 20:59:39 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/17 21:00:15 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 21:00:33 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/17 21:01:35 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/17 21:01:52 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/17 21:02:46 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 21:03:43 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 21:04:10 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 21:04:31 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 21:15:50 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/07/17 21:17:48 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/17 21:20:01 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/17 21:20:19 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/17 21:20:36 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 96 seconds
+===== Time execute: 2019/07/17 21:27:58 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+===== Time execute: 2019/07/17 21:29:13 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 5 seconds
+===== Time execute: 2019/07/17 21:31:47 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 21:33:26 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 21:44:24 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/07/17 21:52:19 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 434.600177709469
+coordsx appears to be: 442.1042304822015
+coordsy appears to be: 439.17649962577957
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/17 21:52:53 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+===== Time execute: 2019/07/17 21:53:24 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 21:53:56 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 17 seconds
+===== Time execute: 2019/07/17 21:54:32 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 5 seconds
+===== Time execute: 2019/07/17 21:54:54 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/17 21:55:13 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 34 seconds
+===== Time execute: 2019/07/17 21:56:10 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/17 21:56:34 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/17 21:57:58 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/17 21:58:42 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/17 21:59:08 ======
+no new updates current version: 5; newest version: 5
+===== Time execute: 2019/07/17 22:01:28 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/17 22:02:29 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 56 seconds
+===== Time execute: 2019/07/17 22:07:32 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/17 22:08:55 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:09:23 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/17 22:12:23 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:12:39 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:12:56 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/17 22:13:44 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/17 22:14:07 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/17 22:14:44 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 28 seconds
+===== Time execute: 2019/07/17 22:15:11 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:15:46 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:16:05 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/17 22:16:26 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:16:41 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:17:00 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:17:22 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:18:26 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:18:43 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/17 22:19:16 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:19:37 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:20:21 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 27 seconds
+===== Time execute: 2019/07/17 22:21:04 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:21:42 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/17 22:23:08 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:23:26 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 22:23:45 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/17 22:24:04 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/17 22:24:21 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/17 22:25:25 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:25:40 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:25:52 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/17 22:26:12 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/17 22:26:58 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/17 22:27:57 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/17 22:28:33 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 22:29:13 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/17 22:29:40 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/17 22:30:03 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 22:30:18 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/17 22:30:33 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/17 22:31:05 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 24 seconds
+===== Time execute: 2019/07/17 22:31:54 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/17 22:32:36 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 28 seconds
+===== Time execute: 2019/07/17 22:33:24 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/17 22:33:55 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/17 22:34:25 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/17 22:34:46 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/07/17 22:35:30 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/17 22:36:08 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/17 22:36:36 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/17 22:36:54 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/17 22:37:15 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 40 seconds
+===== Time execute: 2019/07/19 19:15:27 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/19 19:27:21 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 28 seconds
+===== Time execute: 2019/07/19 19:27:50 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 19:28:47 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 17 seconds
+===== Time execute: 2019/07/19 19:29:06 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/19 19:29:39 ======
+Error checking update: Timed out!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/19 19:29:57 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 19:30:20 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/19 19:31:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/19 19:31:40 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/19 19:32:30 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 19:48:01 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 56 seconds
+===== Time execute: 2019/07/19 19:50:33 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 46 seconds
+===== Time execute: 2019/07/19 19:52:17 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 32 seconds
+===== Time execute: 2019/07/19 19:53:41 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 40 seconds
+===== Time execute: 2019/07/19 19:54:44 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked n makes nightmode = false
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 28 seconds
+===== Time execute: 2019/07/19 19:58:29 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 36 seconds
+===== Time execute: 2019/07/19 20:01:14 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/19 20:01:55 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/19 20:04:22 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 37 seconds
+===== Time execute: 2019/07/19 20:05:25 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 16 seconds
+===== Time execute: 2019/07/19 20:06:53 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/19 20:08:31 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/07/19 20:09:21 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 23 seconds
+===== Time execute: 2019/07/19 20:10:10 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 137 seconds
+===== Time execute: 2019/07/19 20:13:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 53 seconds
+===== Time execute: 2019/07/19 20:14:57 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 114 seconds
+===== Time execute: 2019/07/19 20:16:57 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 147 seconds
+===== Time execute: 2019/07/19 20:19:41 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/19 20:20:22 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 20:20:40 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 54 seconds
+===== Time execute: 2019/07/19 20:21:48 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/19 20:22:07 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/19 20:25:18 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 20:25:41 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 20:26:04 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/19 20:27:02 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/19 20:27:34 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/19 20:28:51 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/19 20:30:34 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 42 seconds
+===== Time execute: 2019/07/19 20:34:47 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/19 20:35:56 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/19 20:44:24 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 20:45:51 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/19 20:46:11 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 29 seconds
+===== Time execute: 2019/07/19 20:46:49 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/19 20:48:19 ======
+Error: Cannot connect to server!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 128 seconds
+===== Time execute: 2019/07/19 20:52:45 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 40 seconds
+===== Time execute: 2019/07/19 20:57:49 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/19 20:58:45 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/19 21:00:12 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/19 21:00:29 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/19 21:00:58 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 463.1922124758091
+coordsx appears to be: 462.8681012089695
+coordsy appears to be: 468.3354916543575
+Clicked g
+Clicked g
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 467.28358973640553
+coordsx appears to be: 464.6635899149817
+coordsy appears to be: 472.36951926885
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 459.9472936354503
+coordsx appears to be: 459.8759129077014
+coordsy appears to be: 465.10267636632193
+Clicked g
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 425.09385631378825
+coordsx appears to be: 433.93530915265
+coordsy appears to be: 429.1762436432075
+Drawing screen closed by user
+Terminated by user
+Time executed: 70 seconds
+===== Time execute: 2019/07/19 21:03:36 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 465.69740028418755
+coordsx appears to be: 463.7220666865542
+coordsy appears to be: 470.807506997554
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/19 21:08:09 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/19 21:14:55 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 464.12622705740375
+coordsx appears to be: 462.77647462821744
+coordsy appears to be: 469.25519599822667
+Drawing screen closed by user
+Terminated by user
+Time executed: 64 seconds
+===== Time execute: 2019/07/19 21:16:54 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 16 seconds
+===== Time execute: 2019/07/19 21:19:29 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/19 21:19:58 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 414.4569419402092
+coordsx appears to be: 424.3602546173304
+coordsy appears to be: 417.4647770127268
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/19 21:22:30 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/19 21:23:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 26 seconds
+===== Time execute: 2019/07/19 21:25:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked t makes toggle top = true
+Clicked t makes toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 61 seconds
+===== Time execute: 2019/07/19 21:27:27 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked up arrow while toggle top = true
+Clicked up arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 27 seconds
+===== Time execute: 2019/07/19 21:31:20 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 41 seconds
+===== Time execute: 2019/07/19 21:35:01 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 21:35:45 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 17 seconds
+===== Time execute: 2019/07/19 21:37:01 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 63 seconds
+===== Time execute: 2019/07/19 21:38:13 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 43 seconds
+===== Time execute: 2019/07/19 21:39:13 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/19 21:41:11 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked right arrow
+Clicked right arrow
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 26 seconds
+===== Time execute: 2019/07/19 21:42:07 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 21:49:26 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 28 seconds
+===== Time execute: 2019/07/19 21:50:40 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked right arrow
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 37 seconds
+===== Time execute: 2019/07/19 21:51:37 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/19 21:54:04 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked d makes debug mode = true
+Clicked s
+Clicked s
+Clicked s
+Clicked s
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 184 seconds
+===== Time execute: 2019/07/19 21:57:24 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Clicked a
+Drawing screen closed by user
+Terminated by user
+Time executed: 33 seconds
+===== Time execute: 2019/07/19 21:59:42 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/07/19 22:01:20 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/19 22:03:00 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked m makes mousechange = true
+Clicked m makes mousechange = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+toggle top = false
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked up arrow while toggle top = true
+Clicked up arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked down arrow while toggle top = true
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked right arrow
+Clicked right arrow
+Drawing screen closed by user
+Terminated by user
+Time executed: 110 seconds
+===== Time execute: 2019/07/19 22:05:26 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 451.28349200186517
+coordsx appears to be: 455.1107656695191
+coordsy appears to be: 456.3406904136443
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 483.4644256671563
+coordsx appears to be: 475.0923218172686
+coordsy appears to be: 488.1638550122932
+Drawing screen closed by user
+Terminated by user
+Time executed: 133 seconds
+===== Time execute: 2019/07/19 22:08:55 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/19 22:09:17 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/19 22:09:56 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/19 22:10:16 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/19 22:12:29 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 23 seconds
+===== Time execute: 2019/07/19 22:13:10 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Equation of the curve: y = 0.0039447731755424065(x-400)^2 + 250.0
+dapathx appears to be: 1161.715032080547
+coordsx appears to be: 614.9446505341407
+coordsy appears to be: 937.6720496764456
+Equation of the curve: y = 0.0039447731755424065(x-400)^2 + 250.0
+dapathx appears to be: 1151.9107694719974
+coordsx appears to be: 615.7805182885861
+coordsy appears to be: 934.4714805362648
+Equation of the curve: y = 0.004155124653739612(x-400)^2 + 250.0
+dapathx appears to be: 1232.3334645331315
+coordsx appears to be: 599.3594822307002
+coordsy appears to be: 948.4576978169121
+Equation of the curve: y = 0.004155124653739612(x-400)^2 + 250.0
+dapathx appears to be: 421.45065391654043
+coordsx appears to be: 427.1675377638777
+coordsy appears to be: 426.2887854461386
+Drawing screen closed by user
+Terminated by user
+Time executed: 28 seconds
+===== Time execute: 2019/07/19 22:16:31 ======
+Error checking update: Timed out!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 396.0
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 396.0
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 396.0
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Clicked s makes dis =2.0
+Clicked s makes dis =3.0
+Clicked s makes dis =4.0
+Equation of the curve: y = 0.003569303985722784(x-400)^2 + 250.0
+dapathx appears to be: 396.0
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked s makes dis =3.0
+Clicked s makes dis =4.0
+Clicked a makes dis = 3.0
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked right arrow
+Clicked a makes dis = 2.0
+Clicked right arrow
+Equation of the curve: y = 0.003569303985722784(x-400)^2 + 250.0
+dapathx appears to be: 396.0
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 100 seconds
+===== Time execute: 2019/07/19 22:18:59 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 456.06612284760524
+coordsx appears to be: 458.01994585850207
+coordsy appears to be: 461.2031387395957
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Equation of the curve: y = 0.003569303985722784(x-400)^2 + 250.0
+dapathx appears to be: 396.0
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 49 seconds
+===== Time execute: 2019/07/19 22:22:21 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Equation of the curve: y = 0.003569303985722784(x-400)^2 + 250.0
+dapathx appears to be: 426.8178951334135
+coordsx appears to be: 438.9325260343942
+coordsy appears to be: 429.8188756180309
+Equation of the curve: y = 0.003569303985722784(x-400)^2 + 250.0
+dapathx appears to be: 409.6854111296688
+coordsx appears to be: 420.10170234403586
+coordsy appears to be: 411.4869812540554
+Equation of the curve: y = 0.003569303985722784(x-400)^2 + 250.0
+dapathx appears to be: 420.348465785994
+coordsx appears to be: 431.82156328125075
+coordsy appears to be: 423.13081619900163
+Clicked a makes dis = 4.0
+Clicked s makes dis =5.0
+Clicked s makes dis =6.0
+Clicked s makes dis =7.0
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Drawing screen closed by user
+Terminated by user
+Time executed: 59 seconds
+===== Time execute: 2019/07/19 22:24:02 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked s makes dis =11.0
+Clicked s makes dis =12.0
+Clicked s makes dis =13.0
+Clicked a makes dis = 12.0
+Clicked a makes dis = 11.0
+Clicked a makes dis = 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Equation of the curve: y = 0.004897959183673469(x-400)^2 + 250.0
+dapathx appears to be: 417.91186763428425
+coordsx appears to be: 419.5412095072595
+coordsy appears to be: 423.3836400468841
+Drawing screen closed by user
+Terminated by user
+Time executed: 80 seconds
+===== Time execute: 2019/07/19 22:28:01 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 413.6906605831382
+coordsx appears to be: 423.3942081948095
+coordsy appears to be: 416.72565736725073
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 413.6906605831382
+coordsx appears to be: 423.3942081948095
+coordsy appears to be: 416.72565736725073
+Drawing screen closed by user
+Terminated by user
+Time executed: 38 seconds
+===== Time execute: 2019/07/19 22:36:05 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = true
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 446.4433811036197
+coordsx appears to be: 451.13491716105284
+coordsy appears to be: 451.4404040049252
+Drawing screen closed by user
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked d makes debug mode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = true
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 456.49560114954494
+coordsx appears to be: 457.9894934558356
+coordsy appears to be: 461.6444807638178
+Drawing screen closed by user
+Terminated by user
+Time executed: 313 seconds
+===== Time execute: 2019/07/20 08:39:17 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 432.4278938710491
+coordsx appears to be: 440.0908530629381
+coordsy appears to be: 436.949715309132
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 55 seconds
+===== Time execute: 2019/07/20 08:42:39 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked down arrow while toggle top = false
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 50 seconds
+===== Time execute: 2019/07/20 08:44:05 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/20 08:44:32 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/20 08:44:59 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/20 08:46:01 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 41 seconds
+===== Time execute: 2019/07/20 08:46:46 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/20 08:47:12 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/20 08:47:35 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/20 08:48:13 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/07/20 08:50:05 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/20 08:51:31 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked right arrow
+Clicked left arrow
+Clicked left arrow
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 38 seconds
+===== Time execute: 2019/07/20 08:54:38 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 20 seconds
+===== Time execute: 2019/07/20 08:56:28 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked s makes dis =4.0
+Clicked s makes dis =5.0
+Clicked s makes dis =6.0
+Clicked s makes dis =7.0
+Clicked s makes dis =8.0
+Clicked s makes dis =9.0
+Clicked s makes dis =10.0
+Clicked s makes dis =11.0
+Clicked a makes dis = 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/20 08:57:34 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/07/20 08:58:42 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 76 seconds
+===== Time execute: 2019/07/20 09:00:11 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 46 seconds
+===== Time execute: 2019/07/20 09:01:43 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 41 seconds
+===== Time execute: 2019/07/20 09:03:38 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/20 09:05:57 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/20 09:06:53 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/20 09:08:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/20 09:08:34 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 33 seconds
+===== Time execute: 2019/07/20 09:10:15 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 65 seconds
+===== Time execute: 2019/07/20 09:11:45 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/20 09:12:26 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 47 seconds
+===== Time execute: 2019/07/20 09:13:34 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 24 seconds
+===== Time execute: 2019/07/20 09:15:03 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 40 seconds
+===== Time execute: 2019/07/20 09:16:02 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/20 09:17:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+toggle top = false
+Clicked right arrow
+Clicked left arrow
+Clicked up arrow while toggle top = true
+Clicked up arrow while toggle top = true
+toggle top = true
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked left arrow
+Clicked right arrow
+toggle top = false
+toggle top = true
+toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 34 seconds
+===== Time execute: 2019/07/20 09:17:58 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+toggle top = false
+toggle top = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/20 09:18:19 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+toggle top = false
+toggle top = true
+toggle top = false
+toggle top = true
+toggle top = false
+toggle top = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+toggle top = false
+toggle top = true
+toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 32 seconds
+===== Time execute: 2019/07/20 09:19:57 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 23 seconds
+===== Time execute: 2019/07/20 09:20:25 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/20 09:21:05 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+toggle top = false
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked r makes w, h = 400.0, 300.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 45 seconds
+===== Time execute: 2019/07/20 09:22:08 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = false
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/20 09:22:30 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = false
+toggle top = false
+Clicked d makes debug mode = true
+toggle top = true
+toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/20 09:23:15 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/07/20 09:23:39 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+toggle top = false
+toggle top = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked r makes w, h = 400.0, 300.0
+Clicked r makes w, h = 400.0, 300.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 24 seconds
+===== Time execute: 2019/07/20 09:25:51 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+toggle top = false
+toggle top = true
+Clicked d makes debug mode = false
+toggle top = false
+Clicked d makes debug mode = true
+toggle top = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 37 seconds
+===== Time execute: 2019/07/20 09:30:04 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/20 09:30:48 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = false
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked r makes w, h = 400.0, 300.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked d makes debug mode = false
+toggle top = false
+Clicked d makes debug mode = true
+toggle top = true
+Clicked d makes debug mode = false
+toggle top = false
+Clicked d makes debug mode = true
+toggle top = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/07/20 09:31:29 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked n makes nightmode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked d makes debug mode = false
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 67 seconds
+===== Time execute: 2019/07/20 09:35:53 ======
+no new updates current version: 5; newest version: 5
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+===== Time execute: 2019/07/20 09:41:20 ======
+no new updates current version: 6; newest version: 5
+Terminated by user
+Time executed: 5 seconds
+===== Time execute: 2019/07/20 09:48:30 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 50 seconds
+===== Time execute: 2019/07/20 09:49:54 ======
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 3 seconds
+===== Time execute: 2019/07/20 10:39:17 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/20 10:57:23 ======
+java.lang.NullPointerException
+no new updates current version: 6; newest version: 6
+java.lang.NullPointerException
+java.lang.NullPointerException
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 450.6613832853026
+coordsx appears to be: 454.09304040669235
+coordsy appears to be: 455.74627507517005
+Drawing screen closed by user
+java.lang.NullPointerException
+Terminated by user
+Time executed: 23 seconds
+===== Time execute: 2019/07/20 10:59:35 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 440.05308912761564
+coordsx appears to be: 446.1475317186239
+coordsy appears to be: 444.8892858442807
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 365.6119063676333
+coordsx appears to be: 357.05771590475035
+coordsy appears to be: 428.54196477729954
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 372.82702794648844
+coordsx appears to be: 363.50402318431236
+coordsy appears to be: 420.72053230634367
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 372.82702794648844
+coordsx appears to be: 363.50402318431236
+coordsy appears to be: 420.72053230634367
+Drawing screen closed by user
+Terminated by user
+Time executed: 32 seconds
+===== Time execute: 2019/07/20 16:53:45 ======
+java.lang.NullPointerException
+no new updates current version: 6; newest version: 6
+java.lang.NullPointerException
+Terminated by user
+Time executed: 42 seconds
+===== Time execute: 2019/07/20 16:54:30 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 413.0911787012894
+coordsx appears to be: 422.48557120992314
+coordsy appears to be: 416.2368352026177
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 404.638437525014
+coordsx appears to be: 413.02289012893857
+coordsy appears to be: 406.89610922262466
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 387.169454894741
+coordsx appears to be: 379.48891631083586
+coordsy appears to be: 405.2273702981332
+Drawing screen closed by user
+Terminated by user
+Time executed: 27 seconds
+===== Time execute: 2019/07/20 16:55:32 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 443.3445270520428
+coordsx appears to be: 449.1491782965321
+coordsy appears to be: 448.223584975624
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 443.3445270520428
+coordsx appears to be: 449.1491782965321
+coordsy appears to be: 448.223584975624
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 427.3803537336551
+coordsx appears to be: 435.9857523441548
+coordsy appears to be: 431.5915887743564
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/20 16:56:18 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 450.26192763368556
+coordsx appears to be: 454.1105132077661
+coordsy appears to be: 455.3200925308763
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 450.26192763368556
+coordsx appears to be: 454.1105132077661
+coordsy appears to be: 455.3200925308763
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 357.2525315594406
+coordsx appears to be: 349.80670030571684
+coordsy appears to be: 437.32079767151765
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 433.05745327631166
+coordsx appears to be: 441.0688220679367
+coordsy appears to be: 437.51341696982377
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 389.9462583346007
+coordsx appears to be: 383.304254585379
+coordsy appears to be: 402.5365388887908
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 477.73825506042084
+coordsx appears to be: 471.2901754111655
+coordsy appears to be: 482.5949670708777
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 477.73825506042084
+coordsx appears to be: 471.2901754111655
+coordsy appears to be: 482.5949670708777
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 358.1898845891377
+coordsx appears to be: 350.8049893243683
+coordsy appears to be: 436.386043076923
+Drawing screen closed by user
+Terminated by user
+Time executed: 36 seconds
+===== Time execute: 2019/07/20 16:57:35 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 52 seconds
+===== Time execute: 2019/07/20 16:59:06 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/20 17:14:45 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 461.6510671000176
+coordsx appears to be: 461.9116842449771
+coordsy appears to be: 466.7993321633178
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/07/20 19:44:06 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/20 19:44:32 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 441.02958852241505
+coordsx appears to be: 447.14772390870326
+coordsy appears to be: 445.86477118872153
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 381.62477737265715
+coordsx appears to be: 372.96118821896687
+coordsy appears to be: 411.34715071250434
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 447.06547764378143
+coordsx appears to be: 452.14348978131056
+coordsy appears to be: 452.02501535020247
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 349.50179912985357
+coordsx appears to be: 343.6718747089295
+coordsy appears to be: 445.37158746632997
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 482.85723663538533
+coordsx appears to be: 474.0196830229662
+coordsy appears to be: 487.5103358183121
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 445.0674106035014
+coordsx appears to be: 450.1425312368767
+coordsy appears to be: 450.0284256051831
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 351.1780414539502
+coordsx appears to be: 344.7067365913696
+coordsy appears to be: 443.6027854097731
+Drawing screen closed by user
+Terminated by user
+Time executed: 122 seconds
+===== Time execute: 2019/07/20 20:09:37 ======
+java.lang.NullPointerException
+no new updates current version: 6; newest version: 6
+java.lang.NullPointerException
+===== Time execute: 2019/07/20 20:10:18 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 410.4812832940442
+coordsx appears to be: 419.4773879956574
+coordsy appears to be: 413.5450916019681
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 413.6906605831382
+coordsx appears to be: 423.3942081948095
+coordsy appears to be: 416.72565736725073
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 375.6573198748069
+coordsx appears to be: 366.5748332099396
+coordsy appears to be: 417.7871586072132
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 386.7724325622348
+coordsx appears to be: 379.17264177282107
+coordsy appears to be: 405.9101242463248
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 383.7554450928127
+coordsx appears to be: 375.26102634021765
+coordsy appears to be: 408.9020739667005
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 380.88262262538694
+coordsx appears to be: 372.0039382754186
+coordsy appears to be: 412.05715073345436
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 428.002393450431
+coordsx appears to be: 436.94752414883
+coordsy appears to be: 432.1351096917102
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 416.7767751902615
+coordsx appears to be: 426.5417283328803
+coordsy appears to be: 420.0811584749008
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 357.56192214404075
+coordsx appears to be: 349.839628173537
+coordsy appears to be: 436.951737980589
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 459.9472936354503
+coordsx appears to be: 459.8759129077014
+coordsy appears to be: 465.10267636632193
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 406.1893467915905
+coordsx appears to be: 415.00723443534173
+coordsy appears to be: 408.5062008415629
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 360.63832938092236
+coordsx appears to be: 352.8670978258216
+coordsy appears to be: 433.8240514044726
+Drawing screen closed by user
+Terminated by user
+Time executed: 73 seconds
+===== Time execute: 2019/07/20 20:11:39 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 446.4433811036197
+coordsx appears to be: 451.13491716105284
+coordsy appears to be: 451.4404040049252
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 362.67814030930805
+coordsx appears to be: 354.0297122438842
+coordsy appears to be: 431.5254290980313
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Clicked n makes nightmode = true
+Clicked n makes nightmode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 53 seconds
+===== Time execute: 2019/07/21 19:53:46 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 9 seconds
+===== Time execute: 2019/07/21 19:54:40 ======
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 4 seconds
