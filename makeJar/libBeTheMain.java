@@ -12,6 +12,9 @@ public class libBeTheMain  {
 		if (Integer.valueOf(args[0]) == 1) {
         	JOptionPane.showMessageDialog((Component)null, "Update completed",
     				"Update", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+        	JOptionPane.showMessageDialog((Component)null, "Update failed",
+    				"Update", JOptionPane.INFORMATION_MESSAGE);
         }
         } catch( ArrayIndexOutOfBoundsException e ) {
         	System.out.println("No signal from updater");
