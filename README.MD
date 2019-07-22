@@ -48,3 +48,9 @@ Run Compile.bat for windows
 
 Run Compile.sh for mac/linux
 
+``` Changing the algorithm ```
+
+Download [Customizer.jar](Customize/Customizer.jar)
+
+[Read this](https://github.com/frychicken/PoolTableSimulator/wiki/Changing-Algorithm)
+
