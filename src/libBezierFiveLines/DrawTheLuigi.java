@@ -111,7 +111,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.setColor(Color.RED);
 		g.fillOval(140,550,20,10);
 		g.setColor(Color.PINK);
-		g.fillOval(140,575,20,10);
+		g.fillOval(140,565,20,10);
 	}
 
 	//draw the whole interface
@@ -350,7 +350,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			g.drawString(" type \"m\" to toggle mouse change", 30,530);
 			g.drawString(" type \"n\" or click        to toggle nightmode", 30,545);
 			g.drawString(" type \"r\" or click        to reset curve", 30,560);
-			g.drawString(" type \"h\" or click        to hide help box", 30,585);
+			g.drawString(" type \"h\" or click        to hide help box", 30,575);
 		}
 		if (toggle_perl) {
 			// equation of the two sides of the triangle
@@ -567,7 +567,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			resetC();
 		}
 
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 585) <=10) ) {
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 575) <=10) ) {
 			hideHelpBox = !hideHelpBox;
 		}
 

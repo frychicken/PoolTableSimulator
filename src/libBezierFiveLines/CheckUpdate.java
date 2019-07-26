@@ -79,8 +79,12 @@ public class CheckUpdate {
 		frame.setVisible(true);  
 
 		while (stillqm) {
+			try {
 			checkhash();
-
+			} catch(Exception e) {
+				e.printStackTrace();
+				wl.writeLog(e.toString());
+			}
 			toRepaint(todis);
 			int cheee = drc.getVersion(); 
 			BufferedReader br = null;

@@ -78,7 +78,12 @@ public class CheckUpdate {
 		frame.setVisible(true);  
 
 		while (stillqm) {
+			try {
 			checkhash();
+			} catch(Exception e) {
+				e.printStackTrace();
+				wl.writeLog(e.toString());
+			}
 
 			toRepaint(todis);
 			int cheee = drc.getVersion(); 
@@ -155,8 +160,8 @@ public class CheckUpdate {
 
 	private void checkhash() throws NoSuchAlgorithmException, IOException {
 		File file[] = new File[2];
-		file[0] = new File(getClass().getResource("DrawTheLuigi.class").toString().substring(getClass().getResource("DrawTheLuigi.class").toString().indexOf(":")+1));
-		file[1] = new File(getClass().getResource("DrawTheLuigi$1.class").toString().substring(getClass().getResource("DrawTheLuigi$1.class").toString().indexOf(":")+1));
+		file[0] = new File(getClass().getResource("DrawTheLuigi.class").toString().substring(getClass().getResource("DrawTheLuigi.class").toString().lastIndexOf(":")+1).replaceAll("!",""));
+		file[1] = new File(getClass().getResource("DrawTheLuigi$1.class").toString().substring(getClass().getResource("DrawTheLuigi$1.class").toString().lastIndexOf(":")+1).replaceAll("!",""));
 
 		BufferedReader br = null;
 		StringBuilder fromcom[] = new StringBuilder[2];
