@@ -1,3 +1,5 @@
+// main but is it?
+
 import java.awt.Component;
 
 import javax.swing.JOptionPane;
@@ -27,7 +29,7 @@ public class libBeTheMain  {
 		} catch (Exception e) {
 			e.printStackTrace();
 			ccu.popUp("Error occurs while loading update");
-			return;
+			ccu.closeUpWindow();
 		}
 		DrawAsk da = new DrawAsk(); 
 		da.daw();

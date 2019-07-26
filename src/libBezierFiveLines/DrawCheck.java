@@ -67,6 +67,6 @@ public class DrawCheck extends Component {
 		f.drawString(display, 20,120);
 	}
 	public int getVersion() {
-		return 6; 
+		return 7; 
 	}
 }

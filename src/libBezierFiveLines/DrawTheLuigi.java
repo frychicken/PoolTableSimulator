@@ -16,6 +16,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	public boolean toggle_perl = false;
 	private static double coordsx = 400;
 	private static double coordsy = 400;
+	private double coorx[] = new double[5];
+	private double coory[] = new double[5];
 	private double dapathx = 400;
 	public boolean nightmode = false;
 
@@ -146,7 +148,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			return  Color.GRAY;
 		}
 	}
-	
+
 	// calculate the slope of the ball and the cue --> find the path of the ball and the cue
 	private void ballAndStickLogic() {
 		//if the ball moves
@@ -255,25 +257,55 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	// calculate the reflection line by finding the length between perpend line and projected line
 	private void getPathSlope() {
 		//calculating the intersection of the path and 400 (y)
-		dapathx = (400 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
-
+		dapathx = (395 - toY)/( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX)) + toX -4;
+		//slope line perpendicular to the path
+		double hps = (supperBigNumber-toY)/(supperBigNumber/((-1)*(400 - toX)/Math.abs(400 - toY)) - toX);
 		// the slope of the normal line to the tangent line to the curve
 		double fpt = ( (supperBigNumber-toY)/((supperBigNumber/find_perpend_tan(toX))-toX));
 		// the slope of the tangent line
 		double fd = ( (supperBigNumber-toY)/((supperBigNumber/find_derivative(toX))-toX));
-        // find the x where they intersect
+		// find the x where they intersect
 		double testx = (fpt*(toX-4) - fd*(395) + 395 - toY)/(fpt - fd);
-        // find the y where they intersect
+		// find the y where they intersect
 		double testy = fd*(testx - 395) + 395;
+		double lengthd = 250;
 		// calculating the length 400,400 to the normal line
 		double length = Math.sqrt( Math.pow( (395 - testx), 2) + Math.pow( (395 - testy), 2));
 		// calculate the x and y of the predicted path of the ball knowing the slope, length between points and the starting coords
 		// since it gives two x's and y's
 		if (dapathx >= 400) {
+			// perpendicular to the curve
+			coorx[0] = toX - lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
+			coory[0] = toY - fpt*lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
+
+			//tangent line
+			coorx[1] = toX + lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coory[1] = toY + fd*lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coorx[2] = toX - lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coory[2] = toY - fd*lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			// perpendicular to the path of the ball
+			coorx[3] = toX - lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+			coory[3] = toY - hps*lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+			coorx[4] = toX + lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+			coory[4] = toY + hps*lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+			//reflection path
 			coordsx = testx + length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
 			coordsy = testy + fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
-		}
+		} 
 		else {
+			coorx[0] = toX + lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
+			coory[0] = toY + fpt*lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
+
+			coorx[1] = toX - lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coory[1] = toY - fd*lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coorx[2] = toX + lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+			coory[2] = toY + fd*lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
+
+			coorx[3] = toX + lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+			coory[3] = toY + hps*lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+			coorx[4] = toX - lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+			coory[4] = toY - hps*lengthd*Math.sqrt(1/(1+ Math.pow(hps, 2)));
+
 			coordsx = testx - length*Math.sqrt(1/(1+ Math.pow(fd, 2)));
 			coordsy = testy - fd*length*Math.sqrt(1/(1+ Math.pow(fd, 2)));	
 		}
@@ -292,12 +324,13 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		if ((suppose_y >= (toY-2)) && (suppose_y <= (toY+2)) && toggle_perl) {		
 			// perpendicular line
 			g.setColor(Color.blue);
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/find_perpend_tan(toX), supperBigNumber ));
+
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, coorx[0], coory[0] ));
 			//draw from x,y to infi
 			g.setColor(Color.RED);
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/find_derivative(toX), supperBigNumber ));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, coorx[1], coory[1] ));
 			//draw from x,y to -infi
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -supperBigNumber/find_derivative(toX), -supperBigNumber ));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, coorx[2], coory[2] ));
 		}
 	}
 	//graphics stuff
@@ -365,8 +398,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.setColor(Color.LIGHT_GRAY);
 		//line that is perpendicular to the path of the ball before it hits the curve -- using very large number to create 90 degree angle ( it will be less 90 if the number goes down)
 		if(toggle_perl) {
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, supperBigNumber/((-1)*(400 - toX)/Math.abs(400 - toY)) , supperBigNumber));
-			((Graphics2D) g).draw(new Line2D.Double(toX,toY, -supperBigNumber/((-1)*(400 - toX)/Math.abs(400 - toY)) , -supperBigNumber));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, coorx[3]  , coory[3] ));
+			((Graphics2D) g).draw(new Line2D.Double(toX,toY, coorx[4] , coory[4]));
 		}
 	}
 
@@ -509,7 +542,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		}
 
-	
+
 
 		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 515) <=10) ) {
 			System.out.println("Clicked d makes debug mode = " + toggle_perl);
