@@ -165,8 +165,7 @@ public class CheckUpdate {
 
 		BufferedReader br = null;
 		StringBuilder fromcom[] = new StringBuilder[2];
-		fromcom[0] = new StringBuilder();
-		fromcom[1] = new StringBuilder();
+	    for(int i=0; i<fromcom.length;fromcom[i++] = new StringBuilder());
 		URL url[] = new URL[2];
 
 		url[0]= new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/hash/DrawTheLuigi.txt");
