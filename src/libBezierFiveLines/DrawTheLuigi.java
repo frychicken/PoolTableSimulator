@@ -273,6 +273,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		double length = Math.sqrt( Math.pow( (395 - testx), 2) + Math.pow( (395 - testy), 2));
 		// calculate the x and y of the predicted path of the ball knowing the slope, length between points and the starting coords
 		// since it gives two x's and y's
+
+
 		if (dapathx >= 400) {
 			// perpendicular to the curve
 			coorx[0] = toX - lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
@@ -295,7 +297,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		else {
 			coorx[0] = toX + lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
 			coory[0] = toY + fpt*lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
-
+			if ((400 - dapathx <= 6.5) && toX >= 400) {
+				coorx[0] = toX- lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
+				coory[0] = toY - fpt*lengthd*Math.sqrt(1/(1+ Math.pow(fpt, 2)));
+			}
 			coorx[1] = toX - lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
 			coory[1] = toY - fd*lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));
 			coorx[2] = toX + lengthd*Math.sqrt(1/(1+ Math.pow(fd, 2)));

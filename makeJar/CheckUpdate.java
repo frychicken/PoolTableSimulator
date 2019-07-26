@@ -164,13 +164,23 @@ public class CheckUpdate {
 		fromcom[1] = new StringBuilder();
 		URL url[] = new URL[2];
 
-		url[0]= new URL("https://null0verflow.xyz/hash/DrawTheLuigi.txt");
-		url[1]= new URL("https://null0verflow.xyz/hash/DrawTheLuigi2.txt");
+		url[0]= new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/hash/DrawTheLuigi.txt");
+		url[1]= new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/hash/DrawTheLuigi2.txt");
 		for (int i =0; i< url.length; i++) {
-
+			long tStart = System.currentTimeMillis();
 			br = new BufferedReader(new InputStreamReader(url[i].openStream()));
 			String line;
 			while ((line = br.readLine()) != null) {	
+				long tEnd = System.currentTimeMillis();
+				if ((tEnd - tStart)/1000.0 >= (10)) {
+					todis = "Error checking update: Timed out!";
+					System.out.println(todis);
+					wl.writeLog(todis);
+					popUp(todis);
+					toRepaint(todis);
+					closeUpWindow();
+					return;
+				}
 				fromcom[i].append(line);
 			}
 
