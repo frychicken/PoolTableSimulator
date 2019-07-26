@@ -7,10 +7,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 //import java.net.MalformedURLException;
 import java.net.URL;
@@ -159,9 +158,10 @@ public class CheckUpdate {
 	}
 
 	private void checkhash() throws NoSuchAlgorithmException, IOException {
-		File file[] = new File[2];
-		file[0] = new File(getClass().getResource("DrawTheLuigi.class").toString().substring(getClass().getResource("DrawTheLuigi.class").toString().indexOf(":")+1));
-		file[1] = new File(getClass().getResource("DrawTheLuigi$1.class").toString().substring(getClass().getResource("DrawTheLuigi$1.class").toString().indexOf(":")+1));
+		
+		InputStream in[] = new InputStream[2];
+		in[0]=getClass().getResourceAsStream("DrawTheLuigi.class");
+		in[1]=getClass().getResourceAsStream("DrawAsk.class");
 
 		BufferedReader br = null;
 		StringBuilder fromcom[] = new StringBuilder[2];
@@ -170,7 +170,7 @@ public class CheckUpdate {
 		URL url[] = new URL[2];
 
 		url[0]= new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/hash/DrawTheLuigi.txt");
-		url[1]= new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/hash/DrawTheLuigi2.txt");
+		url[1]= new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/hash/DrawAsk.txt");
 		for (int i =0; i< url.length; i++) {
 			long tStart = System.currentTimeMillis();
 			br = new BufferedReader(new InputStreamReader(url[i].openStream()));
@@ -191,15 +191,15 @@ public class CheckUpdate {
 
 		}
 		MessageDigest shaDigest = MessageDigest.getInstance("SHA-1");
-		for (int i=0; i< file.length; i++) {
-			if(!getFileChecksum(shaDigest, file[i]).equals(fromcom[i].toString())) {
-				todis = "mismatched hash at "+ file[i] +"\n expected: "+fromcom[i]+  "\n reality:" + getFileChecksum(shaDigest, file[i]);
+		for (int i=0; i< in.length; i++) {
+			if(!getFileChecksum(shaDigest, in[i]).equals(fromcom[i].toString())) {
+				todis = "mismatched hash at "+ in[i] +"\n expected: "+fromcom[i]+  "\n reality:" + getFileChecksum(shaDigest, in[i]);
 				System.out.println(todis);
 				wl.writeLog(todis);
 				popUp(todis);
 			}
 			else {
-				todis = "hash matched "+ getFileChecksum(shaDigest, file[i]);
+				todis = "hash matched "+ getFileChecksum(shaDigest, in[i]);
 				System.out.println(todis);
 				wl.writeLog(todis);
 			}
@@ -207,15 +207,14 @@ public class CheckUpdate {
 		}
 	}
 
-	private String getFileChecksum(MessageDigest digest, File file) throws IOException
+	private String getFileChecksum(MessageDigest digest, InputStream fis) throws IOException
 	{
-		FileInputStream fis = new FileInputStream(file);
 		byte[] byteArray = new byte[1024];
 		int bytesCount = 0;
 		while ((bytesCount = fis.read(byteArray)) != -1) {
 			digest.update(byteArray, 0, bytesCount);
 		};
-		fis.close();
+		
 		byte[] bytes = digest.digest();
 		StringBuilder sb = new StringBuilder();
 		for(int i=0; i< bytes.length ;i++)
