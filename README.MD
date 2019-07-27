@@ -45,6 +45,8 @@ type "r" / click the red-oval button to reset curve
 
 type "h" / click the pink-oval button to hide help box
 
+type "p" / click the yellow-oval button to toggle changing projected path using arrow keys (both on-screen and physical)
+
 ## TODO
 
 Actually calculate the velocity of the ball (green) 

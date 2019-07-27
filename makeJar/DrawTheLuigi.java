@@ -18,6 +18,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	private double coory[] = new double[5];
 	private double dapathx = 400;
 	public boolean nightmode = false;
+	public boolean toggle_pro = false;
 
 	private final int supperBigNumber = 500000;
 	private boolean check = true;
@@ -100,6 +101,8 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {505 -5, 525, 505-5}, 3);
 		g.fillPolygon(new int[] {(630+(630+50))/2 -20 +5, (630+(630+50))/2 +5,(630+(630+50))/2 +5}, new int[] {505, 525, 485}, 3);
 		g.fillPolygon(new int[] {(730+(730+50))/2 -5, (730+(730+50))/2 -5,(730+(730+50))/2 + 20-5}, new int[] {485, 525, 505}, 3);	
+		g.setColor(Color.YELLOW);
+		g.fillOval(140,445,20,10);
 		g.setColor(Color.BLUE);
 		g.fillOval(140,490,20,10);
 		g.setColor(Color.GREEN);
@@ -109,7 +112,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		g.setColor(Color.RED);
 		g.fillOval(140,550,20,10);
 		g.setColor(Color.PINK);
-		g.fillOval(140,575,20,10);
+		g.fillOval(140,565,20,10);
 	}
 
 	//draw the whole interface
@@ -340,15 +343,16 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	private void drawInformation(Graphics g) {
 		g.setColor(Color.RED);
 		if(!hideHelpBox) {
-			g.drawString("Use arrow keys or drag (mousechange) its height, width", 30,450);
-			g.drawString("type \"a\", \"s\" to add, remove lines and \"c\" to close", 30, 470);
+			g.drawString("Use arrow keys or drag (mousechange) its height, width", 30,440);
+			g.drawString(" type \"p\" or click        to toggle changing projected path", 30, 455);
+			g.drawString(" type \"a\", \"s\" to add, remove lines and \"c\" to close", 30, 470);
 			g.drawString(" type \"g\" or click at the origin to animate the ball", 30,485);
 			g.drawString(" type \"t\" or click        to toggle changing height", 30,500);
 			g.drawString(" type \"d\" or click        to toggle debug mode", 30,515);
 			g.drawString(" type \"m\" to toggle mouse change", 30,530);
 			g.drawString(" type \"n\" or click        to toggle nightmode", 30,545);
 			g.drawString(" type \"r\" or click        to reset curve", 30,560);
-			g.drawString(" type \"h\" or click        to hide help box", 30,585);
+			g.drawString(" type \"h\" or click        to hide help box", 30,575);
 		}
 		if (toggle_perl) {
 			// equation of the two sides of the triangle
@@ -510,7 +514,9 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				if (DrawAsk.toogle_top) {
 					h +=  10;
 					top = 400 - h;	
-				} else {
+				} else if(toggle_pro)
+					toY-=7;
+				else{
 					h +=  10;
 				}
 
@@ -518,14 +524,22 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				if (DrawAsk.toogle_top) {
 					h -=  10;
 					top = 400 - h;	
-				} else {
+				} else if(toggle_pro)
+					toY+=7;
+				else{
 					h -=  10;
 				}
 
 			}else if (((arg0.getX() > 630) && (arg0.getX() < 630 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
-				w-=10;
+				if(toggle_pro)
+					toX-=7;
+				else
+					w-=10;
 			}else if (((arg0.getX() > 730) && (arg0.getX() < 730 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
-				w+=10;
+				if(toggle_pro)
+					toX+=7;
+				else
+					w+=10;
 			} else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
 				DrawAsk.dis --;
 				if (DrawAsk.dis <1) DrawAsk.dis =1;
@@ -545,18 +559,22 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		}
 
-
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 455) <=10) ) {
+			toggle_pro = !toggle_pro;
+			System.out.println("Clicked p makes toggle_pro = " + toggle_pro);
+			wl.writeLog("Clicked p makes toggle_pro = "+ toggle_pro);
+		}
 
 		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 515) <=10) ) {
+			toggle_perl = !toggle_perl;
 			System.out.println("Clicked d makes debug mode = " + toggle_perl);
 			wl.writeLog("Clicked d makes debug mode = "+ toggle_perl);
-			toggle_perl = !toggle_perl;
 		}
 
 		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 500) <=10) ) {
+			DrawAsk.toogle_top = !DrawAsk.toogle_top;
 			System.out.println("toggle top = "+ DrawAsk.toogle_top);
 			wl.writeLog("toggle top = "+ DrawAsk.toogle_top);
-			DrawAsk.toogle_top = !DrawAsk.toogle_top;
 		}
 
 		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 560) <=10) ) {
@@ -565,14 +583,14 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			resetC();
 		}
 
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 585) <=10) ) {
+		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 575) <=10) ) {
 			hideHelpBox = !hideHelpBox;
 		}
 
 		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 545) <=10) ) {
+			nightmode = !nightmode;
 			System.out.println("Clicked n makes nightmode = "+ nightmode);
 			wl.writeLog("Clicked n makes nightmode = "+ nightmode);
-			nightmode = !nightmode;
 			if(nightmode) {
 				frame.getContentPane().setBackground(Color.BLACK);  
 			} else {

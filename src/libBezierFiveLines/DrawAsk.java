@@ -169,24 +169,32 @@ public class DrawAsk extends Component  implements ActionListener {
 				if (key == KeyEvent.VK_LEFT) {
 					System.out.println("Clicked left arrow");
 					wl.writeLog("Clicked left arrow");
-					dl.w -=  10;
+					if(dl.toggle_pro)
+						DrawTheLuigi.toX-=7;
+					else
+						dl.w -=  10;
 					frame.repaint(); 
 				}
 				else if (key == KeyEvent.VK_RIGHT) {
 					System.out.println("Clicked right arrow");
 					wl.writeLog("Clicked right arrow");
-					dl.w +=  10;
+					if(dl.toggle_pro)
+						DrawTheLuigi.toX+=7;
+					else
+						dl.w +=  10;
 					frame.repaint(); 
 				}
 				else if (key == KeyEvent.VK_UP) {
 					if (toogle_top) {
 						dl.h +=  10;
 						dl.top = 400 - dl.h;	
-					} else {
+					} else 	if(dl.toggle_pro)
+						DrawTheLuigi.toY-=7;
+					else {
 						dl.h +=  10;
 					}
-					System.out.println("Clicked up arrow while toggle top = "+ toogle_top);
-					wl.writeLog("Clicked up arrow while toggle top = "+ toogle_top);
+					System.out.println("Clicked up arrow while toggle top = "+ toogle_top + " toggle pro="+dl.toggle_pro);
+					wl.writeLog("Clicked up arrow while toggle top = "+ toogle_top+ " toggle pro="+dl.toggle_pro);
 					frame.repaint(); 
 
 				}
@@ -194,7 +202,9 @@ public class DrawAsk extends Component  implements ActionListener {
 					if (toogle_top) {
 						dl.h -=  10;
 						dl.top = 400 - dl.h;	
-					} else {
+					} else 	if(dl.toggle_pro)
+						DrawTheLuigi.toY+=7;
+					else{
 						dl.h -=  10;
 					}
 					System.out.println("Clicked down arrow while toggle top = "+ toogle_top);
@@ -207,6 +217,11 @@ public class DrawAsk extends Component  implements ActionListener {
 					wl.writeLog("Clicked g");
 					DrawTheLuigi.ball_go = true;
 					DrawTheLuigi.timer.start();
+				}
+				if (key2 == 'p') {
+					dl.toggle_pro = !dl.toggle_pro;
+					System.out.println("Clicked p makes toggle_pro = "+dl.toggle_pro);
+					wl.writeLog("Clicked p makes toggle_pro = "+dl.toggle_pro);
 				}
 				//t to toggle changing top
 				if (key2 == 't') {

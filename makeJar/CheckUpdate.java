@@ -6,12 +6,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 //import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.channels.Channels;
@@ -85,7 +83,6 @@ public class CheckUpdate {
 				e.printStackTrace();
 				wl.writeLog(e.toString());
 			}
-
 			toRepaint(todis);
 			int cheee = drc.getVersion(); 
 			BufferedReader br = null;
@@ -160,15 +157,14 @@ public class CheckUpdate {
 	}
 
 	private void checkhash() throws NoSuchAlgorithmException, IOException {
-	
+		
 		InputStream in[] = new InputStream[2];
 		in[0]=getClass().getResourceAsStream("DrawTheLuigi.class");
 		in[1]=getClass().getResourceAsStream("DrawAsk.class");
 
 		BufferedReader br = null;
 		StringBuilder fromcom[] = new StringBuilder[2];
-		fromcom[0] = new StringBuilder();
-		fromcom[1] = new StringBuilder();
+	    for(int i=0; i<fromcom.length;fromcom[i++] = new StringBuilder());
 		URL url[] = new URL[2];
 
 		url[0]= new URL("https://raw.githubusercontent.com/frychicken/PoolTableSimulator/master/hash/DrawTheLuigi.txt");
