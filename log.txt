@@ -4610,3 +4610,1441 @@ Time executed: 9 seconds
 no new updates current version: 6; newest version: 6
 Terminated by user
 Time executed: 4 seconds
+===== Time execute: 2019/07/21 20:43:30 ======
+Error checking update: Timed out!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/25 19:23:16 ======
+java.lang.NullPointerException
+no new updates current version: 6; newest version: 6
+java.lang.NullPointerException
+java.lang.NullPointerException
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+java.lang.NullPointerException
+===== Time execute: 2019/07/25 19:25:58 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 70 seconds
+===== Time execute: 2019/07/25 19:29:15 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/25 19:29:46 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/07/25 19:32:12 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/25 19:33:03 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 35 seconds
+===== Time execute: 2019/07/25 19:34:17 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 20 seconds
+===== Time execute: 2019/07/25 19:35:03 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/07/25 19:35:57 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 66 seconds
+===== Time execute: 2019/07/25 19:37:51 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 63 seconds
+===== Time execute: 2019/07/25 19:39:29 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 46 seconds
+===== Time execute: 2019/07/25 19:41:04 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 28 seconds
+===== Time execute: 2019/07/25 19:43:10 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 35 seconds
+===== Time execute: 2019/07/25 19:44:54 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked n makes nightmode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 44 seconds
+===== Time execute: 2019/07/25 19:49:16 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/25 19:49:46 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 20 seconds
+===== Time execute: 2019/07/25 19:51:26 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Clicked n makes nightmode = true
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 70 seconds
+===== Time execute: 2019/07/25 19:56:03 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 51 seconds
+===== Time execute: 2019/07/25 19:58:31 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/25 19:59:15 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 47 seconds
+===== Time execute: 2019/07/25 20:00:14 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/25 20:00:39 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/25 20:01:07 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 30 seconds
+===== Time execute: 2019/07/25 20:01:41 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 27 seconds
+===== Time execute: 2019/07/25 20:02:15 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked d makes debug mode = false
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 50 seconds
+===== Time execute: 2019/07/25 20:03:18 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 37 seconds
+===== Time execute: 2019/07/25 20:03:55 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 50 seconds
+===== Time execute: 2019/07/25 20:05:10 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/25 20:06:12 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 43 seconds
+===== Time execute: 2019/07/25 20:08:01 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 394.34978178783894
+coordsx appears to be: 393.82241169910003
+coordsy appears to be: 394.6203144864443
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 394.0256388707131
+coordsx appears to be: 393.1078649711609
+coordsy appears to be: 394.6737229417156
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 398.0120240601263
+coordsx appears to be: 400.7528734419933
+coordsy appears to be: 393.7495824549886
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 396.6232741025333
+coordsx appears to be: 397.77524668508966
+coordsy appears to be: 393.85613160635603
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 384.91816633681594
+coordsx appears to be: 380.65722702152516
+coordsy appears to be: 404.1347469481169
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 394.82892680554914
+coordsx appears to be: 394.6601896479641
+coordsy appears to be: 394.9719777067336
+Drawing screen closed by user
+Terminated by user
+Time executed: 54 seconds
+===== Time execute: 2019/07/25 20:10:38 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 27 seconds
+===== Time execute: 2019/07/25 20:11:52 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 15 seconds
+===== Time execute: 2019/07/25 20:12:42 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/25 20:13:09 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 24 seconds
+===== Time execute: 2019/07/25 20:13:57 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/07/25 20:14:27 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/07/25 20:15:40 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/25 20:16:10 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 23 seconds
+===== Time execute: 2019/07/25 20:17:08 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/25 20:17:50 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 24 seconds
+===== Time execute: 2019/07/25 20:18:22 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 113 seconds
+===== Time execute: 2019/07/25 20:22:16 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 21 seconds
+===== Time execute: 2019/07/25 20:22:43 ======
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 50 seconds
+===== Time execute: 2019/07/25 20:31:22 ======
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 4 seconds
+===== Time execute: 2019/07/25 20:47:39 ======
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 17 seconds
+===== Time execute: 2019/07/25 20:49:16 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: 242421421442424
+ reality:f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi$1.class
+ expected: ujj
+ reality:19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/25 20:50:20 ======
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 4 seconds
+===== Time execute: 2019/07/25 20:51:23 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/25 20:51:36 ======
+hash matched 
+f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 
+19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 11 seconds
+===== Time execute: 2019/07/25 20:51:57 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 4 seconds
+===== Time execute: 2019/07/25 20:52:46 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/07/25 20:55:23 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 76 seconds
+===== Time execute: 2019/07/25 21:00:04 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Terminated by user
+Time executed: 8 seconds
+===== Time execute: 2019/07/25 21:00:37 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 6; newest version: 6
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/25 21:01:24 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 6
+Terminated by user
+Time executed: 5 seconds
+===== Time execute: 2019/07/25 21:08:05 ======
+java.lang.NullPointerException
+===== Time execute: 2019/07/25 21:09:05 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/25 21:13:48 ======
+java.lang.NullPointerException
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+java.lang.NullPointerException
+Terminated by user
+Time executed: 6 seconds
+===== Time execute: 2019/07/25 21:16:11 ======
+hash matched f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+===== Time execute: 2019/07/25 21:17:34 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+ reality:7b9fa8da9eb66eca1c27581b61719c8f9be12802
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked d makes debug mode = true
+Drawing screen closed by user
+Terminated by user
+Time executed: 39 seconds
+===== Time execute: 2019/07/25 21:19:05 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+ reality:83674244bbd1eebd041953dc2e11a725cb13e4c1
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 394.6732453946236
+coordsx appears to be: 394.40822574120523
+coordsy appears to be: 394.8091967595292
+Drawing screen closed by user
+Terminated by user
+Time executed: 129 seconds
+===== Time execute: 2019/07/25 21:22:00 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+ reality:903e91c8cd25ba4b7b8e1164a9d0638437dcc6bf
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 393.97746659809866
+coordsx appears to be: 393.04767214588765
+coordsy appears to be: 394.5755043379146
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 397.572062319409
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 395.3783129926341
+coordsx appears to be: 395.0
+coordsy appears to be: 395.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 69 seconds
+===== Time execute: 2019/07/25 21:24:20 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+ reality:2e631c43b34f219b74faa5adea16f493db1b8d56
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+Error checking update: Timed out!
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked d makes debug mode = true
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked right arrow
+Clicked a makes dis = 9.0
+Clicked a makes dis = 8.0
+Clicked a makes dis = 7.0
+Clicked a makes dis = 6.0
+Clicked a makes dis = 5.0
+Clicked a makes dis = 4.0
+Clicked a makes dis = 3.0
+Clicked a makes dis = 2.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked a makes dis = 1.0
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked left arrow
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked up arrow while toggle top = false
+Clicked down arrow while toggle top = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 96 seconds
+===== Time execute: 2019/07/25 21:26:05 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: f37b1ff1202f953566f95c461dcaf9e510fd8ae3
+ reality:2e631c43b34f219b74faa5adea16f493db1b8d56
+hash matched 19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/25 21:30:52 ======
+Terminated by user
+Time executed: 4 seconds
+===== Time execute: 2019/07/25 21:37:10 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:2e631c43b34f219b74faa5adea16f493db1b8d56
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi$1.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked g
+Equation of the curve: y = 0.00375(x-400)^2 + 250.0
+dapathx appears to be: 419.73601183090926
+coordsx appears to be: 425.51105401161055
+coordsy appears to be: 419.0325378802198
+Clicked r makes w, h = 400.0, 300.0
+Clicked n makes nightmode = false
+Clicked d makes debug mode = false
+Drawing screen closed by user
+Terminated by user
+Time executed: 59 seconds
+===== Time execute: 2019/07/25 21:40:41 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:2e631c43b34f219b74faa5adea16f493db1b8d56
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi$1.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/07/25 21:41:52 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:52b449695ee9c17da85bb68ce47ca90ecc004a3c
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi$1.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/07/25 21:43:10 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:3a720e2e9e6a07ad5f5751c44e650a1260d9123b
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi$1.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Clicked r makes w, h = 400.0, 300.0
+Clicked r makes w, h = 400.0, 300.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 12 seconds
+===== Time execute: 2019/07/25 21:47:47 ======
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:3a720e2e9e6a07ad5f5751c44e650a1260d9123b
+mismatched hash at /Users/null0verflow/eclipse-workspace/libBezierFiveLines/bin/libBezierFiveLines/DrawTheLuigi$1.class
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:19c82455a47a6ea20707b4dfb895eddc71cf3501
+no new updates current version: 7; newest version: 7
+Terminated by user
+Time executed: 7 seconds
+===== Time execute: 2019/07/26 16:50:03 ======
+mismatched hash at java.io.BufferedInputStream@6433a2
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:da39a3ee5e6b4b0d3255bfef95601890afd80709
+mismatched hash at java.io.BufferedInputStream@5910e440
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:da39a3ee5e6b4b0d3255bfef95601890afd80709
+no new updates current version: 7; newest version: 7
+Initial mousechange: false
+initial w: 400.0
+initial h: 300.0
+initial w: 10.0
+Drawing screen closed by user
+Terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/07/26 18:57:14 ======
+java.lang.NullPointerException
+===== Time execute: 2019/07/26 18:57:51 ======
+mismatched hash at java.io.BufferedInputStream@21b8d17c
+ expected: da39a3ee5e6b4b0d3255bfef95601890afd80709
+ reality:da39a3ee5e6b4b0d3255bfef95601890afd80709
+mismatched hash at java.io.BufferedInputStream@6433a2
+ expected: cd2568f2c9acb236667f85913642e2bb1c45fd59
+ reality:da39a3ee5e6b4b0d3255bfef95601890afd80709
+no new updates current version: 7; newest version: 7
+Terminated by user
+Time executed: 10 seconds

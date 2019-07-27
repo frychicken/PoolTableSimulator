@@ -4,7 +4,14 @@ Generate quadratic curve and pool table simulation
 
 using Bezier Curve and slope line equation
 
-```About```
+#### ```Table of contents``` 
+
+| About           | Usage         | TODO    | Compile to jar  | Changing the algorithm
+| :-------------: |:-------------:| :-----:|:------:|:----:|
+| [here](#About)  | [here](#Usage) | [here](#TODO)| [here](#Compile-to-jar) | [here](#Changing-the-algorithm) |
+
+
+## About
 
 _Powered by [libBezierFiveLines](https://github.com/bobdinh139/libBezierFiveLines)_
 
@@ -16,7 +23,7 @@ Origin: (400, 400)
 
 green is the color of the ball; pink is the curve; magenta is the reflection path; red is the tangent line to the curve; blue is the normal line to the tangent line; dark grey is the perpendicular line to the projected line of the ball (black)
 
-```Usage```
+## Usage
 
 Uncheck "mousechange" if you want to use the simulation mode; otherwise, check it.
 
@@ -38,19 +45,19 @@ type "r" / click the red-oval button to reset curve
 
 type "h" / click the pink-oval button to hide help box
 
-```TODO```
+## TODO
 
 Actually calculate the velocity of the ball (green) 
 
-```Compile to jar```
+## Compile to jar
 
 Run Compile.bat for windows
 
 Run Compile.sh for mac/linux
 
-``` Changing the algorithm ```
+## Changing the algorithm
 
 Download [Customizer.jar](Customize/Customizer.jar)
 
-[Read this](https://github.com/frychicken/PoolTableSimulator/wiki/Changing-Algorithm)
+[Follow this instructions](https://github.com/frychicken/PoolTableSimulator/wiki/Changing-Algorithm)
 
