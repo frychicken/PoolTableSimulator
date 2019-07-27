@@ -59,5 +59,5 @@ Run Compile.sh for mac/linux
 
 Download [Customizer.jar](Customize/Customizer.jar)
 
-[Follow this instructions](https://github.com/frychicken/PoolTableSimulator/wiki/Changing-Algorithm)
+[Follow these instructions](https://github.com/frychicken/PoolTableSimulator/wiki/Changing-Algorithm)
 
