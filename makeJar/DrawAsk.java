@@ -1,5 +1,4 @@
 // just graphic stuff
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Toolkit;
@@ -29,6 +28,7 @@ public class DrawAsk extends Component  implements ActionListener {
 	public static boolean mousechange = false;
 	public static boolean toogle_top = false;
 	private DrawTheLuigi dl;
+	private FunctionsLol fl = new FunctionsLol();
 	//create frame, window with button and checkbox, label.
 	public void daw() {
 		panel = new JPanel();
@@ -166,105 +166,58 @@ public class DrawAsk extends Component  implements ActionListener {
 				int key2 = event.getKeyChar();
 
 				if (key == KeyEvent.VK_LEFT) {
-					System.out.println("Clicked left arrow");
-					wl.writeLog("Clicked left arrow");
-					if(dl.toggle_pro)
-						DrawTheLuigi.toX-=7;
-					else
-						dl.w -=  10;
+					fl.clickArrowLeft();
 					frame.repaint(); 
 				}
 				else if (key == KeyEvent.VK_RIGHT) {
-					System.out.println("Clicked right arrow");
-					wl.writeLog("Clicked right arrow");
-					if(dl.toggle_pro)
-						DrawTheLuigi.toX+=7;
-					else
-						dl.w +=  10;
+					fl.clickArrowRight();
 					frame.repaint(); 
 				}
 				else if (key == KeyEvent.VK_UP) {
-					if (toogle_top) {
-						dl.h +=  10;
-						dl.top = 400 - dl.h;	
-					} else 	if(dl.toggle_pro)
-						DrawTheLuigi.toY-=7;
-					else {
-						dl.h +=  10;
-					}
-					System.out.println("Clicked up arrow while toggle top = "+ toogle_top + " toggle pro="+dl.toggle_pro);
-					wl.writeLog("Clicked up arrow while toggle top = "+ toogle_top+ " toggle pro="+dl.toggle_pro);
+					fl.clickArrowUp();
 					frame.repaint(); 
 
 				}
 				else if (key == KeyEvent.VK_DOWN) {
-					if (toogle_top) {
-						dl.h -=  10;
-						dl.top = 400 - dl.h;	
-					} else 	if(dl.toggle_pro)
-						DrawTheLuigi.toY+=7;
-					else{
-						dl.h -=  10;
-					}
-					System.out.println("Clicked down arrow while toggle top = "+ toogle_top);
-					wl.writeLog("Clicked down arrow while toggle top = "+ toogle_top);
+					fl.clickArrowDown();
 					frame.repaint(); 
 				}
 				//g to shoot the ball
 				if (key2 == 'g') {
-					System.out.println("Clicked g");
-					wl.writeLog("Clicked g");
-					DrawTheLuigi.ball_go = true;
-					DrawTheLuigi.timer.start();
+					fl.clickg();
 				}
 				if (key2 == 'p') {
-					dl.toggle_pro = !dl.toggle_pro;
-					System.out.println("Clicked p makes toggle_pro = "+dl.toggle_pro);
-					wl.writeLog("Clicked p makes toggle_pro = "+dl.toggle_pro);
+					fl.clickp();
 				}
 				//t to toggle changing top
 				if (key2 == 't') {
-					toogle_top = !toogle_top;
-					System.out.println("Clicked t makes toggle top = "+ toogle_top);
-					wl.writeLog("Clicked t makes toggle top = "+toogle_top);
+					fl.clickt();
 					frame.repaint(); 
 				}
 				//s to remove lines
 				if (key2 == 's') {
-					dis +=1;
-					System.out.println("Clicked s makes dis = " + dis);
-					wl.writeLog("Clicked s makes dis =" + dis);
+					fl.clicks();
 					frame.repaint(); 
 				}
 				// a to add more lines
 				if (key2 == 'a') {
-					dis -=1;
-					if (dis < 1) dis = 1;
-					System.out.println("Clicked a makes dis = " + dis);
-					wl.writeLog("Clicked a makes dis = " + dis);
+					fl.clicka();
 					frame.repaint(); 
 				}
 				if (key2 == 'd') {
-					dl.toggle_perl = !dl.toggle_perl;
-					System.out.println("Clicked d makes debug mode = " + dl.toggle_perl);
-					wl.writeLog("Clicked d makes debug mode = "+ dl.toggle_perl);
+					fl.clickd();
 					frame.repaint(); 
 				}
 				if (key2 == 'r') {
-					dl.w = 400;
-					dl.h=300;
-					System.out.println("Clicked r makes w, h = " + dl.w + ", "+dl.h);
-					wl.writeLog("Clicked r makes w, h = " + dl.w + ", "+dl.h);
+					fl.clickr();
 					frame.repaint(); 
 				}
 				if (key2 == 'h') {
-					dl.hideHelpBox = !dl.hideHelpBox;
+					fl.clickh();
 					frame.repaint(); 
 				}
 				if (key2 == 'm') {
-					mousechange = !mousechange;
-					System.out.println("Clicked m makes mousechange = "+ mousechange);
-					wl.writeLog("Clicked m makes mousechange = "+ mousechange);
+					fl.clickm();
 					frame.repaint(); 
 				}
 				if(key2 == 'n') {

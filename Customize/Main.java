@@ -35,6 +35,7 @@ public class Main extends JFrame implements ActionListener{
     static ChangeInterf ui = new ChangeInterf();
 	private static final long serialVersionUID = 1L;
 	static JTextField txtboc;
+	static JTextField txtboc2;
 	private static Frame bobJFrame;
 	private final Timer t;
 	static JFrame frame;
@@ -99,10 +100,12 @@ public class Main extends JFrame implements ActionListener{
 		frame = new JFrame("Customizer");
 
 		txtboc = new JTextField("javac DrawTheLuigi.java WriteLogF.java DrawAsk.java");  
-		JLabel lblLabel = new JLabel("Enter your command to compile (if you don't know, leave it as it is)");
-		JLabel lblLabel2 = new JLabel("Several .java files (DrawAsk,...) ie javac DrawTheLuigi.java WriteLogF.java");
+		txtboc2 = new JTextField("jar uf PoolSimulator.jar DrawTheLuigi.class DrawTheLuigi$1.class");  
 
-		final URI uri = new URI("https://github.com/frychicken/PoolTableSimulator/tree/master/src");
+		JLabel lblLabel = new JLabel("Enter your command to compile (if you don't know, leave it as it is)");
+		JLabel lblLabel2 = new JLabel("ie jar uf PoolSimulator.jar st.class st.class st.class");
+
+		final URI uri = new URI("https://github.com/frychicken/PoolTableSimulator/tree/master/makeJar");
 		JButton button2 = new JButton();
 		button2.setText("important dependencie(s): WriteLogF, DrawAsk");
 		button2.setHorizontalAlignment(SwingConstants.LEFT);
@@ -129,7 +132,7 @@ public class Main extends JFrame implements ActionListener{
 			}
 		});
 
-		final URI uri2 = new URI("https://github.com/frychicken/PoolTableSimulator/blob/master/README.md");
+		final URI uri2 = new URI("https://github.com/frychicken/PoolTableSimulator/wiki/Changing-Algorithm");
 		JButton button3 = new JButton();
 		button3.setText("help");
 		button3.setHorizontalAlignment(SwingConstants.LEFT);
@@ -162,6 +165,7 @@ public class Main extends JFrame implements ActionListener{
 		JPanel panel = new JPanel(); 
 		panel.add(lblLabel);
 		panel.add(txtboc);
+		panel.add(txtboc2);
 		panel.add(lblLabel2);
 		panel.add(button2);
 		panel.add(button3);
@@ -182,7 +186,7 @@ public class Main extends JFrame implements ActionListener{
 			try {
 				r.exec(txtboc.getText());
 				Thread.sleep(2000);
-				Process proc  = r.exec("jar uf PoolSimulator.jar DrawTheLuigi.class DrawTheLuigi$1.class");
+				Process proc  = r.exec(txtboc2.getText());
 				BufferedReader stdInput = new BufferedReader(new 
 				     InputStreamReader(proc.getInputStream()));
 				BufferedReader stdError = new BufferedReader(new 

@@ -11,14 +11,14 @@ import javax.swing.*;
 public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener  {
 	private static final long serialVersionUID = 1L;
 
-	public boolean toggle_perl = false;
+	public static boolean toggle_perl = false;
 	private static double coordsx = 400;
 	private static double coordsy = 400;
 	private double coorx[] = new double[5];
 	private double coory[] = new double[5];
 	private double dapathx = 400;
 	public boolean nightmode = false;
-	public boolean toggle_pro = false;
+	public static boolean toggle_pro = false;
 
 	private final int supperBigNumber = 500000;
 	private boolean check = true;
@@ -45,11 +45,11 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	private static int stick_cy = 500;
 	private static int the_sub =1;
 
-	public double w = DrawAsk.w;
-	public double h = DrawAsk.h;
+	public static double w = DrawAsk.w;
+	public static double h = DrawAsk.h;
 	double halfw = (w%200!=0) ? 200-(-1)*( w/2-200) : w/2;
 	double startpoint = 200;
-	double top =400-h;
+	static double top =400-h;
 	double bottom =400;
 
 	private int count =0;
@@ -62,7 +62,9 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	private int initialY=0;
 
 	private boolean clicked = false;	
-	public boolean hideHelpBox = false;
+	public static boolean hideHelpBox = false;
+
+	private FunctionsLol fl = new FunctionsLol();
 
 	public DrawTheLuigi(JFrame frame) {
 		this.frame = frame;
@@ -190,11 +192,6 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		toX =400;
 		toY=400;
 		//dapathx = 400;
-	}
-	//reset the curve
-	public void resetC() {
-		w=400;
-		h=300;
 	}
 	//reset the ball
 	public void resetB() {
@@ -506,46 +503,24 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 				reset();
 		}
 		else {
-			if(((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5)) || (  ((arg0.getX() > 680) && (arg0.getX()  < 680 +50)) && ((arg0.getY()  > 560) && (arg0.getY()  < 560 +50))    )   ) {
-				ball_go = true;
-				timer.start();
+			if(fl.isgclicked(arg0.getX(),arg0.getY() )) {
+				fl.clickg();
 			} 
-			else if (((arg0.getX() > 680) && (arg0.getX() < 680 +50)) && ((arg0.getY() > 430) && (arg0.getY() < 430 +50))) {
-				if (DrawAsk.toogle_top) {
-					h +=  10;
-					top = 400 - h;	
-				} else if(toggle_pro)
-					toY-=7;
-				else{
-					h +=  10;
-				}
+			else if (fl.isupclicked(arg0.getX(), arg0.getY())) {
+				fl.clickArrowUp();
 
-			}else if (((arg0.getX() > 680) && (arg0.getX() < 680 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
-				if (DrawAsk.toogle_top) {
-					h -=  10;
-					top = 400 - h;	
-				} else if(toggle_pro)
-					toY+=7;
-				else{
-					h -=  10;
-				}
+			}else if (fl.isdownclicked(arg0.getX(), arg0.getY())) {
+				fl.clickArrowDown();
 
-			}else if (((arg0.getX() > 630) && (arg0.getX() < 630 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
-				if(toggle_pro)
-					toX-=7;
-				else
-					w-=10;
-			}else if (((arg0.getX() > 730) && (arg0.getX() < 730 +50)) && ((arg0.getY() > 480) && (arg0.getY() < 480 +50))) {
-				if(toggle_pro)
-					toX+=7;
-				else
-					w+=10;
-			} else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() < 50 && arg0.getX() > 0) {
-				DrawAsk.dis --;
-				if (DrawAsk.dis <1) DrawAsk.dis =1;
+			}else if (fl.isleftclicked(arg0.getX(), arg0.getY())) {
+				fl.clickArrowLeft();
+			}else if (fl.isrightclicked(arg0.getX(), arg0.getY())) {
+				fl.clickArrowRight();
+			} else if (fl.isaclicked(arg0.getX(), arg0.getY())) {
+				fl.clicka();
 			}
-			else if (arg0.getY() < 50 && arg0.getY()> 10 && arg0.getX() > 50 && arg0.getX() < 100)
-				DrawAsk.dis ++;
+			else if (fl.issclicked(arg0.getX(), arg0.getY()))
+				fl.clicks();
 			else if((arg0.getButton() == MouseEvent.BUTTON1) && arg0.getY() <=400) {
 				//if user does not toggle mouse change; if user left-click
 				//get the coordinates of the left-click
@@ -559,32 +534,24 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		}
 
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 455) <=10) ) {
-			toggle_pro = !toggle_pro;
-			System.out.println("Clicked p makes toggle_pro = " + toggle_pro);
-			wl.writeLog("Clicked p makes toggle_pro = "+ toggle_pro);
+		if(fl.ispclicked(arg0.getX(), arg0.getY()) ) {
+			fl.clickp();
 		}
 
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 515) <=10) ) {
-			toggle_perl = !toggle_perl;
-			System.out.println("Clicked d makes debug mode = " + toggle_perl);
-			wl.writeLog("Clicked d makes debug mode = "+ toggle_perl);
+		if( fl.isdclicked(arg0.getX(), arg0.getY()) ) {
+			fl.clickd();
 		}
 
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 500) <=10) ) {
-			DrawAsk.toogle_top = !DrawAsk.toogle_top;
-			System.out.println("toggle top = "+ DrawAsk.toogle_top);
-			wl.writeLog("toggle top = "+ DrawAsk.toogle_top);
+		if(fl.istclicked(arg0.getX(), arg0.getY()) ) {
+			fl.clickt();
 		}
 
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 560) <=10) ) {
-			System.out.println("Clicked r makes w, h = " + w + ", "+h);
-			wl.writeLog("Clicked r makes w, h = " + w + ", "+h);
-			resetC();
+		if(fl.isrclicked(arg0.getX(), arg0.getY()) ) {
+			fl.clickr();
 		}
 
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 575) <=10) ) {
-			hideHelpBox = !hideHelpBox;
+		if(fl.ishclicked(arg0.getX(), arg0.getY()) ) {
+			fl.clickh();
 		}
 
 		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 545) <=10) ) {
