@@ -10,49 +10,33 @@ import java.awt.event.MouseMotionListener;
 import java.awt.geom.Line2D;
 import javax.swing.*;
 
-public class DrawTheLuigi  extends Component implements MouseListener, MouseMotionListener  {
+public class DrawTheLuigi  extends FunctionsLol implements MouseListener, MouseMotionListener  {
 	private static final long serialVersionUID = 1L;
 
-	public static boolean toggle_perl = false;
 	private static double coordsx = 400;
 	private static double coordsy = 400;
 	private double coorx[] = new double[5];
 	private double coory[] = new double[5];
 	private double dapathx = 400;
-	public boolean nightmode = false;
-	public static boolean toggle_pro = false;
 
 	private final int supperBigNumber = 500000;
 	private boolean check = true;
-
 	public static Timer timer;
-	private JFrame frame;
+
 	private ActionListener animation;
-	private WriteLogF wl = new WriteLogF();
 
-	public static double toX =400;
-	public static double toY= 400;
-
-	public static double mouseXC =0;
-	public static double mouseYC =0;
-
-	public static boolean ball_go = false;
 	private static boolean ball_kgo = false;
 
-	public static int ball_y =395;
+	private static int ball_y =395;
 	private static int theSub =1;
-	public static int ball_x =395;
+	private static int ball_x =395;
 
 	private int stick_sx = 500;
 	private static int stick_cy = 500;
 	private static int the_sub =1;
 
-	public static double w = DrawAsk.w;
-	public static double h = DrawAsk.h;
-	double halfw = (w%200!=0) ? 200-(-1)*( w/2-200) : w/2;
-	double startpoint = 200;
-	static double top =400-h;
-	double bottom =400;
+	private double halfw = (w%200!=0) ? 200-(-1)*( w/2-200) : w/2;
+	private double bottom =400;
 
 	private int count =0;
 
@@ -62,11 +46,6 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	private int initial =0;
 	private int initialY=0;
-
-	private boolean clicked = false;	
-	public static boolean hideHelpBox = false;
-
-	private FunctionsLol fl = new FunctionsLol();
 
 	public DrawTheLuigi(JFrame frame) {
 		this.frame = frame;
@@ -85,38 +64,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 	//draw on screen button
 	private void initComponents(Graphics g) {
-		g.setColor(checkhover(680,430));
-		g.fillRect(680, 430, 50, 50);
-		g.setColor(checkhover(630,480));
-		g.fillRect(630, 480, 50, 50);
-		g.setColor(checkhover(680,480));
-		g.fillRect(680, 480, 50, 50);
-		g.setColor(checkhover(730,480));
-		g.fillRect(730, 480, 50, 50);
-		g.setColor(checkhover(680,560));
-		g.fillOval(680, 560, 50, 50);
-		g.setColor(Color.BLACK);
-		g.drawRect(680, 430, 50, 50);
-		g.drawRect(630, 480, 50, 50);
-		g.drawRect(680, 480, 50, 50);
-		g.drawRect(730, 480, 50, 50);
-		g.drawOval(680, 560, 50, 50);
-		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {460 +5, 440 , 460+5}, 3);
-		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {505 -5, 525, 505-5}, 3);
-		g.fillPolygon(new int[] {(630+(630+50))/2 -20 +5, (630+(630+50))/2 +5,(630+(630+50))/2 +5}, new int[] {505, 525, 485}, 3);
-		g.fillPolygon(new int[] {(730+(730+50))/2 -5, (730+(730+50))/2 -5,(730+(730+50))/2 + 20-5}, new int[] {485, 525, 505}, 3);	
-		g.setColor(Color.YELLOW);
-		g.fillOval(140,445,20,10);
-		g.setColor(Color.BLUE);
-		g.fillOval(140,490,20,10);
-		g.setColor(Color.GREEN);
-		g.fillOval(140,505,20,10);
-		g.setColor(Color.ORANGE);
-		g.fillOval(140,535,20,10);
-		g.setColor(Color.RED);
-		g.fillOval(140,550,20,10);
-		g.setColor(Color.PINK);
-		g.fillOval(140,565,20,10);
+	     drawButtons(g);
 	}
 
 	//draw the whole interface
@@ -135,23 +83,6 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		ballAndStickLogic();
 		getPathSlope();
 		writedalog();
-
-
-	}
-
-	//change on-screen button if user hover/click/non-interact
-	private Color checkhover(int x, int y) {
-		if (((mouseXC > x) && (mouseXC < x +50)) && ((mouseYC > y) && (mouseYC < y +50))) {
-			if (clicked) {
-				clicked = false;
-				return Color.DARK_GRAY;
-
-			} else
-				return Color.LIGHT_GRAY;
-		}
-		else {
-			return  Color.GRAY;
-		}
 	}
 
 	// calculate the slope of the ball and the cue --> find the path of the ball and the cue
@@ -440,7 +371,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		// generate the curve by generating bunch of line; each line is i and j distance from each other
 		while (i <bottom && j>top) {
 
-			g2.draw( new Line2D.Double( ((-1)*(halfw*(i-400)/h) + 200+(-1)*(w/2-200))  ,(i+=DrawAsk.dis) , ((halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))))   , 	(j-=DrawAsk.dis) ));
+			g2.draw( new Line2D.Double( ((-1)*(halfw*(i-400)/h) + 200+(-1)*(w/2-200))  ,(i+=dis) , ((halfw*(j-400)/h)+400+(400-(200+(-1)*(w/2-200))))   , 	(j-=dis) ));
 			count ++;
 		}
 		//count number of lines
@@ -459,7 +390,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		mouseYC = arg0.getY();
 
 		//if user click mouse change
-		if(DrawAsk.mousechange) {
+		if(mousechange) {
 			// allow for changing the curve horizontally using mouse
 			if (arg0.getX() - initial <0) {
 				w += 5;
@@ -470,10 +401,10 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 			}
 			// changing the curve vertically
 			if (arg0.getY() - initialY >0) {
-				if (DrawAsk.toogle_top)  top =400-h; //if they toggle changing up and down
+				if (toogle_top)  top =400-h; //if they toggle changing up and down
 				h-=5;
 			} else {
-				if (DrawAsk.toogle_top)  top =400-h; // if not, change how the endpoints are met
+				if (toogle_top)  top =400-h; // if not, change how the endpoints are met
 				h+=5;
 			}
 		}	else if ( arg0.getY() <=400){			
@@ -497,32 +428,21 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 		resetB();
 		clicked = true;
 		//if user toggle mouse change
-		if(DrawAsk.mousechange) {
+		if(mousechange) {
 			//click near the blue part to add/remove lines 
-			DrawAsk.toogle_top = !DrawAsk.toogle_top;
+			toogle_top = !toogle_top;
 			//reset when mouse is clicked but not on origin and when mousechange is toggle
 			if (!((Math.abs(400 - arg0.getX()) <=5)&&(Math.abs(400 - arg0.getY()) <=5)))
 				reset();
 		}
 		else {
-			if(fl.isgclicked(arg0.getX(),arg0.getY() )) {
-				fl.clickg();
-			} 
-			else if (fl.isupclicked(arg0.getX(), arg0.getY())) {
-				fl.clickArrowUp();
-
-			}else if (fl.isdownclicked(arg0.getX(), arg0.getY())) {
-				fl.clickArrowDown();
-
-			}else if (fl.isleftclicked(arg0.getX(), arg0.getY())) {
-				fl.clickArrowLeft();
-			}else if (fl.isrightclicked(arg0.getX(), arg0.getY())) {
-				fl.clickArrowRight();
-			} else if (fl.isaclicked(arg0.getX(), arg0.getY())) {
-				fl.clicka();
-			}
-			else if (fl.issclicked(arg0.getX(), arg0.getY()))
-				fl.clicks();
+			if(isgclicked(arg0.getX(),arg0.getY() )) {clickg();} 
+			else if (isupclicked(arg0.getX(), arg0.getY())) {clickArrowUp();}
+			else if (isdownclicked(arg0.getX(), arg0.getY())) {clickArrowDown();}
+			else if (isleftclicked(arg0.getX(), arg0.getY())) {clickArrowLeft();}
+			else if (isrightclicked(arg0.getX(), arg0.getY())) {clickArrowRight();}
+			else if (isaclicked(arg0.getX(), arg0.getY())) {clicka();}
+			else if (issclicked(arg0.getX(), arg0.getY())) clicks();
 			else if((arg0.getButton() == MouseEvent.BUTTON1) && arg0.getY() <=400) {
 				//if user does not toggle mouse change; if user left-click
 				//get the coordinates of the left-click
@@ -536,37 +456,12 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 
 		}
 
-		if(fl.ispclicked(arg0.getX(), arg0.getY()) ) {
-			fl.clickp();
-		}
-
-		if( fl.isdclicked(arg0.getX(), arg0.getY()) ) {
-			fl.clickd();
-		}
-
-		if(fl.istclicked(arg0.getX(), arg0.getY()) ) {
-			fl.clickt();
-		}
-
-		if(fl.isrclicked(arg0.getX(), arg0.getY()) ) {
-			fl.clickr();
-		}
-
-		if(fl.ishclicked(arg0.getX(), arg0.getY()) ) {
-			fl.clickh();
-		}
-
-		if((Math.abs(arg0.getX() -150) <=15) && (Math.abs(arg0.getY() - 545) <=10) ) {
-			nightmode = !nightmode;
-			System.out.println("Clicked n makes nightmode = "+ nightmode);
-			wl.writeLog("Clicked n makes nightmode = "+ nightmode);
-			if(nightmode) {
-				frame.getContentPane().setBackground(Color.BLACK);  
-			} else {
-				frame.getContentPane().setBackground(Color.WHITE);  
-
-			}
-		}
+		if(ispclicked(arg0.getX(), arg0.getY())) {clickp();}
+		if(isdclicked(arg0.getX(), arg0.getY())) {clickd();}
+		if(istclicked(arg0.getX(), arg0.getY())) {clickt();}
+		if(isrclicked(arg0.getX(), arg0.getY())) {clickr();}
+		if(ishclicked(arg0.getX(), arg0.getY())) {clickh();}
+		if(isnclicked(arg0.getX(), arg0.getY())) {clickn();}
 
 		frame.repaint();
 	}
@@ -574,7 +469,7 @@ public class DrawTheLuigi  extends Component implements MouseListener, MouseMoti
 	@Override
 	public void mousePressed(MouseEvent arg0) {
 		clicked = true;
-		if(DrawAsk.mousechange) {
+		if(mousechange) {
 			initial = arg0.getX();
 			initialY = arg0.getY();
 		}

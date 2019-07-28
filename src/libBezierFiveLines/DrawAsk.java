@@ -1,17 +1,14 @@
 // just graphic stuff
 package libBezierFiveLines;
 
-import java.awt.Color;
-import java.awt.Component;
 import java.awt.Toolkit;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class DrawAsk extends Component  implements ActionListener {
+public class DrawAsk extends FunctionsLol  implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private static JFrame jf;
-	private JFrame frame;
 	private JButton button= new JButton("OK");
 	private JButton welp= new JButton("HELP");
 	private JPanel panel;
@@ -19,18 +16,12 @@ public class DrawAsk extends Component  implements ActionListener {
 	private JLabel lh = new JLabel("h:");
 	private JLabel instru = new JLabel("W: Width of the curve (default: 400); h: the height of the curve (default: 150)");
 	private JLabel dbl = new JLabel("Distance between lines (default: 10)");
-	private WriteLogF wl = new WriteLogF();
 	private static JCheckBox checkBox;
 	private static JTextField fw;  	
 	private static JTextField fh;  	
 	private static JTextField dist;  
-	public static double w =400;
-	public static double h =300;
-	public static double dis =10;
-	public static boolean mousechange = false;
-	public static boolean toogle_top = false;
+	
 	private DrawTheLuigi dl;
-	private FunctionsLol fl = new FunctionsLol();
 	//create frame, window with button and checkbox, label.
 	public void daw() {
 		panel = new JPanel();
@@ -146,7 +137,6 @@ public class DrawAsk extends Component  implements ActionListener {
 		frame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent evt) {
-
 				mousechange = false;
 				DrawTheLuigi.reset();
 				frame.dispose();
@@ -167,80 +157,26 @@ public class DrawAsk extends Component  implements ActionListener {
 				int key = event.getKeyCode(); 
 				int key2 = event.getKeyChar();
 
-				if (key == KeyEvent.VK_LEFT) {
-					fl.clickArrowLeft();
-					frame.repaint(); 
-				}
-				else if (key == KeyEvent.VK_RIGHT) {
-					fl.clickArrowRight();
-					frame.repaint(); 
-				}
-				else if (key == KeyEvent.VK_UP) {
-					fl.clickArrowUp();
-					frame.repaint(); 
-
-				}
-				else if (key == KeyEvent.VK_DOWN) {
-					fl.clickArrowDown();
-					frame.repaint(); 
-				}
+				if (key == KeyEvent.VK_LEFT) {clickArrowLeft();frame.repaint(); }
+				else if (key == KeyEvent.VK_RIGHT) {clickArrowRight();frame.repaint(); }
+				else if (key == KeyEvent.VK_UP) {clickArrowUp();frame.repaint();}
+				else if (key == KeyEvent.VK_DOWN) {clickArrowDown();frame.repaint();}
 				//g to shoot the ball
-				if (key2 == 'g') {
-					fl.clickg();
-				}
-				if (key2 == 'p') {
-					fl.clickp();
-				}
+				if (key2 == 'g') {clickg();}
+				else if (key2 == 'p') {clickp();}
 				//t to toggle changing top
-				if (key2 == 't') {
-					fl.clickt();
-					frame.repaint(); 
-				}
+				else if (key2 == 't') {clickt();frame.repaint(); }
 				//s to remove lines
-				if (key2 == 's') {
-					fl.clicks();
-					frame.repaint(); 
-				}
+				else if (key2 == 's') {clicks();frame.repaint(); }
 				// a to add more lines
-				if (key2 == 'a') {
-					fl.clicka();
-					frame.repaint(); 
-				}
-				if (key2 == 'd') {
-					fl.clickd();
-					frame.repaint(); 
-				}
-				if (key2 == 'r') {
-					fl.clickr();
-					frame.repaint(); 
-				}
-				if (key2 == 'h') {
-					fl.clickh();
-					frame.repaint(); 
-				}
-				if (key2 == 'm') {
-					fl.clickm();
-					frame.repaint(); 
-				}
-				if(key2 == 'n') {
-					dl.nightmode = !dl.nightmode;
-					System.out.println("Clicked n makes nightmode = "+ dl.nightmode);
-					wl.writeLog("Clicked n makes nightmode = "+ dl.nightmode);
-					if(dl.nightmode) {
-						frame.getContentPane().setBackground(Color.BLACK);  
-					} else {
-						frame.getContentPane().setBackground(Color.WHITE);  
-
-					}
-				}
+				else if (key2 == 'a') {clicka();frame.repaint(); }
+				else if (key2 == 'd') {clickd();frame.repaint(); }
+				else if (key2 == 'r') {clickr();frame.repaint(); }
+				else if (key2 == 'h') {clickh();frame.repaint(); }
+				else if (key2 == 'm') {clickm();frame.repaint(); }
+				else if(key2 == 'n') {clickn();frame.repaint();}
 				//c to close window
-				if (key2 == 'c') {
-					System.out.println("Clicked c");
-					wl.writeLog("Clicked c");
-					frame.setVisible(false);
-					frame.dispose();
-					daw();
-				}
+				else if (key2 == 'c') {clickc();daw();}
 			}
 		});
 

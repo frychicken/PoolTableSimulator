@@ -1,129 +1,172 @@
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+
 //basically all functions that both DrawAsk and DrawTheLuigi need
-public class FunctionsLol {
+abstract class FunctionsLol extends Component{
+	private static final long serialVersionUID = 1L;
 	WriteLogF wl = new WriteLogF();
-	public void clickArrowLeft() {
+	protected JFrame frame;
+	protected static double w =400;
+	protected static double h =300;
+	protected static double dis =10;
+	protected static boolean mousechange = false;
+	protected static boolean toogle_top = false;
+	protected static boolean toggle_perl = false;
+	protected static boolean nightmode = false;
+	protected static boolean toggle_pro = false;
+	protected static double toX =400;
+	protected static double toY= 400;
+	protected static double top =400-h;
+	protected static boolean hideHelpBox = false;
+	protected static boolean ball_go = false;
+	protected static double mouseXC =0;
+	protected static double mouseYC =0;
+	protected boolean clicked = false;	
+	
+	protected void clickArrowLeft() {
 		System.out.println("Clicked left arrow");
 		wl.writeLog("Clicked left arrow");
-		if(DrawTheLuigi.toggle_pro && !DrawAsk.toogle_top)
-			DrawTheLuigi.toX-=7;
+		if(toggle_pro && !toogle_top)
+			toX-=7;
 		else
-			DrawTheLuigi.w -=  10;
+			w -=  10;
 	}
-	public void clickArrowRight() {
+	protected void clickArrowRight() {
 		System.out.println("Clicked right arrow");
 		wl.writeLog("Clicked right arrow");
-		if(DrawTheLuigi.toggle_pro && !DrawAsk.toogle_top)
-			DrawTheLuigi.toX+=7;
+		if(toggle_pro && !toogle_top)
+			toX+=7;
 		else
-			DrawTheLuigi.w +=  10;
+			w +=  10;
 	}
-	public void clickArrowDown() {
-		if (DrawAsk.toogle_top) {
-			DrawTheLuigi.h -=  10;
-			DrawTheLuigi.top = 400 - DrawTheLuigi.h;	
-		} else if(DrawTheLuigi.toggle_pro) {
-			DrawTheLuigi.toY+=7;
-			 if (DrawTheLuigi.toY > 400) DrawTheLuigi.toY = 400;
+	protected void clickArrowDown() {
+		if (toogle_top) {
+			h -=  10;
+			top = 400 - h;	
+		} else if(toggle_pro) {
+			toY+=7;
+			 if (toY > 400) toY = 400;
 		}else{
-			DrawTheLuigi.h -=  10;
+			h -=  10;
 		}
-		System.out.println("Clicked down arrow while toggle top = "+ DrawAsk.toogle_top);
-		wl.writeLog("Clicked down arrow while toggle top = "+ DrawAsk.toogle_top);
+		System.out.println("Clicked down arrow while toggle top = "+ toogle_top);
+		wl.writeLog("Clicked down arrow while toggle top = "+ toogle_top);
 
 	}
-	public void clickArrowUp() {
-		if (DrawAsk.toogle_top) {
-			DrawTheLuigi.h +=  10;
-			DrawTheLuigi.top = 400 - DrawTheLuigi.h;	
-		} else 	if(DrawTheLuigi.toggle_pro) {
-			DrawTheLuigi.toY-=7;  
+	protected void clickArrowUp() {
+		if (toogle_top) {
+			h +=  10;
+			top = 400 - h;	
+		} else 	if(toggle_pro) {
+			toY-=7;  
 		}
 		else {
-			DrawTheLuigi.h +=  10;
+			h +=  10;
 		}
-		System.out.println("Clicked up arrow while toggle top = "+ DrawAsk.toogle_top + " toggle pro="+DrawTheLuigi.toggle_pro);
-		wl.writeLog("Clicked up arrow while toggle top = "+ DrawAsk.toogle_top+ " toggle pro="+DrawTheLuigi.toggle_pro);
+		System.out.println("Clicked up arrow while toggle top = "+ toogle_top + " toggle pro="+toggle_pro);
+		wl.writeLog("Clicked up arrow while toggle top = "+ toogle_top+ " toggle pro="+toggle_pro);
 	}
-	public void clickg() {
+	protected void clickg() {
 		System.out.println("Clicked g");
 		wl.writeLog("Clicked g");
-		DrawTheLuigi.ball_go = true;
+		ball_go = true;
 		DrawTheLuigi.timer.start();
 	}
-	public void clickp() {
-		DrawTheLuigi.toggle_pro = !DrawTheLuigi.toggle_pro;
-		DrawAsk.toogle_top = false;
-		System.out.println("Clicked p makes toggle_pro = "+DrawTheLuigi.toggle_pro);
-		wl.writeLog("Clicked p makes toggle_pro = "+DrawTheLuigi.toggle_pro);
+	protected void clickp() {
+		toggle_pro = !toggle_pro;
+		toogle_top = false;
+		System.out.println("Clicked p makes toggle_pro = "+toggle_pro);
+		wl.writeLog("Clicked p makes toggle_pro = "+toggle_pro);
 	}
-	public void clickt() {
-		DrawAsk.toogle_top = !DrawAsk.toogle_top;
-		System.out.println("Clicked t makes toggle top = "+ DrawAsk.toogle_top);
-		wl.writeLog("Clicked t makes toggle top = "+DrawAsk.toogle_top);
-	}
-
-	public void clicks() {
-		DrawAsk.dis +=1;
-		System.out.println("Clicked s makes dis = " + DrawAsk.dis);
-		wl.writeLog("Clicked s makes dis =" + DrawAsk.dis);
-	}
-	public void clicka() {
-		DrawAsk.dis -=1;
-		if (DrawAsk.dis < 1) DrawAsk.dis = 1;
-		System.out.println("Clicked a makes dis = " + DrawAsk.dis);
-		wl.writeLog("Clicked a makes dis = " + DrawAsk.dis);
+	protected void clickt() {
+		toogle_top = !toogle_top;
+		System.out.println("Clicked t makes toggle top = "+ toogle_top);
+		wl.writeLog("Clicked t makes toggle top = "+toogle_top);
 	}
 
-	public void clickd() {
-		DrawTheLuigi.toggle_perl = !DrawTheLuigi.toggle_perl;
-		System.out.println("Clicked d makes debug mode = " + DrawTheLuigi.toggle_perl);
-		wl.writeLog("Clicked d makes debug mode = "+ DrawTheLuigi.toggle_perl);
+	protected void clicks() {
+		dis +=1;
+		System.out.println("Clicked s makes dis = " +dis);
+		wl.writeLog("Clicked s makes dis =" + dis);
 	}
-	public void clickr() {
-		DrawTheLuigi.w = 400;
-		DrawTheLuigi.h=300;
-		System.out.println("Clicked r makes w, h = " + DrawTheLuigi.w + ", "+DrawTheLuigi.h);
-		wl.writeLog("Clicked r makes w, h = " + DrawTheLuigi.w + ", "+DrawTheLuigi.h);
+	protected void clicka() {
+		dis -=1;
+		if (dis < 1) dis = 1;
+		System.out.println("Clicked a makes dis = " + dis);
+		wl.writeLog("Clicked a makes dis = " + dis);
 	}
-	public void clickh() {
-		DrawTheLuigi.hideHelpBox = !DrawTheLuigi.hideHelpBox;
+
+	protected void clickd() {
+	    toggle_perl = !toggle_perl;
+		System.out.println("Clicked d makes debug mode = " + toggle_perl);
+		wl.writeLog("Clicked d makes debug mode = "+ toggle_perl);
 	}
-	public void clickm() {
-		DrawAsk.mousechange = !DrawAsk.mousechange;
-		System.out.println("Clicked m makes mousechange = "+ DrawAsk.mousechange);
-		wl.writeLog("Clicked m makes mousechange = "+ DrawAsk.mousechange);
+	protected void clickr() {
+		w = 400;
+		h=300;
+		System.out.println("Clicked r makes w, h = " + w + ", "+h);
+		wl.writeLog("Clicked r makes w, h = " + w + ", "+h);
 	}
-	public boolean isgclicked(int x, int y) {
+	protected void clickh() {
+		hideHelpBox = !hideHelpBox;
+	}
+	protected void clickm() {
+		mousechange = !mousechange;
+		System.out.println("Clicked m makes mousechange = "+ mousechange);
+		wl.writeLog("Clicked m makes mousechange = "+ mousechange);
+	}
+	protected void clickn() {
+		nightmode = !nightmode;
+		System.out.println("Clicked n makes nightmode = "+ nightmode);
+		wl.writeLog("Clicked n makes nightmode = "+ nightmode);
+		if(nightmode) {
+			frame.getContentPane().setBackground(Color.BLACK);  
+		} else {
+			frame.getContentPane().setBackground(Color.WHITE);  
+
+		}
+	}
+	protected void clickc() {
+		System.out.println("Clicked c");
+		wl.writeLog("Clicked c");
+		frame.setVisible(false);
+		frame.dispose();
+		
+	}
+	protected boolean isgclicked(int x, int y) {
 		if(((Math.abs(400 - x) <=5)&&(Math.abs(400 - y) <=5)) || (  ((x > 680) && (x  < 680 +50)) && ((y  > 560) && (y < 560 +50))    )) {
 			return true;
 		}
 		return false;
 	}
-	public boolean isupclicked(int x, int y) {
+	protected boolean isupclicked(int x, int y) {
 		if(((x > 680) && (x < 680 +50)) && ((y > 430) && (y < 430 +50))) {
 			return true;
 		}
 		return false;
 	}
-	public boolean isdownclicked(int x, int y) {
+	protected boolean isdownclicked(int x, int y) {
 		if(((x > 680) && (x< 680 +50)) && ((y> 480) && (y < 480 +50))) {
 			return true;
 		}
 		return false;
 	}
-	public boolean isleftclicked(int x, int y) {
+	protected boolean isleftclicked(int x, int y) {
 		if(((x > 630) && (x < 630 +50)) && ((y > 480) && (y < 480 +50))) {
 			return true;
 		}
 		return false;
 	}
-	public boolean isrightclicked(int x, int y) {
+	protected boolean isrightclicked(int x, int y) {
 		if(((x > 730) && (x < 730 +50)) && ((y> 480) && (y < 480 +50))) {
 			return true;
 		}
 		return false;
 	}
-	public boolean isaclicked(int x, int y) {
+	protected boolean isaclicked(int x, int y) {
 		if(y< 50 && y> 10 && x < 50 && x > 0) {
 			return true;
 		}
@@ -131,43 +174,102 @@ public class FunctionsLol {
 		return false;
 	}
 	
-	public boolean issclicked(int x, int y) {
+	protected boolean issclicked(int x, int y) {
 		if(y < 50 && y> 10 && x > 50 && x < 100) {
 			return true;
 		}
 		return false;
 	}
 	
-	public boolean ispclicked(int x, int y) {
+	protected boolean ispclicked(int x, int y) {
 		if((Math.abs(x-150) <=15) && (Math.abs(y - 455) <=10)) {
 			return true;
 		}
 		return false;
 	}
 	
-	public boolean isdclicked(int x, int y) {
+	protected boolean isdclicked(int x, int y) {
 		if((Math.abs(x -150) <=15) && (Math.abs(y - 515) <=10)) {
 			return true;
 		}
 		return false;
 	}
-	public boolean istclicked(int x, int y) {
+	protected boolean istclicked(int x, int y) {
 		if((Math.abs(x -150) <=15) && (Math.abs(y - 500) <=10)) {
 			return true;
 		}
 		return false;
 	}
-	public boolean isrclicked(int x, int y) {
+	protected boolean isrclicked(int x, int y) {
 		if((Math.abs(x -150) <=15) && (Math.abs(y - 560) <=10)) {
 			return true;
 		}
 		return false;
 	}
-	public boolean ishclicked(int x, int y) {
+	protected boolean ishclicked(int x, int y) {
 		if((Math.abs(x -150) <=15) && (Math.abs(y - 575) <=10)) {
 			return true;
 		}
 		return false;
 	}
+	
+	protected boolean isnclicked(int x, int y) {
+		if((Math.abs(x -150) <=15) && (Math.abs(y - 545) <=10) ) {
+			return true;
+		}
+		return false;
+	}
+	
+	protected void drawButtons(Graphics g) {
+		g.setColor(checkhover(680,430));
+		g.fillRect(680, 430, 50, 50);
+		g.setColor(checkhover(630,480));
+		g.fillRect(630, 480, 50, 50);
+		g.setColor(checkhover(680,480));
+		g.fillRect(680, 480, 50, 50);
+		g.setColor(checkhover(730,480));
+		g.fillRect(730, 480, 50, 50);
+		g.setColor(checkhover(680,560));
+		g.fillOval(680, 560, 50, 50);
+		g.setColor(Color.BLACK);
+		g.drawRect(680, 430, 50, 50);
+		g.drawRect(630, 480, 50, 50);
+		g.drawRect(680, 480, 50, 50);
+		g.drawRect(730, 480, 50, 50);
+		g.drawOval(680, 560, 50, 50);
+		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {460 +5, 440 , 460+5}, 3);
+		g.fillPolygon(new int[] {695 -5, 705 ,715+5}, new int[] {505 -5, 525, 505-5}, 3);
+		g.fillPolygon(new int[] {(630+(630+50))/2 -20 +5, (630+(630+50))/2 +5,(630+(630+50))/2 +5}, new int[] {505, 525, 485}, 3);
+		g.fillPolygon(new int[] {(730+(730+50))/2 -5, (730+(730+50))/2 -5,(730+(730+50))/2 + 20-5}, new int[] {485, 525, 505}, 3);	
+		g.setColor(Color.YELLOW);
+		g.fillOval(140,445,20,10);
+		g.setColor(Color.BLUE);
+		g.fillOval(140,490,20,10);
+		g.setColor(Color.GREEN);
+		g.fillOval(140,505,20,10);
+		g.setColor(Color.ORANGE);
+		g.fillOval(140,535,20,10);
+		g.setColor(Color.RED);
+		g.fillOval(140,550,20,10);
+		g.setColor(Color.PINK);
+		g.fillOval(140,565,20,10);
+	}
+	
+	//change on-screen button if user hover/click/non-interact
+	protected Color checkhover(int x, int y) {
+		if (((mouseXC > x) && (mouseXC < x +50)) && ((mouseYC > y) && (mouseYC < y +50))) {
+			if (clicked) {
+				clicked = false;
+				return Color.DARK_GRAY;
+
+			} else
+				return Color.LIGHT_GRAY;
+		}
+		else {
+			return  Color.GRAY;
+		}
+	}
+	
+	
 	
 }
