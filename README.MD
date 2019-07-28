@@ -51,7 +51,7 @@ type "p" / click the yellow-oval button to toggle changing projected path using 
 
 Actually calculate the velocity of the ball (green) 
 
-## Compile to jar
+## Build
 
 Run Compile.bat for windows
 

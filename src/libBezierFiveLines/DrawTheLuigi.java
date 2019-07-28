@@ -154,6 +154,10 @@ public class DrawTheLuigi  extends FunctionsLol implements MouseListener, MouseM
 	//write log
 	private void writedalog() {
 		if (ball_go && check) {
+			System.out.println("Equation of i of the curve:"+"i = ("+ (h/100)/(w/200)+")(200-x) +"+w);
+			wl.writeLog("Equation of i of the curve:"+"i = ("+ (h/100)/(w/200)+")(200-x) +"+w);
+			System.out.println("Equation of j of the curve:"+"j = ("+ (h/100)/(w/200)+")(x+600) +"+ w );
+			wl.writeLog("Equation of j of the curve:"+"j = ("+ (h/100)/(w/200)+")(x+600) +"+ w );
 			System.out.println("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
 			wl.writeLog("Equation of the curve: y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve));
 			System.out.println("dapathx appears to be: " + dapathx);
@@ -297,7 +301,10 @@ public class DrawTheLuigi  extends FunctionsLol implements MouseListener, MouseM
 
 			//equation of the curve and equation of the line 
 			g.drawString("y = " + (4)*top_curve/Math.pow(w,2) + "(x-400)^2 + " + (400 - top_curve), 10,100 );
-			g.drawString("y= "+ Math.abs(400-toY)/(400-toX) + "(x-400)" + "+ 400",10,115);
+			g.drawString("y= "+ Math.abs(400-toY)/(400-toX) + "(x-400)" + "+ 400",10,120);
+			
+	        g.drawString("i = ("+ (h/100)/(w/200)+")(200-x) +"+w, 10,140 );
+            g.drawString("j = ("+ (h/100)/(w/200)+")(x+600) +"+ w, 10,160 );
 		}
 	}
 
