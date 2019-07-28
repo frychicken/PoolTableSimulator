@@ -99,7 +99,7 @@ public class Main extends JFrame implements ActionListener{
 
 		frame = new JFrame("Customizer");
 
-		txtboc = new JTextField("javac DrawTheLuigi.java WriteLogF.java DrawAsk.java");  
+		txtboc = new JTextField("javac DrawTheLuigi.java WriteLogF.java DrawAsk.java FunctionsLol.java");  
 		txtboc2 = new JTextField("jar uf PoolSimulator.jar DrawTheLuigi.class DrawTheLuigi$1.class");  
 
 		JLabel lblLabel = new JLabel("Enter your command to compile (if you don't know, leave it as it is)");
