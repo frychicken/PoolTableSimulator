@@ -1,6 +1,6 @@
 # PoolTableSimulator -- WIP
 
-Generate quadratic curve and pool table simulation
+Generate quadratic curve to simulate pool table and the reflection path
 
 using Bezier Curve and slope line equation
 
@@ -8,7 +8,7 @@ using Bezier Curve and slope line equation
 
 | About           | Usage         | TODO    | Compile to jar  | Changing the algorithm
 | :-------------: |:-------------:| :-----:|:------:|:----:|
-| [here](#About)  | [here](#Usage) | [here](#TODO)| [here](#Compile-to-jar) | [here](#Changing-the-algorithm) |
+| [here](#About)  | [here](#Usage) | [here](#TODO)| [here](#Build) | [here](#Changing-the-algorithm) |
 
 
 ## About
