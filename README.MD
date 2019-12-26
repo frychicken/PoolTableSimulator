@@ -6,9 +6,9 @@ using Bezier Curve and slope line equation
 
 #### ```Table of contents``` 
 
-| About           | Usage         | TODO    | Compile to jar  | Changing the algorithm
-| :-------------: |:-------------:| :-----:|:------:|:----:|
-| [here](#About)  | [here](#Usage) | [here](#TODO)| [here](#Build) | [here](#Changing-the-algorithm) |
+| About           | Usage         | TODO    | Build  | Changing the algorithm | Read more | 
+| :-------------: |:-------------:| :-----:|:------:|:----:| :-------:|
+| [here](#About)  | [here](#Usage) | [here](#TODO)| [here](#Build) | [here](#Changing-the-algorithm) |[WIKI](https://github.com/frychicken/PoolTableSimulator/wiki) |
 
 
 ## About
